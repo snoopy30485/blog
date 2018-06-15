@@ -14,7 +14,7 @@ tags:
 
 #### 進入專案畫面
 
-{% asset_img 5.png gcp %}
+![](images/5.png)
 
 ***
 #### 5. 選取專案
@@ -22,7 +22,7 @@ tags:
 ***
 #### 6. 點選資訊主頁畫面左上方的工具列
 ![](images/22.png)
-
+{% asset_img .png gcp %}
 ***
 #### 7. 點選工具列清單 → Compute Engine → VM 執行個體 ( 可點選圖釘把自己常用的工具釘選到最上面 )
 ![](images/4.png)
