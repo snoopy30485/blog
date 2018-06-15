@@ -1,6 +1,6 @@
 ---
-title: GCP
-date: 2018-06-15 17:44:46
+title: GCP-GoogleCloudPlatform VM 建立
+date: 2018-06-15 18:04:28
 tags:
 ---
 # 建立GCP雲端機器
