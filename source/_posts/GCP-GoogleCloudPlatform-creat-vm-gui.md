@@ -1,28 +1,33 @@
 ---
-title: gcptest
-date: 2018-06-15 18:41:18
+title: GCP-GoogleCloudPlatform-creat-vm-gui
+date: 2018-06-19 10:54:37
 tags:
 ---
+
 # 建立GCP雲端機器
-#### <p>1. [連結到 Google Cloud Platform](https://cloud.google.com/?utm_source=google&utm_medium=cpc&utm_campaign=japac-TW-all-en-dr-bkws-all-super-trial-e-dr-1002234&utm_content=text-ad-none-none-DEV_c-CRE_205812821243-ADGP_BKWS%20%7C%20EXA%20~%20T1%20-%20General_M:1_TW_EN_cloud-googlecloud-KWID_43700018487811535-kwd-35920686936&userloc_9040380&utm_term=KW_googlecloud&gclid=CNnCzIrBg9UCFVgFKgod99wNLQ&dclid=COnE9orBg9UCFcUulgodL5kHxg "Google Cloud Platform")</p>
-#### <p>2. 登入Google</p>
-#### <p>3. 點擊畫面右上角控制台</p>
-![](images/1.png)
-***
+
+#### 1. https://cloud.google.com/
+
+#### 2. 登入Google
+
+#### 3. 點擊畫面右上角控制台
+
+![ ](images/1.png)
+
 #### 4. 選取或建立新機構（ 專案 )
-![...](images/2.jpg)
 
-#### 進入專案畫面
+![進入專案畫面](images/2.jpg)
 
-![...](images/5.png)
 
-***
+![](images/5.png)
+
 #### 5. 選取專案
+
 ![](images/3.png)
 ***
 #### 6. 點選資訊主頁畫面左上方的工具列
 ![](images/22.png)
-{% asset_img .png gcp %}
+
 ***
 #### 7. 點選工具列清單 → Compute Engine → VM 執行個體 ( 可點選圖釘把自己常用的工具釘選到最上面 )
 ![](images/4.png)
