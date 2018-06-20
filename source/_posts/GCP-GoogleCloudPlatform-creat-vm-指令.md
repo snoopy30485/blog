@@ -26,7 +26,7 @@ tags:
 ### 5. 開啟專案
 
 ```
-gcloud projects create 專案ID --name=專案名稱 
+gcloud projects create (專案ID) --name=(專案名稱) 
 ```
 
 ![ ](images/5.1.png)
@@ -48,11 +48,34 @@ gcloud config list project
 ### 如果不是此專案可以用下面指令更換
 
 ```
-gcloud config set project 專案 ID
+gcloud config set project (專案ID)
 ```
 
 ![ ](images/9.png)
 
+### 7. 建立 VM
+
+```
+gcloud compute instances create (VM名稱) --zone (區域) --image-project (project) --image (name) --tags (名稱) --custom-cpu (數字) --custom-memory (數字) --boot-disk-size (數字) --create-disk size=(數字單位),type=(硬碟類型),name=(名稱)
+```
+
+### 建立 VM 指令介紹：
+
+### 查詢：gcloud compute (想要查詢的東西) list
+
+```
+ex：gcloud compute images list
+```
+
+![ ](images/10.png)
+
+### 創建 VM：(不設定的值會給預設值) gcloud compute instances create (name) --zone (區域)
+
+```
+ex：gcloud compute instances create test --zone asia-east1-c
+```
+
+### 沒有下區域指令回詢問是否在此區域，Did you mean zone [asia-east1-b] for instance: [test] (Y/n)? 回答 y 會直接在這個區域，n 會讓你選區域
 
 
 
@@ -62,20 +85,6 @@ gcloud config set project 專案 ID
 
 
 
-
-建立 VM 指令介紹：
-
-查詢
-gcloud compute (想要查詢的東西) list
-ex：gcloud compute images list 查詢images
-
-
-創建VM (不設定的值會給預設值)
-gcloud compute instances create (name) --zone (區域) 
-ex：gcloud compute instances create test --zone  asia-east1-c
-
-沒有下區域指令回詢問是否在此區域，不再此區域回答y會顯示error
-ex：Did you mean zone [asia-east1-b] for instance: [test] (Y/n)?
 
 
 設定image (使用gcloud compute images list查詢project和image)
