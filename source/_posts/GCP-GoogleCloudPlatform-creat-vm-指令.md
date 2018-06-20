@@ -18,7 +18,7 @@ tags:
 
 ![ ](images/2.png)
 
-### 啟動畫面
+### 啟動畫面，虛擬機裝載了所有您需要的開發工具。它提供了一個持久的5GB主目錄，並在 Google Cloud 上運行。只需使用瀏覽器或 Google Chromebook 即可完成中大部分（如果不是全部的話）工作。
 
 ![ ](images/3.png)
 ![ ](images/4.png)
@@ -29,8 +29,37 @@ tags:
 gcloud projects create 專案ID --name=專案名稱 
 ```
 
-![ ](images/5.png)
+![ ](images/5.1.png)
 ![ ](images/6.png)
+
+### 6. 查看帳戶跟專案
+
+```
+gcloud auth list
+```
+
+![ ](images/7.png)
+```
+gcloud config list project
+```
+
+![ ](images/8.png)
+
+### 如果不是此專案可以用下面指令更換
+
+```
+gcloud config set project 專案 ID
+```
+
+![ ](images/9.png)
+
+
+
+
+
+
+
+
 
 
 
