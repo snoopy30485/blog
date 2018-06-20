@@ -57,7 +57,7 @@ tags:
 #### 點選變更選擇作業系統 image，及開機磁碟容量及類型
 
 ![ ](images/9.png)
-![ ](images/10.1.jpg)
+![ ](images/10.1.png)
 ![ ](images/23.1.png)
 
 #### 10. 設定身分及 API 存取權與防火牆
