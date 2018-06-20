@@ -6,24 +6,24 @@ tags:
 
 # 建立GCP雲端機器 ( 指令版 )
 
-#### 1. https://cloud.google.com/
+### 1. https://cloud.google.com/
 
-#### 2. 登入Google
+### 2. 登入Google
 
-#### 3. 點擊畫面右上角控制台 ( 主頁有各種資訊可以查看 )
+### 3. 點擊畫面右上角控制台 ( 主頁有各種資訊可以查看 )
 
 ![ ](images/1.png)
 
-#### 4. 在GCP控制台中，點擊右上角工具欄上的 Cloud Shell 圖標
+### 4. 在GCP控制台中，點擊右上角工具欄上的 Cloud Shell 圖標
 
 ![ ](images/2.png)
 
-#### 啟動畫面
+### 啟動畫面
 
 ![ ](images/3.png)
 ![ ](images/4.png)
 
-#### 5. 開啟專案
+### 5. 開啟專案
 
 ```
 gcloud projects create 專案ID --name=專案名稱 
