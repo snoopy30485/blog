@@ -26,7 +26,7 @@ tags:
 #### 5. 開啟專案
 
 ```
-gcloud projects create 專案ID --name=專案名稱 --organization=組織名稱
+gcloud projects create 專案ID --name=專案名稱 
 ```
 
 ![ ](images/5.png)
