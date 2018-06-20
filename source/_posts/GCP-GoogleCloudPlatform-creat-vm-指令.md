@@ -4,8 +4,37 @@ date: 2018-06-19 15:42:47
 tags:
 ---
 
+# 建立GCP雲端機器 ( 指令版 )
 
-建立 VM 指令：
+#### 1. https://cloud.google.com/
+
+#### 2. 登入Google
+
+#### 3. 點擊畫面右上角控制台 ( 主頁有各種資訊可以查看 )
+
+![ ](images/1.png)
+
+#### 4. 在GCP控制台中，點擊右上角工具欄上的 Cloud Shell 圖標
+
+![ ](images/2.png)
+
+#### 啟動畫面
+
+![ ](images/3.png)
+![ ](images/4.png)
+
+#### 5. 開啟專案
+
+```
+gcloud projects create 專案ID --name=專案名稱 --organization=組織名稱
+```
+
+![ ](images/5.png)
+![ ](images/6.png)
+
+
+
+建立 VM 指令介紹：
 
 查詢
 gcloud compute (想要查詢的東西) list
