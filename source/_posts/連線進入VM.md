@@ -78,7 +78,7 @@ gcloud auth list
 ![ ](images/14.png)
 ![ ](images/15.png)
 
-### 接下來和 Cloud Shell 一樣步驟，書完指令會再開一個終端機就是成功了
+### 接下來和 Cloud Shell 一樣步驟，輸入完指令會再開一個終端機就是成功了
 
 ![ ](images/17.png)
 ![ ](images/16.png)
@@ -109,7 +109,7 @@ gcloud auth list
 ![ ](images/4.png)
 ![ ](images/5.png)
 
-### 點編輯把剛剛複製的金鑰貼上( 要按照格式不然會出現錯誤 )
+### 點編輯把剛剛複製的金鑰貼上( 要按照格式不然會出現錯誤，空格輸入要命的名稱 )
 
 ![ ](images/24.png)
 
@@ -117,7 +117,7 @@ gcloud auth list
 
 ![ ](images/25.png)
 
-### 金鑰是在 22 port，預設是有 22 port 也可以自己建立一個
+### SSH 是在 22 port，預設是有 22 port 也可以自己建立一個
 
 ![ ](images/26.png)
 
@@ -131,3 +131,5 @@ gcloud auth list
 ![ ](images/29.png)
 ![ ](images/30.png)
 ![ ](images/31.png)
+
+### 恭喜完成連線！
