@@ -44,7 +44,7 @@ gcloud compute ssh (VM名稱) --zone (區域)
 
 ![ ](images/8.png)
 
-### 看到使用者改了就是進去了
+### 看到使用者改了就是進去了(第一次會有以上步驟，下次在下指令就不會有了)
 
 ![ ](images/9.png)
 ![ ](images/10.png)
@@ -77,3 +77,57 @@ gcloud auth list
 
 ![ ](images/14.png)
 ![ ](images/15.png)
+
+### 接下來和 Cloud Shell 一樣步驟，書完指令會再開一個終端機就是成功了
+
+![ ](images/17.png)
+![ ](images/16.png)
+
+### 四、 使用其他程式連線，本文章使用 Xshell 5 可以使用自己熟悉程式
+
+
+### 首先創建金鑰
+
+![ ](images/18.png)
+![ ](images/19.png)
+
+### 長度選 2048 目前 1024 已經不太安全
+
+![ ](images/20.png)
+![ ](images/21.png)
+
+### 設定密碼和名稱
+
+![ ](images/22.png)
+
+### 複製金鑰或儲存
+
+![ ](images/23.png)
+
+### 到 GCP Compute Engine → 中繼資料 → SSH 金鑰 添加金鑰
+
+![ ](images/4.png)
+![ ](images/5.png)
+
+### 點編輯把剛剛複製的金鑰貼上( 要按照格式不然會出現錯誤 )
+
+![ ](images/24.png)
+
+### 接下來到 VCP 網路 → 防火牆規則
+
+![ ](images/25.png)
+
+### 金鑰是在 22 port，預設是有 22 port 也可以自己建立一個
+
+![ ](images/26.png)
+
+### 點選防火牆名稱進入後點編輯，加入自己的 ip，儲存
+
+![ ](images/27.png)
+![ ](images/28.png)
+
+### 回到 Xshell 5 點選新增工作 → 連線：輸入名稱(隨意)和 ip → 使用者驗證：方法選 Public Key 選擇金鑰使用者(剛剛命的名稱)和輸入密碼
+
+![ ](images/29.png)
+![ ](images/30.png)
+![ ](images/31.png)
