@@ -39,6 +39,7 @@ gcloud auth list
 ```
 
 ![ ](images/7.png)
+
 ```
 gcloud config list project
 ```
@@ -82,7 +83,7 @@ gcloud compute instances create (name) --zone (區域)
 ### 回答 n 會讓你選區域，輸入想要的區域的數字就會變成該區域了
 
 ![ ](images/12.png)
-![ ](images/13.png)
+![ ](images/13.1.png)
 
 ### 設定 image：使用 gcloud compute images list 查詢 project 和 image 
 
@@ -112,7 +113,7 @@ gcloud compute images list
 
 ```
 --custom-cpu (數字) --custom-memory (數字)
-``` 
+```
 
 ### ex：gcloud compute instances create --custom-cpu 4 --custom-memory 8
 
