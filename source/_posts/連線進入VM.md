@@ -48,7 +48,7 @@ gcloud compute ssh (VM名稱) --zone (區域)
 
 ### 原本是帳號加專案 ID
 
-![ ](images/9.png)
+![ ](images/9.1.png)
 
 ### 看到變成帳號加 VM 名稱就是進去了
 
