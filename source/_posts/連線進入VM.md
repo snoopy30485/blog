@@ -4,7 +4,7 @@ date: 2018-06-21 14:47:21
 tags:
 ---
 
-## 遠端連線進入 VM (ubuntu)
+### 連線進入 VM ubuntu
 
 ### 總共有4種方法可以進入 VM 本篇文章將依序作介紹
 
@@ -17,7 +17,7 @@ tags:
 ![ ](images/2.png)
 ![ ](images/3.png)
 
-### 連進去後在 Compute Engine → 中繼資料 → SSH 金鑰會幫你加金鑰
+### 連進去後在 Compute Engine → 中繼資料 → SSH 金鑰查看連進去後會幫你加金鑰
 
 ![ ](images/4.png)
 ![ ](images/5.png)
@@ -26,7 +26,7 @@ tags:
 
 ### 打開 Cloud Shell
 
-![ ](images/6.png)
+![ ](images/6.1.png)
 
 ### 使用指令連線進入
 
@@ -44,18 +44,20 @@ gcloud compute ssh (VM名稱) --zone (區域)
 
 ![ ](images/8.png)
 
-### 看到使用者改了就是進去了(第一次會有以上步驟，下次在下指令就不會有了)
+### 看到使用者改了就是進去了 ( 第一次會有以上步驟，下次在下指令就不會有了 )
 
 ![ ](images/9.png)
 ![ ](images/10.png)
 
-### 三、 使用 SDK 連線
+### 三、 使用 Cloud SDK 連線
 
-### 安裝 SDK 下載和說明：https://cloud.google.com/sdk/
+### Cloud SDK：Cloud SDK 是一套 Cloud Platform 工具，其中包含 gcloud、gsutil 和 bq，可讓您透過指令列存取 Google Compute Engine、Google Cloud Storage、Google BigQuery，以及其他產品和服務。您可以利用這些工具進行互動操作，也可以運用在您的自動化指令碼中。 ( Cloud Shell 使用的指令就是 SDK 的指令 )
+
+### 安裝 SDK，下載：https://cloud.google.com/sdk/ 
 
 ### 打開 SDK 
 
-![ ](images/11.png)
+![ ](images/11.1.png)
 
 ### 如果帳號不對要記得切換帳號
 
@@ -64,14 +66,6 @@ gcloud auth login 帳號
 ```
 
 ![ ](images/12.png)
-
-### 可以下指令檢查一下
-
-```
-gcloud auth list
-```
-
-![ ](images/13.png)
 
 ### 切換帳號它會開個網頁讓你選目前想用的帳號
 
@@ -82,6 +76,14 @@ gcloud auth list
 
 ![ ](images/17.png)
 ![ ](images/16.png)
+
+### 可以下指令檢查一下
+
+```
+gcloud auth list
+```
+
+![ ](images/13.png)
 
 ### 四、 使用其他程式連線，本文章使用 Xshell 5 可以使用自己熟悉程式
 
