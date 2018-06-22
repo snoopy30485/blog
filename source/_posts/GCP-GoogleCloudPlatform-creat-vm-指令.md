@@ -34,9 +34,7 @@ tags:
 gcloud projects create (專案ID) --name=(專案名稱)
 ```
 
-```
-ex：gcloud projects create  gvuriegh --name=123456789
-```
+### ex：gcloud projects create  gvuriegh \--name=123456789
 
 ![ ](images/5.1.png)
 
@@ -80,7 +78,7 @@ gcloud config set project (專案ID)
 gcloud compute instances create (VM名稱) --zone (區域) --image-project (project) --image (name) --tags (名稱) --custom-cpu (數字) --custom-memory (數字) --boot-disk-size (數字) --create-disk size=(數字單位),type=(硬碟類型),name=(名稱)
 ```
 
-### ex：gcloud compute instances create test --zone asia-east1-c --image-project ubuntu-os-cloud --image ubuntu-1604-xenial-v20180522 --tags test --custom-cpu 4 --custom-memory 8 --boot-disk-size 30 --create-disk size=10GB,type=pd-ssd,name=test-disk
+### ex：gcloud compute instances create test \--zone asia-east1-c \--image-project ubuntu-os-cloud \--image ubuntu-1604-xenial-v20180522 \--tags test \--custom-cpu 4 \--custom-memory 8 \--boot-disk-size 30 \--create-disk size=10GB,type=pd-ssd,name=test-disk
 
 ### 建立成功後詳細訊息還是要到 Compute Engine → VM 執行個體裡面看
 
@@ -94,7 +92,7 @@ gcloud compute instances create (VM名稱) --zone (區域) --image-project (proj
 gcloud compute instances create (name) --zone (區域)
 ```
 
-### ex：gcloud compute instances create test --zone asia-east1-a
+### ex：gcloud compute instances create test \--zone asia-east1-a
 
 ![ ](images/14.png)
 
@@ -125,7 +123,7 @@ gcloud compute images list
 --image-project (project) --image (name)
 ```
 
-### ex：gcloud compute instances create gcelab2 --zone us-central1-c --image-project ubuntu-os-cloud --image ubuntu-1604-xenial-v20180522
+### ex：gcloud compute instances create gcelab2 \--zone us-central1-c \--image-project ubuntu-os-cloud \--image ubuntu-1604-xenial-v20180522
 
 ### ● 設定網路標記：目前防火牆要先設定好標記 ( 防火牆指令設標記會在研究 )
 
@@ -133,7 +131,7 @@ gcloud compute images list
 --tags (你設定的標記)
 ```
 
-### ex： gcloud compute instances create --tags test
+### ex： gcloud compute instances create \--tags test
 
 ### ● 設定記憶體跟 cpu
 
@@ -141,7 +139,7 @@ gcloud compute images list
 --custom-cpu (數字) --custom-memory (數字)
 ```
 
-### ex：gcloud compute instances create --custom-cpu 4 --custom-memory 8
+### ex：gcloud compute instances create \--custom-cpu 4 \--custom-memory 8
 
 ### ● 設定開機硬碟容量：容量沒給單位預設是 GB
 
@@ -149,7 +147,7 @@ gcloud compute images list
 --boot-disk-size (數字)
 ```
 
-### ex：gcloud compute instances create --boot-disk-size 30GB
+### ex：gcloud compute instances create \--boot-disk-size 30GB
 
 ### ● 設定開機硬碟類型：
 
@@ -167,7 +165,7 @@ gcloud compute disk-types list
 --boot-disk-type (硬碟類型)
 ```
 
-### ex：gcloud compute instances create --boot-disk-type pd-ssd
+### ex：gcloud compute instances create \--boot-disk-type pd-ssd
 
 ### ● 設定開機硬碟在刪除虛擬機器的 instance 下會保留住開機硬碟，預設情況是會刪除開機硬碟
 
@@ -181,6 +179,6 @@ gcloud compute disk-types list
 --create-disk name=(name),type=(硬碟類型),size=(容量)
 ```
 
-### ex：gcloud compute instances create --create-disk name=test,type=pd-ssd,size=10GB
+### ex：gcloud compute instances create \--create-disk name=test,type=pd-ssd,size=10GB
 
 ## 指令網站連結：https://cloud.google.com/sdk/docs/
