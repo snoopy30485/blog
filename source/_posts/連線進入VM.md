@@ -88,7 +88,7 @@ gcloud auth list
 
 ![ ](images/13.png)
 
-### 接下來和 Cloud Shell 一樣步驟，輸入完指令會再開一個終端機就是成功了 (不用按 y/n 到這邊後終端機就會跳出來了)
+### 接下來和 Cloud Shell 一樣步驟，輸入完指令會再開一個終端機就是成功了 ( y/n 不用輸入到這邊後終端機就會跳出來了)
 
 ![ ](images/17.1.png)
 ![ ](images/16.png)
