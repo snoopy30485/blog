@@ -22,6 +22,8 @@ tags:
 ![ ](images/4.png)
 ![ ](images/5.png)
 
+***
+
 ### 二、 使用 Cloud Shell 連線
 
 ### 打開 Cloud Shell
@@ -49,13 +51,15 @@ gcloud compute ssh (VM名稱) --zone (區域)
 ![ ](images/9.png)
 ![ ](images/10.png)
 
+***
+
 ### 三、 使用 Cloud SDK 連線
 
 ### Cloud SDK：Cloud SDK 是一套 Cloud Platform 工具，其中包含 gcloud、gsutil 和 bq，可讓您透過指令列存取 Google Compute Engine、Google Cloud Storage、Google BigQuery，以及其他產品和服務。您可以利用這些工具進行互動操作，也可以運用在您的自動化指令碼中。 ( Cloud Shell 使用的指令就是 SDK 的指令 )
 
 ### 安裝 SDK，下載：https://cloud.google.com/sdk/ 
 
-### 打開 SDK 
+### 啟動 SDK
 
 ![ ](images/11.1.png)
 
@@ -72,7 +76,11 @@ gcloud auth login 帳號
 ![ ](images/14.png)
 ![ ](images/15.png)
 
-### 可以下指令檢查一下
+### 出現此畫面就是成功了，第一次會需要網頁點帳號再來就不用了
+
+![ ](images/32.png)
+
+### 可以下指令檢查一下，目前使用的帳號前面會有 \*
 
 ```
 gcloud auth list
@@ -80,20 +88,21 @@ gcloud auth list
 
 ![ ](images/13.png)
 
-### 接下來和 Cloud Shell 一樣步驟，輸入完指令會再開一個終端機就是成功了
+### 接下來和 Cloud Shell 一樣步驟，輸入完指令會再開一個終端機就是成功了 (不用按 y/n 到這邊後終端機就會跳出來了)
 
 ![ ](images/17.png)
 ![ ](images/16.png)
 
-### 四、 使用其他程式連線，本文章使用 Xshell 5 可以使用自己熟悉程式
+***
 
+### 四、 使用其他程式連線，本文章使用 Xshell 5 可以使用自己熟悉程式
 
 ### 首先創建金鑰
 
 ![ ](images/18.png)
 ![ ](images/19.png)
 
-### 長度選 2048 目前 1024 已經不太安全
+### 選擇 RSA 長度選 2048 目前 1024 已經不太安全
 
 ![ ](images/20.png)
 ![ ](images/21.png)
@@ -111,7 +120,7 @@ gcloud auth list
 ![ ](images/4.png)
 ![ ](images/5.png)
 
-### 點編輯把剛剛複製的金鑰貼上 ( 要按照格式不然會出現錯誤，空格輸入要命的名稱 )
+### 點編輯把剛剛複製的金鑰貼上 ( 要按照格式不然會出現錯誤，空格輸入要命的名稱，輸入名稱將會在使用 Xshell 5 連線時用到 )
 
 ![ ](images/24.png)
 
@@ -123,7 +132,7 @@ gcloud auth list
 
 ![ ](images/26.png)
 
-### 點選防火牆名稱進入後點編輯，加入自己的 ip，儲存
+### 點選防火牆名稱進入後點編輯，加入自己的 ip ( 外網 )，儲存
 
 ![ ](images/27.png)
 ![ ](images/28.png)
@@ -134,4 +143,14 @@ gcloud auth list
 ![ ](images/30.png)
 ![ ](images/31.png)
 
+### 第一次登入會出現 SSH 安全性警告，點選接受及存檔
+
+![ ](images/33.png)
+
+### 一樣第一次會問你使用者名稱，就是 GCP Compute Engine → 中繼資料 → SSH 金鑰添加的名稱
+
+![ ](images/34.png)
+
 ### 恭喜完成連線！
+
+![ ](images/35.png)
