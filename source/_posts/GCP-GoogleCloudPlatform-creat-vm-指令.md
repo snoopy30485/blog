@@ -6,43 +6,58 @@ tags:
 
 # 建立GCP雲端機器 ( 指令版 )
 
-### 1. https://cloud.google.com/
+### 1. 網址：https://cloud.google.com/
 
-### 2. 登入Google
+### 2. 登入 Google 帳號
 
-### 3. 點擊畫面右上角控制台 ( 主頁有各種資訊可以查看 )
+### 3. 點擊畫面右上角控制台進入 ( 主頁有各種資訊可以查看 )
 
 ![ ](images/1.png)
 
 ### 4. 在GCP控制台中，點擊右上角工具欄上的 Cloud Shell 圖標
 
-![ ](images/2.png)
+![ ](images/2.1.png)
 
-### 啟動畫面，虛擬機裝載了所有您需要的開發工具。它提供了一個持久的5GB主目錄，並在 Google Cloud 上運行。只需使用瀏覽器或 Google Chromebook 即可完成中大部分（如果不是全部的話）工作。
+### 啟動 Cloud Shell，虛擬機裝載了所有您需要的開發工具。它提供了一個持久的5GB主目錄，並在 Google Cloud 上運行。只需使用瀏覽器或 Google Chromebook 即可完成中大部分（如果不是全部的話）工作。
 
 ![ ](images/3.png)
+
+### 啟動畫面
+
 ![ ](images/4.png)
 
-### 5. 開啟專案
+***
+
+### 5. 開啟專案指令
 
 ```
 gcloud projects create (專案ID) --name=(專案名稱) 
 ```
+### ex：gcloud projects create  gvuriegh --name=123456789
 
 ![ ](images/5.1.png)
+
+### 從 gui 查看名稱跟 ID 是否一樣
+
 ![ ](images/6.png)
 
-### 6. 查看帳戶跟專案
+***
+
+### 6. 查看帳戶跟專案指令
 
 ```
 gcloud auth list
 ```
+
+### 可以看到使用者是誰，其實就是 google 登入帳號
 
 ![ ](images/7.png)
 
 ```
 gcloud config list project
 ```
+
+### 是顯示專案 ID (預設 ID 都很像 ID 盡可能都是自己取比較好)
 
 ![ ](images/8.png)
 
@@ -54,19 +69,23 @@ gcloud config set project (專案ID)
 
 ![ ](images/9.png)
 
-### 7. 建立 VM
+***
+
+### 7. 建立 VM 指令
 
 ```
 gcloud compute instances create (VM名稱) --zone (區域) --image-project (project) --image (name) --tags (名稱) --custom-cpu (數字) --custom-memory (數字) --boot-disk-size (數字) --create-disk size=(數字單位),type=(硬碟類型),name=(名稱)
 ```
 
-ex：gcloud compute instances create test --zone asia-east1-c --image-project ubuntu-os-cloud --image ubuntu-1604-xenial-v20180522 --tags test --custom-cpu 4 --custom-memory 8 --boot-disk-size 30 --create-disk size=10GB,type=pd-ssd,name=test-disk
+### ex：gcloud compute instances create test --zone asia-east1-c --image-project ubuntu-os-cloud --image ubuntu-1604-xenial-v20180522 --tags test --custom-cpu 4 --custom-memory 8 --boot-disk-size 30 --create-disk size=10GB,type=pd-ssd,name=test-disk
+
+### 建立成功後詳細訊息還是要到 gui 裡面看
 
 ![ ](images/16.png)
 
-### 建立 VM 指令介紹：
+### 建立 VM 指令分解介紹：
 
-### 創建 VM：(除了名稱跟區域不設定的值會給預設值) 沒有下區域指令會詢問是否在此區域，Did you mean zone [asia-east1-b] for instance: [test] (Y/n)? 回答 y 會直接在這個預設區域，n 會讓你選區域
+### 創建 VM：( 除了名稱跟區域不設定的值會給預設值 ) 沒有下區域指令會詢問是否在此區域，Did you mean zone [asia-east1-b] for instance: [test] (Y/n)? 回答 y 會直接在這個預設區域，n 會讓你選區域
 
 ```
 gcloud compute instances create (name) --zone (區域)
