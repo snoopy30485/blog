@@ -17,7 +17,7 @@ tags:
 ![ ](images/2.png)
 ![ ](images/3.png)
 
-### 連進去後在 Compute Engine → 中繼資料 → SSH 金鑰查看連進去後會幫你加金鑰
+### 可以在 Compute Engine → 中繼資料 → SSH 金鑰查看金鑰 ( 連進去後會幫你加金鑰 )
 
 ![ ](images/4.png)
 ![ ](images/5.png)
@@ -31,7 +31,7 @@ tags:
 ### 使用指令連線進入
 
 ```
-gcloud compute ssh (VM名稱) --zone (區域) 
+gcloud compute ssh (VM名稱) ---zone (區域) 
 ```
 
 ### ex：gcloud compute ssh test --zone asia-east1-b	
@@ -72,11 +72,6 @@ gcloud auth login 帳號
 ![ ](images/14.png)
 ![ ](images/15.png)
 
-### 接下來和 Cloud Shell 一樣步驟，輸入完指令會再開一個終端機就是成功了
-
-![ ](images/17.png)
-![ ](images/16.png)
-
 ### 可以下指令檢查一下
 
 ```
@@ -84,6 +79,11 @@ gcloud auth list
 ```
 
 ![ ](images/13.png)
+
+### 接下來和 Cloud Shell 一樣步驟，輸入完指令會再開一個終端機就是成功了
+
+![ ](images/17.png)
+![ ](images/16.png)
 
 ### 四、 使用其他程式連線，本文章使用 Xshell 5 可以使用自己熟悉程式
 
@@ -111,7 +111,7 @@ gcloud auth list
 ![ ](images/4.png)
 ![ ](images/5.png)
 
-### 點編輯把剛剛複製的金鑰貼上( 要按照格式不然會出現錯誤，空格輸入要命的名稱 )
+### 點編輯把剛剛複製的金鑰貼上 ( 要按照格式不然會出現錯誤，空格輸入要命的名稱 )
 
 ![ ](images/24.png)
 
@@ -119,7 +119,7 @@ gcloud auth list
 
 ![ ](images/25.png)
 
-### SSH 是在 22 port，預設是有 22 port 也可以自己建立一個
+### SSH 是使用 22 port，預設是有 22 port 也可以自己建立一個
 
 ![ ](images/26.png)
 
@@ -128,7 +128,7 @@ gcloud auth list
 ![ ](images/27.png)
 ![ ](images/28.png)
 
-### 回到 Xshell 5 點選新增工作 → 連線：輸入名稱(隨意)和 ip → 使用者驗證：方法選 Public Key 選擇金鑰使用者(剛剛命的名稱)和輸入密碼
+### 回到 Xshell 5 點選新增工作 → 連線：輸入名稱 ( 隨意 ) 和 ip → 使用者驗證：方法選 Public Key 選擇金鑰使用者 ( 剛剛命的名稱 ) 和輸入密碼
 
 ![ ](images/29.png)
 ![ ](images/30.png)
