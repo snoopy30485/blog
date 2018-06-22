@@ -31,10 +31,10 @@ tags:
 ### 使用指令連線進入
 
 ```
-gcloud compute ssh (VM名稱) ---zone (區域) 
+gcloud compute ssh (VM名稱) --zone (區域)
 ```
 
-### ex：gcloud compute ssh test --zone asia-east1-b	
+### ex：gcloud compute ssh test ---zone asia-east1-b
 
 ### 輸入 y 繼續
 
