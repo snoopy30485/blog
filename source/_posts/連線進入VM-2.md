@@ -28,7 +28,7 @@ gcloud compute instances get-serial-port-output ( VM 名稱 )
 
 ![ ](images/2.png)
 
-### 設定使用者名稱
+### 設定使用者名稱 ( 使用者預設是帳號，但不建議使用使用同樣使用者名稱會把上一台密碼洗掉 )
 
 ![ ](images/3.png)
 
@@ -44,7 +44,7 @@ gcloud compute instances get-serial-port-output ( VM 名稱 )
 
 ![ ](images/6.png)
 
-### 輸入完出現此畫面點左邊
+### 點擊繼續以確認您要連接
 
 ![ ](images/7.png)
 

@@ -22,6 +22,10 @@ tags:
 
 ![ ](images/2.png)
 
+### 目前 Local SSD ( gui ) 只能在 VM 建立下方的磁碟建立才有
+
+![ ](images/17.png)
+
 ***
 
 ### 二、刪除主機、保留硬碟
