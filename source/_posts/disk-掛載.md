@@ -32,6 +32,8 @@ gcloud compute disks create (名稱) --size=(容量) --zone (區域)
 gcloud compute instances attach-disk ( VM 名稱 ) --disk (創建磁碟的名稱) --zone (區域)
 ```
 
+### ex：gcloud compute instances attach-disk
+
 ### 輸出畫面
 
 ![ ](images/5.png)
