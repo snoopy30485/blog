@@ -22,6 +22,147 @@ gcloud compute disks create (名稱) --size=(容量) --zone (區域)
 
 ![ ](images/4.png)
 
-### 新增進使用中 VM
+***
 
+### 二、新增磁碟進使用中 VM 並掛載 ( linux )
 
+### 加入磁碟 ( 區域要跟 VM 相同不然會顯示錯誤 )
+
+```
+gcloud compute instances attach-disk ( VM 名稱 ) --disk (創建磁碟的名稱) --zone (區域)
+```
+
+### 輸出畫面
+
+![ ](images/5.png)
+
+### 可以到 gui Compute Engine → 磁碟查看，新增好會出現 VM 名稱
+
+![ ](images/18.png)
+
+### 連線進入 VM ( 前面文章有教學怎麼進入 )
+
+### 最高權限
+
+![ ](images/6.png)
+
+### 顯示主機上的硬碟
+
+```
+ls /dev/[sh]d*
+```
+
+![ ](images/7.png)
+
+### 顯示新增硬碟資訊
+
+```
+fdisk -l /dev/sdb
+```
+
+![ ](images/8.png)
+
+### 對 sdb 磁碟進行分割，輸入 m 顯示說明
+
+```
+fdisk /dev/sdb
+```
+
+![ ](images/9.png)
+![ ](images/10.png)
+
+### 輸入 n 新增分割區，在輸入 p  ( 硬碟全部只要一個分割區 )
+
+![ ](images/11.png)
+
+### 輸入 1 ( 磁碟代號 )按 Enter，按 Enter ( 起始磁區使用預設值 )，在按 Enter ( 最後磁區使用預設值 )
+
+![ ](images/12.png)
+
+### 輸入 w ( 將分割表寫入磁碟後離開 )
+
+![ ](images/13.png)
+
+### 檢查一下分，割好的 sb1 出現了
+
+![ ](images/14.png)
+
+### 對 sdb1 磁碟做 ext4 格式化
+
+```
+mkfs -t ext4 /dev/sdb1
+```
+
+![ ](images/15.png)
+
+### 使用 UUID 掛載磁碟
+
+### 列出所有磁碟的 UUID
+
+```
+sudo blkid
+```
+
+![ ](images/16.png)
+
+### 編輯 fstab 檔案，將要掛載硬碟的 UDID 填入，編輯後存檔重啟系統後就會自動掛載
+
+```
+vim /etc/fstab
+```
+
+### UUID：填入需掛載磁碟的 UUID
+
+### /data：將此磁碟掛載到 /data 的路徑
+
+### ext4：檔案系統類型
+
+### defaults：掛載時要使用的掛載參數
+
+### 第一個 0：dump 會根據這個設定決定是否需要備份，一般設定為 0 即不備份；1 為每日備份；2 為隔日備份
+
+### 第二個 0：fsck 會根據這個設定，決定在不正常關機後，檢查檔案系統的順序。根目錄要設定成 1 其他分割區設定成 2 如果設定成 0 則不會作 fsck 檢查
+
+![ ](images/17.png)
+
+***
+
+### 三、新增磁碟進使用中 VM 並掛載 ( windows )
+
+### 進入 Compute Engine → VM 執行個體點選 VM 名稱 → VM 執行個體詳細資料 → 編輯
+
+![ ](images/19.png)
+![ ](images/20.png)
+
+### 往下拉在其他磁碟新增硬碟
+
+![ ](images/21.png)
+
+### 可以到 gui Compute Engine → 磁碟查看，新增好會出現 VM 名稱
+
+![ ](images/18.png)
+
+### 連線進入 VM
+
+### 開始右鍵 → Disk Managment
+
+![ ](images/22.png)
+
+### 選擇 ok 硬碟就會出現了
+
+![ ](images/23.png)
+![ ](images/24.png)
+
+### 對新硬碟右鍵第一個選項
+
+![ ](images/25.png)
+
+### next 到底 ( 如果沒特別需求 )
+
+![ ](images/26.png)
+![ ](images/27.png)
+![ ](images/28.png)
+![ ](images/29.png)
+![ ](images/30.png)
+
+### 恭喜硬碟掛載完成！
