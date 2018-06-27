@@ -17,7 +17,7 @@ tags:
 ![ ](images/2.png)
 ![ ](images/3.png)
 
-### 選擇一個解決方案，裡面有各種介紹也有使用費用，確定好後點擊 COMPUTE ENGINE 啟動
+### 選擇一個 Windows Server 2012 R2方案，裡面有各種介紹也有使用費用，確定好後點擊 COMPUTE ENGINE 啟動
 
 ![ ](images/4.png)
 
@@ -33,7 +33,7 @@ tags:
 
 ![ ](images/9.png)
 
-### 選擇 Nginx 裡面有各種介紹也有使用費用，確定好後點擊 COMPUTE ENGINE 啟動
+### 選擇 Nginx 方案裡面有各種介紹也有使用費用，確定好後點擊 COMPUTE ENGINE 啟動
 
 ![ ](images/7.png)
 
