@@ -8,7 +8,7 @@ tags:
 
 ### 總共有2種方法可以進入 VM 本篇文章將依序作介紹
 
-### 一、 使用GCP開啟新視窗連線
+### 一、 使用 GCP 開啟新視窗連線
 
 ### 建立好 VM 後有可能尚未準備好接受 RDP 連接，因為所有 OS 組件都需要一段時間才能初始化
 
@@ -52,3 +52,33 @@ gcloud compute instances get-serial-port-output ( VM 名稱 )
 
 ![ ](images/8.png)
 
+***
+
+### 二、Windows 內建登入
+
+### 取得使用者名稱跟密碼 ( 取得方式跟用 GCP 開啟新視窗連線一樣 )
+
+### 打開搜尋輸入 mstsc 選擇遠端桌面連線
+
+![ ](images/9.png)
+
+### 或是開始鍵 + R 輸入 mstsc
+
+![ ](images/10.png)
+
+### 輸入欲登入 VM 外部 IP
+
+![ ](images/11.png)
+![ ](images/12.png)
+
+### 輸入設定好的使用者名稱跟密碼
+
+![ ](images/13.png)
+
+### 選擇是
+
+![ ](images/14.png)
+
+### 恭喜連線成功！
+
+![ ](images/15.png)
