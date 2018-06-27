@@ -12,7 +12,7 @@ tags:
 
 ![ ](images/1.png)
 
-### Cloud Launcher 主頁，選擇一個想要的解決方案，本文章使用 Windows Server 2012 R2 跟 Nginx 2個例子
+### Cloud Launcher 主頁，選擇一個想要的方案，本文章使用 Windows Server 2012 R2 跟 Nginx 2個例子
 
 ![ ](images/2.png)
 ![ ](images/3.png)
