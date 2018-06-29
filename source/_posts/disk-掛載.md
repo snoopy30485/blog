@@ -4,15 +4,19 @@ date: 2018-06-27 09:45:14
 tags:
 ---
 
-### 一、創建硬碟
+## 一、創建硬碟
 
-### 到 Compute Engine → 磁碟創建一個磁碟
+### 到 Compute Engine → 磁碟，創建一個磁碟
+
+### 注意：區域要設定跟 VM 同區，名稱不能跟 VM 一樣
 
 ![ ](images/1.png)
 ![ ](images/2.png)
 ![ ](images/3.png)
 
-### 也可以用指令創建 ( 記得 zone 要設定跟 VM 同區，名稱不能跟 VM 一樣 )
+### 也可以用指令創建
+
+### 注意：zone 要設定跟 VM 同區，名稱不能跟 VM 一樣
 
 ```
 gcloud compute disks create (名稱) --size=(容量) --zone (區域)
@@ -24,15 +28,13 @@ gcloud compute disks create (名稱) --size=(容量) --zone (區域)
 
 ***
 
-### 二、新增磁碟進使用中 VM 並掛載 ( linux )
+## 二、新增磁碟進使用中 VM 並掛載 ( linux )
 
 ### 加入磁碟 ( 區域要跟 VM 相同不然會顯示錯誤 )
 
 ```
 gcloud compute instances attach-disk ( VM 名稱 ) --disk (創建磁碟的名稱) --zone (區域)
 ```
-
-### ex：gcloud compute instances attach-disk
 
 ### 輸出畫面
 
@@ -77,7 +79,7 @@ fdisk /dev/sdb
 
 ![ ](images/11.png)
 
-### 輸入 1 ( 磁碟代號 )按 Enter，按 Enter ( 起始磁區使用預設值 )，在按 Enter ( 最後磁區使用預設值 )
+### 輸入 1 ( 磁碟代號 ) 按 Enter，按 Enter ( 起始磁區使用預設值 )，在按 Enter ( 最後磁區使用預設值 )
 
 ![ ](images/12.png)
 
@@ -85,7 +87,7 @@ fdisk /dev/sdb
 
 ![ ](images/13.png)
 
-### 檢查一下分，割好的 sb1 出現了
+### 檢查一下，分割好的 sb1 出現了
 
 ![ ](images/14.png)
 
@@ -140,9 +142,17 @@ vim /etc/fstab
 
 ![ ](images/21.png)
 
-### 可以到 gui Compute Engine → 磁碟查看，新增好會出現 VM 名稱
+### 可以到 Compute Engine → 磁碟查看，新增好會出現 VM 名稱
 
 ![ ](images/18.png)
+
+### 新增後到 Compute Engine → 硬碟要刪除會顯示 "無法刪除以連結的磁碟"
+
+![ ](images/31.png)
+
+### 要到 VM 執行個體詳細資料 → 編輯，案 X 把硬碟移除，磁碟才能刪除
+
+![ ](images/32.png)
 
 ### 連線進入 VM
 
@@ -150,14 +160,18 @@ vim /etc/fstab
 
 ![ ](images/22.png)
 
-### 選擇 ok 硬碟就會出現了
+### 選擇 GPT 按 OK 後硬碟就會出現了
 
-![ ](images/23.png)
-![ ](images/24.png)
+### 硬碟模式介紹：1. 傳統 BIOS/MBR 2. 新型 UEFI/GPT
+
+### 傳統的硬碟分割都是用 MBR 分割，但 MBR 分割只支援 2TB 以下容量硬碟，所以 2TB 以上容量硬碟一定要 GPT 分割
+
+![ ](images/23.1.png)
+![ ](images/24.1.png)
 
 ### 對新硬碟右鍵第一個選項
 
-![ ](images/25.png)
+![ ](images/25.1.png)
 
 ### next 到底 ( 如果沒特別需求 )
 
@@ -168,3 +182,5 @@ vim /etc/fstab
 ![ ](images/30.png)
 
 ### 恭喜硬碟掛載完成！
+
+![ ](images/33.png)
