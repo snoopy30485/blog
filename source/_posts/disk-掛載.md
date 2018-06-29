@@ -40,10 +40,6 @@ gcloud compute disks create (名稱) --size=(容量) --zone (區域)
 
 ![ ](images/21.png)
 
-### 可以到 Compute Engine → 磁碟，查看新增好 "使用者" 會出現 VM 名稱
-
-![ ](images/18.png)
-
 ### 新增後到 Compute Engine → 硬碟要刪除會顯示 "無法刪除以連結的磁碟"
 
 ![ ](images/31.png)
@@ -62,7 +58,7 @@ gcloud compute instances attach-disk ( VM 名稱 ) --disk (創建磁碟的名稱
 
 ![ ](images/5.png)
 
-### 可以到 gui Compute Engine → 磁碟查看，新增好會出現 VM 名稱
+### 可以到 Compute Engine → 磁碟查看，新增好會出現 VM 名稱
 
 ![ ](images/18.png)
 
