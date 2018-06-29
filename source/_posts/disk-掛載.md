@@ -30,16 +30,6 @@ gcloud compute disks create (名稱) --size=(容量) --zone (區域)
 
 ## 二、新增磁碟進使用中 VM
 
-### 新增磁碟指令 ( 區域要跟 VM 相同不然會顯示錯誤 )
-
-```
-gcloud compute instances attach-disk ( VM 名稱 ) --disk (創建磁碟的名稱) --zone (區域)
-```
-
-### 輸出畫面
-
-![ ](images/5.png)
-
 ### 新增磁碟指令 GUI
 
 ### 進入 Compute Engine → VM 執行個體點選 VM 名稱 → VM 執行個體詳細資料 → 編輯
@@ -61,6 +51,16 @@ gcloud compute instances attach-disk ( VM 名稱 ) --disk (創建磁碟的名稱
 ### 要到 VM 執行個體詳細資料 → 編輯，案 X 把硬碟移除磁碟才能刪除
 
 ![ ](images/32.png)
+
+### 新增磁碟指令 ( 區域要跟 VM 相同不然會顯示錯誤 )
+
+```
+gcloud compute instances attach-disk ( VM 名稱 ) --disk (創建磁碟的名稱) --zone (區域)
+```
+
+### 輸出畫面
+
+![ ](images/5.png)
 
 ### 可以到 gui Compute Engine → 磁碟查看，新增好會出現 VM 名稱
 
