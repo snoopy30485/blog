@@ -44,7 +44,7 @@ gcloud compute instances attach-disk ( VM 名稱 ) --disk (創建磁碟的名稱
 
 ![ ](images/18.png)
 
-### 連線進入 VM [連線進入 VM 傳送門] (https://snoopy30485.github.io/2018/06/21/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM/)
+### 連線進入 VM [連線進入 VM 傳送門](https://snoopy30485.github.io/2018/06/21/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM/)
 
 ### 最高權限
 
@@ -158,7 +158,7 @@ vim /etc/fstab
 
 ![ ](images/32.png)
 
-### 連線進入 VM [連線進入 VM-2 傳送門] (https://snoopy30485.github.io/2018/06/22/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM-2/)
+### 連線進入 VM [連線進入 VM-2 傳送門](https://snoopy30485.github.io/2018/06/22/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM-2/)
 
 ### 開始右鍵 → Disk Managment
 
