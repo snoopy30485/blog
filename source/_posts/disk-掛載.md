@@ -109,10 +109,6 @@ fdisk /dev/sdb
 
 ![ ](images/13.png)
 
-### 檢查一下，分割好的 sb1 出現了
-
-![ ](images/14.png)
-
 ### 對 sdb1 磁碟做 ext4 格式化
 
 ```
