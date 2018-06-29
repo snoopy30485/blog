@@ -10,7 +10,7 @@ tags:
 
 ### 注意：區域要設定跟 VM 同區，名稱不能跟 VM 一樣
 
-![ ](images/1.png)
+![ ](images/1.1.png)
 ![ ](images/2.png)
 ![ ](images/3.png)
 
