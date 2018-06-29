@@ -28,9 +28,9 @@ gcloud compute disks create (名稱) --size=(容量) --zone (區域)
 
 ***
 
-## 二、新增磁碟進使用中 VM 並掛載 ( linux )
+## 二、新增磁碟進使用中 VM
 
-### 加入磁碟 ( 區域要跟 VM 相同不然會顯示錯誤 )
+### 新增磁碟指令 ( 區域要跟 VM 相同不然會顯示錯誤 )
 
 ```
 gcloud compute instances attach-disk ( VM 名稱 ) --disk (創建磁碟的名稱) --zone (區域)
@@ -40,11 +40,33 @@ gcloud compute instances attach-disk ( VM 名稱 ) --disk (創建磁碟的名稱
 
 ![ ](images/5.png)
 
+### 新增磁碟指令 GUI
+
+### 進入 Compute Engine → VM 執行個體點選 VM 名稱 → VM 執行個體詳細資料 → 編輯
+
+![ ](images/20.png)
+
+### 往下拉在其他磁碟新增硬碟
+
+![ ](images/21.png)
+
+### 可以到 Compute Engine → 磁碟，查看新增好 "使用者" 會出現 VM 名稱
+
+![ ](images/18.png)
+
+### 新增後到 Compute Engine → 硬碟要刪除會顯示 "無法刪除以連結的磁碟"
+
+![ ](images/31.png)
+
+### 要到 VM 執行個體詳細資料 → 編輯，案 X 把硬碟移除磁碟才能刪除
+
+![ ](images/32.png)
+
 ### 可以到 gui Compute Engine → 磁碟查看，新增好會出現 VM 名稱
 
 ![ ](images/18.png)
 
-### 連線進入 VM [文章傳送門](https://snoopy30485.github.io/2018/06/21/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM/)
+### 三、連線進入 VM 掛載 ( linux ) [文章傳送門](https://snoopy30485.github.io/2018/06/21/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM/)
 
 ### 最高權限
 
@@ -121,7 +143,7 @@ vim /etc/fstab
 
 ### UUID：填入需掛載磁碟的 UUID
 
-### /data：將此磁碟掛載到 /data 的路徑 ( 掛前不會有 /data 載後會幫你建好 )
+### /data：將此磁碟掛載到 /data 的路徑 ( 掛載前不會有 /data 掛載後會幫你建好 )
 
 ### ext4：檔案系統類型
 
@@ -143,29 +165,7 @@ df -h
 
 ***
 
-### 三、新增磁碟進使用中 VM 並掛載 ( windows )
-
-### 進入 Compute Engine → VM 執行個體點選 VM 名稱 → VM 執行個體詳細資料 → 編輯
-
-![ ](images/20.png)
-
-### 往下拉在其他磁碟新增硬碟
-
-![ ](images/21.png)
-
-### 可以到 Compute Engine → 磁碟，查看新增好 "使用者" 會出現 VM 名稱
-
-![ ](images/18.png)
-
-### 新增後到 Compute Engine → 硬碟要刪除會顯示 "無法刪除以連結的磁碟"
-
-![ ](images/31.png)
-
-### 要到 VM 執行個體詳細資料 → 編輯，案 X 把硬碟移除磁碟才能刪除
-
-![ ](images/32.png)
-
-### 連線進入 VM [文章傳送門](https://snoopy30485.github.io/2018/06/22/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM-2/)
+### 四、連線進入 VM 掛載 ( windows ) [文章傳送門](https://snoopy30485.github.io/2018/06/22/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM-2/)
 
 ### 開始右鍵 → Disk Managment
 
