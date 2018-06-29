@@ -40,7 +40,7 @@ gcloud compute disks create (名稱) --size=(容量) --zone (區域)
 
 ![ ](images/21.png)
 
-### 新增後到 Compute Engine → 硬碟要刪除會顯示 "無法刪除以連結的磁碟"
+### 新增後如果要刪除硬碟到 Compute Engine → 硬碟，要刪除會顯示 "無法刪除以連結的磁碟"
 
 ![ ](images/31.png)
 
