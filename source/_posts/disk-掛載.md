@@ -30,7 +30,7 @@ gcloud compute disks create (名稱) --size=(容量) --zone (區域)
 
 ## 二、新增磁碟進使用中 VM
 
-### 新增磁碟指令 GUI
+### 新增磁碟 GUI
 
 ### 進入 Compute Engine → VM 執行個體點選 VM 名稱 → VM 執行個體詳細資料 → 編輯
 
