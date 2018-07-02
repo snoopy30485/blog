@@ -119,7 +119,7 @@ gcloud compute instances get-serial-port-output ( VM 名稱 )
 
 ### 1. 對加入好的 VM 名稱點擊右鍵選擇 Connect Server
 
-![ ](images/21.png)
+![ ](images/21.1.png)
 
 ### 點擊群組右邊會出現所有 VM，直接對需要的 VM 點擊2下
 
