@@ -19,7 +19,7 @@ tags:
 ![ ](images/2.png)
 ![ ](images/3.png)
 
-### 可以在 Compute Engine → 中繼資料 → SSH 金鑰查看金鑰 ( 連進去後會幫你加金鑰 )
+### 可以在 Compute Engine → 中繼資料 → SSH 金鑰，查看金鑰 ( VM 連進去時會幫你加金鑰 )
 
 ![ ](images/4.png)
 ![ ](images/5.png)
@@ -38,7 +38,7 @@ tags:
 gcloud compute ssh (VM名稱) --zone (區域)
 ```
 
-### ex：gcloud compute ssh test    \--zone asia-east1-b
+### ex：gcloud compute ssh test \--zone asia-east1-b
 
 ### 輸入 y 繼續
 
@@ -114,11 +114,11 @@ gcloud auth list
 
 ### 設定密碼和名稱
 
-![ ](images/22.png)
+![ ](images/22.1.png)
 
 ### 複製金鑰或儲存
 
-![ ](images/23.png)
+![ ](images/23.1.png)
 
 ### 到 GCP Compute Engine → 中繼資料 → SSH 金鑰 添加金鑰
 
@@ -127,9 +127,9 @@ gcloud auth list
 
 ### 點編輯把剛剛複製的金鑰貼上 ( 要按照格式不然會出現錯誤，空格輸入要命的名稱，輸入名稱將會在使用 Xshell 5 連線時用到 )
 
-![ ](images/24.png)
+![ ](images/24.1.png)
 
-### 接下來到 VCP 網路 → 防火牆規則
+### 接下來到 VPC 網路 → 防火牆規則
 
 ![ ](images/25.png)
 
