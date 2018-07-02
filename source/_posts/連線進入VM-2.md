@@ -87,7 +87,7 @@ gcloud compute instances get-serial-port-output ( VM 名稱 )
 
 ### 三、 使用 Remote Desktop Connection Manage - RDCMan 連線
 
-### Remote Desktop Connection Manage 是由微軟所開發的遠端桌面連線群組管理工具，透過該工具，可以將每個遠端連線以群組的方式進行歸類，同時開啟數個遠端連線，且該工具可將所有的設定以RDG檔案的方式，快速的移轉到裝有 Remote Desktop Connection Manage 的電腦上，可免除重複建立的麻煩
+### Remote Desktop Connection Manage 是由微軟所開發的遠端桌面連線群組管理工具，透過該工具，可以將每個遠端連線以群組的方式進行歸類，同時開啟數個遠端連線，且該工具可將所有的設定以 RDG 檔案的方式，快速的移轉到裝有 Remote Desktop Connection Manage 的電腦上，可免除重複建立的麻煩
 
 ### 下載連結：https://www.microsoft.com/en-us/download/details.aspx?id=44989
 
