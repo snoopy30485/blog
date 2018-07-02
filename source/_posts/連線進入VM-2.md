@@ -100,9 +100,10 @@ gcloud compute instances get-serial-port-output ( VM 名稱 )
 
 ![ ](images/18.png)
 
-### Add Server 後會出現設定視窗，在 Server Settings → Server name 輸入要連線 VM IP，輸入後下方 Display name 會跟著一起出現可以修改 ( 加入完後此名稱會顯示在左側是給自己看的 )
+### Add Server 後會出現設定視窗，在 Server Settings → Server name 輸入要連線 VM IP，輸入後下方 Display name 會跟著一起出現可以修改 ( 加入完後此名稱會顯示在左側，名稱是給自己看的 )
 
 ![ ](images/19.png)
+![ ](images/31.png)
 
 ### 再來點選上面分頁 Logon Credentials 輸入使用者名稱跟密碼
 
