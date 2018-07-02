@@ -146,7 +146,7 @@ gcloud auth list
 
 ![ ](images/29.png)
 ![ ](images/30.png)
-![ ](images/31.png)
+![ ](images/31.1.png)
 
 ### 第一次登入會出現 SSH 安全性警告，點選接受及存檔
 
@@ -154,7 +154,7 @@ gcloud auth list
 
 ### 一樣第一次會問你使用者名稱，就是 GCP Compute Engine → 中繼資料 → SSH 金鑰添加的名稱
 
-![ ](images/34.png)
+![ ](images/34.1.png)
 
 ### 恭喜完成連線！
 
