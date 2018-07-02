@@ -6,11 +6,12 @@ tags:
 
 ## 一、創建硬碟
 
-### 到 Compute Engine → 磁碟，創建一個磁碟
-
-### 注意：區域要設定跟 VM 同區，名稱不能跟 VM 一樣
+### 到 Compute Engine → 磁碟
 
 ![ ](images/1.1.png)
+
+### 創建一個磁碟，注意：區域要設定跟 VM 同區，名稱不能跟 VM 一樣
+
 ![ ](images/2.png)
 ![ ](images/3.png)
 
@@ -44,7 +45,7 @@ gcloud compute disks create (名稱) --size=(容量) --zone (區域)
 
 ![ ](images/31.png)
 
-### 要到 VM 執行個體詳細資料 → 編輯，案 X 把硬碟移除磁碟才能刪除
+### 要到 VM 執行個體詳細資料 → 編輯，案 X 把硬碟移除才能刪除
 
 ![ ](images/32.png)
 
