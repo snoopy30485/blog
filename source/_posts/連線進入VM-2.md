@@ -121,11 +121,11 @@ gcloud compute instances get-serial-port-output ( VM 名稱 )
 
 ![ ](images/21.png)
 
-### 點擊群組右邊會出現所有 VM，直接對需要的 VM 點擊2下
+### 2. 點擊群組右邊會出現所有 VM，直接對需要的 VM 點擊2下
 
 ![ ](images/22.1.png)
 
-### 直接點擊 VM 名稱2下
+### 3. 直接點擊 VM 名稱2下
 
 ![ ](images/23.png)
 
