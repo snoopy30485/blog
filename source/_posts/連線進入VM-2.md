@@ -111,6 +111,10 @@ gcloud compute instances get-serial-port-output ( VM 名稱 )
 
 ![ ](images/20.png)
 
+### 設定好後如果想要再做更改，可以右鍵選擇 Properties
+
+![ ](images/32.png)
+
 ### 接下來連線進 VM 有3種方式
 
 ### 1. 對加入好的 VM 名稱點擊右鍵選擇 Connect Server
