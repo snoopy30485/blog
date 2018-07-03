@@ -30,7 +30,7 @@ tags:
 
 ### 打開 Cloud Shell
 
-![ ](images/6.1.png)
+![ ](images/6.2.png)
 
 ### 使用指令連線進入
 
