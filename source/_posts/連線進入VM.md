@@ -52,7 +52,7 @@ gcloud compute ssh (VM名稱) --zone (區域)
 
 ![ ](images/9.1.png)
 
-### 看到變成帳號加 VM 名稱就是進去了
+### 看到變成帳號加 VM 名稱就是進去了，接下來就可以直接操作了
 
 ![ ](images/10.png)
 
