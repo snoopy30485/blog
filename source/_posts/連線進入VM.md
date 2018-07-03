@@ -105,7 +105,7 @@ gcloud auth list
 ### 首先創建金鑰
 
 ![ ](images/18.png)
-![ ](images/19.png)
+![ ](images/19.1.png)
 
 ### 選擇 RSA 長度選 2048 目前 1024 已經不太安全
 
@@ -120,7 +120,7 @@ gcloud auth list
 
 ![ ](images/23.1.png)
 
-### 到 GCP Compute Engine → 中繼資料 → SSH 金鑰 添加金鑰
+### 到 GCP Compute Engine → 中繼資料 → SSH 金鑰，添加金鑰
 
 ![ ](images/4.png)
 ![ ](images/5.png)
@@ -142,17 +142,23 @@ gcloud auth list
 ![ ](images/27.png)
 ![ ](images/28.png)
 
-### 回到 Xshell 5 點選新增工作 → 連線：輸入名稱 ( 隨意 ) 和 ip → 使用者驗證：方法選 Public Key 選擇金鑰使用者 ( 剛剛命的名稱 ) 和輸入密碼
+### 回到 Xshell 5 點選新增工作
 
 ![ ](images/29.png)
+
+### 連線：輸入名稱 ( 隨意 ) 和 ip
+
 ![ ](images/30.png)
+
+### 使用者驗證：方法選 Public Key 選擇金鑰使用者 ( 剛剛命的名稱 ) 和輸入密碼
+
 ![ ](images/31.1.png)
 
 ### 第一次登入會出現 SSH 安全性警告，點選接受及存檔
 
 ![ ](images/33.png)
 
-### 一樣第一次會問你使用者名稱，就是 GCP Compute Engine → 中繼資料 → SSH 金鑰添加的名稱
+### 一樣第一次會問你使用者名稱，就是 GCP Compute Engine → 中繼資料 → SSH 金鑰，添加的名稱
 
 ![ ](images/34.1.png)
 
