@@ -28,31 +28,7 @@ tags:
 
 ***
 
-### 5. 查看帳戶跟專案指令
 
-```
-gcloud auth list
-```
-
-### 可以看到使用者是誰，其實就是 google 登入帳號
-
-![ ](images/7.png)
-
-```
-gcloud config list project
-```
-
-### 是顯示專案 ID ( 預設 ID 都很像，盡可能都是自己取比較好 )
-
-![ ](images/8.png)
-
-### 如果不是此專案可以用下面指令更換
-
-```
-gcloud config set project (專案ID)
-```
-
-![ ](images/9.png)
 
 ***
 
