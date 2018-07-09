@@ -28,23 +28,7 @@ tags:
 
 ***
 
-### 5. 開啟專案指令
-
-```
-gcloud projects create (專案ID) --name=(專案名稱)
-```
-
-### ex：gcloud projects create  gvuriegh \--name=123456789
-
-![ ](images/5.1.png)
-
-### 可以直接從左上點 ▼ 查看你的專案名稱跟 ID
-
-![ ](images/6.png)
-
-***
-
-### 6. 查看帳戶跟專案指令
+### 5. 查看帳戶跟專案指令
 
 ```
 gcloud auth list
@@ -72,7 +56,7 @@ gcloud config set project (專案ID)
 
 ***
 
-### 7. 建立 VM 指令
+### 6. 建立 VM 指令
 
 ```
 gcloud compute instances create (VM名稱) --zone (區域) --image-project (project) --image (name) --tags (名稱) --custom-cpu (數字) --custom-memory (數字) --boot-disk-size (數字) --create-disk size=(數字單位),type=(硬碟類型),name=(名稱)
