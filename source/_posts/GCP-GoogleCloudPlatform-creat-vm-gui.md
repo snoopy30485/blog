@@ -42,33 +42,27 @@ tags:
 
 ### 也可以調整成自己想要的核心數量、記憶體大小和 GPU 數量來自訂機器類型
 
-![ ](images/8.1.png)
+![ ](images/8.2.png)
 
 ### 點選變更選擇作業系統 image，及開機磁碟容量及類型
 
-![ ](images/9.png)
-![ ](images/10.1.png)
+![ ](images/9.1.png)
+![ ](images/10.2.png)
 ![ ](images/23.1.png)
 
 ### 設定身分及 API 存取權與防火牆
 
-![ ](images/11.jpg)
+![ ](images/11.1.jpg)
 
 ### 設定管理、磁碟、網路、SSH 金鑰
 
 ### 網路部分有做一篇基礎文章，可以到這邊看 [文章傳送門](https://snoopy30485.github.io/2018/06/27/%E9%98%B2%E7%81%AB%E7%89%86%E3%80%81%E7%B6%B2%E8%B7%AF/)
 
-![ ](images/12.jpg)
+![ ](images/12.1.jpg)
 
 ### 設定管理頁籤內容
 
 ![ ](images/13.jpg)
-
-### 點選 ＋新增項目後點選建立磁碟建立第二顆磁碟
-
-![ ](images/14.jpg)
-![ ](images/15.png)
-![ ](images/16.png)
 
 ### 設定 SSH 金鑰
 
