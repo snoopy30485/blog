@@ -16,11 +16,11 @@ tags:
 
 ### 4. 在 GCP 控制台中，點擊右上角工具欄上的 Cloud Shell 圖標
 
-![ ](images/2.1.png)
+![ ](images/2.2.png)
 
 ### 啟動 Cloud Shell，虛擬機裝載了所有您需要的開發工具。它提供了一個持久的5GB主目錄，並在 Google Cloud 上運行。只需使用瀏覽器或 Google Chromebook 即可完成中大部分（如果不是全部的話）工作。
 
-![ ](images/3.png)
+![ ](images/3.1.png)
 
 ### 啟動畫面
 
