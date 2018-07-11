@@ -24,15 +24,11 @@ tags:
 
 ### 啟動畫面
 
-![ ](images/4.png)
+![ ](images/4.1.png)
 
 ***
 
-
-
-***
-
-### 6. 建立 VM 指令
+### 5. 建立 VM 指令
 
 ```
 gcloud compute instances create (VM名稱) --zone (區域) --image-project (project) --image (name) --tags (名稱) --custom-cpu (數字) --custom-memory (數字) --boot-disk-size (數字) --create-disk size=(數字單位),type=(硬碟類型),name=(名稱)
