@@ -42,7 +42,7 @@ tags:
 
 ![ ](images/2.png)
 
-### CPU 跟記憶體 GCP 預設有幫你配好看要高記憶體還是高 CPU，可以直接選擇
+### 設定 CPU 跟記憶體 GCP 預設有幫你配好看要高記憶體還是高 CPU，可以直接選擇
 
 ![ ](images/33.png)
 
@@ -87,8 +87,6 @@ tags:
 ![ ](images/16.png)
 
 ### 設定 SSH 金鑰
-
-### SSH 金鑰部分有做一篇基礎文章，可以到這邊看 [文章傳送門](https://snoopy30485.github.io/2018/06/21/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM/)
 
 ![ ](images/16.png)
 
