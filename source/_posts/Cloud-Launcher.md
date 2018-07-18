@@ -12,7 +12,7 @@ tags:
 
 ![ ](images/1.png)
 
-### Cloud Launcher 主頁，選擇一個想要的方案，本文章使用 Windows Server 2012 R2 跟 Nginx 2個例子
+### Cloud Launcher 主頁，選擇一個想要的方案，本文章使用 Windows Server 2012 R2 跟 Nginx 2 個例子
 
 ![ ](images/2.png)
 ![ ](images/3.png)
@@ -33,7 +33,7 @@ tags:
 
 ![ ](images/9.png)
 
-### 選擇 Nginx 方案裡面有各種介紹也有使用費用，確定好後點擊 COMPUTE ENGINE 啟動
+### 選擇 Nginx 方案，裡面有各種介紹也有使用費用，確定好後點擊 COMPUTE ENGINE 啟動
 
 ![ ](images/7.png)
 
