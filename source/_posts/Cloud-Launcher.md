@@ -10,7 +10,7 @@ tags:
 
 ### 在 Google 雲端控制台中，到 Cloud Launcher 並點擊它
 
-![ ](images/1.png)
+![ ](images/1.1.png)
 
 ### Cloud Launcher 主頁，選擇一個想要的方案，本文章使用 Windows Server 2012 R2 跟 Nginx 2 個例子
 
