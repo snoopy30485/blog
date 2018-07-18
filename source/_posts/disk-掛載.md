@@ -63,7 +63,7 @@ gcloud compute instances attach-disk ( VM 名稱 ) --disk (創建磁碟的名稱
 
 ![ ](images/18.png)
 
-### 三、連線進入 VM 掛載 ( linux ) [文章傳送門](https://snoopy30485.github.io/2018/06/21/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM/)
+### 三、連線進入 VM 掛載 ( linux ) [連線進入 VM 文章傳送門](https://snoopy30485.github.io/2018/06/21/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM/)
 
 ### 最高權限
 
@@ -98,7 +98,7 @@ fdisk /dev/sdb
 ![ ](images/9.png)
 ![ ](images/10.png)
 
-### 輸入 n 新增分割區，在輸入 p  ( 硬碟全部只要一個分割區 )
+### 輸入 n 新增分割區，在輸入 p ( 硬碟全部只要一個分割區 )
 
 ![ ](images/11.png)
 
@@ -158,7 +158,7 @@ df -h
 
 ***
 
-### 四、連線進入 VM 掛載 ( windows ) [文章傳送門](https://snoopy30485.github.io/2018/06/22/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM-2/)
+### 四、連線進入 VM 掛載 ( windows ) [連線進入 VM 文章傳送門](https://snoopy30485.github.io/2018/06/22/%E9%80%A3%E7%B7%9A%E9%80%B2%E5%85%A5VM-2/)
 
 ### 開始右鍵 → Disk Managment
 
