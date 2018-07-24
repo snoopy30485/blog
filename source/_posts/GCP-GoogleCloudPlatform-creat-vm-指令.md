@@ -10,6 +10,8 @@ tags:
 
 ### 指令網站連結：https://cloud.google.com/sdk/docs/
 
+### 本篇開始：
+
 ### 1. 進入 GCP 網址：https://cloud.google.com/
 
 ### 2. 登入 Google 帳號
