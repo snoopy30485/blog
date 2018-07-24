@@ -4,9 +4,9 @@ date: 2018-06-19 10:54:37
 tags:
 ---
 
-## 建立GCP雲端機器
+## 建立 GCP 雲端機器
 
-### 1. 進入 GCP 網址：https://cloud.google.com/
+### 1. 進入 GCP，網址：https://cloud.google.com/
 
 ### 2. 登入 Google 帳號
 
