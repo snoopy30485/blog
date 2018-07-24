@@ -4,7 +4,11 @@ date: 2018-06-19 15:42:47
 tags:
 ---
 
-# 建立GCP雲端機器 ( 指令版 )
+## 建立GCP雲端機器 ( 指令版 )
+
+### 本章節將介紹比較常用指令，更多指令用法可以到下方連結查看
+
+### 指令網站連結：https://cloud.google.com/sdk/docs/
 
 ### 1. 網址：https://cloud.google.com/
 
@@ -18,7 +22,7 @@ tags:
 
 ![ ](images/2.2.png)
 
-### 啟動 Cloud Shell，虛擬機裝載了所有您需要的開發工具。它提供了一個持久的5GB主目錄，並在 Google Cloud 上運行。只需使用瀏覽器或 Google Chromebook 即可完成中大部分（如果不是全部的話）工作。
+### 啟動 Cloud Shell，虛擬機裝載了所有您需要的開發工具。它提供了一個持久的5GB主目錄，並在 Google Cloud 上運行。只需使用瀏覽器或 Google Chromebook 即可完成中大部分（ 如果不是全部的話 ）工作。
 
 ![ ](images/3.1.png)
 
@@ -54,7 +58,11 @@ gcloud compute instances create (name) --zone (區域)
 ex：gcloud compute instances create test --zone asia-east1-a
 ```
 
+### 有給區域會直接建好
+
 ![ ](images/14.png)
+
+### 沒給區域指令
 
 ```
 ex：gcloud compute instances create test
@@ -71,7 +79,7 @@ ex：gcloud compute instances create test
 
 ### ● 設定 image：
 
-### 使用 gcloud compute images list 查詢 project 和 image 
+### 使用 gcloud compute images list 查詢 project 和 image
 
 ```
 gcloud compute images list
@@ -163,4 +171,4 @@ ex：gcloud compute instances create --create-disk name=test,type=pd-ssd,size=10
 
 ![ ](images/6.png)
 
-### 指令網站連結：https://cloud.google.com/sdk/docs/
+### 恭喜指令建立完成！
