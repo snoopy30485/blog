@@ -100,7 +100,7 @@ docker run -d --name es -p 9200:9200 --restart=always -v /data/elasticsearch:/us
 
 ### 參數介紹：
 
-### -v：把我們設置的 config 同步到容器裡面 ( 配置 logstash.conf 放的路徑要跟 -V 的一樣 )
+### -v：把我們設置的 config 同步到容器裡面 ( 配置 logstash.conf 放的路徑要跟 -v 的一樣 )
 
 ```
 docker run -d --name logstash -p 5044:5044 --link es:elasticsearch --restart=always -v /logstash.conf:/usr/share/logstash/pipeline/logstash.conf -e LS_JAVA_OPTS:-Xms6g -e LS_JAVA_OPTS:-Xmx6g docker.elastic.co/logstash/logstash:5.6.7
@@ -111,7 +111,7 @@ docker run -d --name logstash -p 5044:5044 --link es:elasticsearch --restart=alw
 vi logstash.conf
 ```
 
-### conf 內容
+### config 內容
 
 ```
 input {
