@@ -15,6 +15,8 @@ tags:
 ## kibana 版本發行說明：
 ## https://www.elastic.co/guide/en/kibana/5.6/release-notes.html
 
+***
+
 ### 一、在 GCP 建立一台機器
 
 ### VM 設定：名稱、區域、記憶體、CPU、開機磁碟
