@@ -219,7 +219,7 @@ ls 或 ll
 
 ***
 
-### 三、用 powersfell 把 winlogbeat 轉服務
+### 三、用 powershell 把 winlogbeat 轉服務
 
 ### 當 log 有成功進來後，會把 winlogbeat 轉成服務，這樣每次重開機後都會自行啟動
 
