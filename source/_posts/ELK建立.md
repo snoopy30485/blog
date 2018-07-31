@@ -21,7 +21,7 @@ tags:
 
 ![ ](images/1.png)
 
-### 網路：記得設定網路標記 ( 為防火牆用 )，外部 IP 設定成固定 IP
+### 網路：記得設定網路標記，外部 IP 設定成固定 IP
 
 ![ ](images/2.png)
 
@@ -61,12 +61,6 @@ apt-get -y dist-upgrade
 apt-get -y install docker.io
 ```
 
-### 安裝 docker-compose
-
-```
-apt-get -y install docker-compose
-```
-
 ### 增加虛擬記憶體大小至少要大於 262144 KB，否則建立好的 Elasticsearch 執行會失敗
 
 ```
@@ -86,11 +80,11 @@ echo vm.max_map_count=262144 >> /etc/sysctl.conf
 
 #### -d：背景執行
 
-#### -v：持久化 (避免重開後資料消失)
+#### -v：持久化，設定容器儲存 LOG 路徑 /usr/share/elasticsearch/data 同步一份到我們指定路徑 /data/elasticsearch
 
 #### --name：Container 命名
 
-#### -p：設定port號
+#### -p：設定 port號
 
 #### --restart=always：機器重啟後 Container 自動重啟（預設是關閉）
 
@@ -106,7 +100,7 @@ docker run -d --name es -p 9200:9200 --restart=always -v /data/elasticsearch:/us
 
 ### 參數介紹：
 
-### 
+### -v：把我們設置的 config 同步到容器裡面 ( 配置 logstash.conf 放的路徑要跟 -V 的一樣 )
 
 ```
 docker run -d --name logstash -p 5044:5044 --link es:elasticsearch --restart=always -v /logstash.conf:/usr/share/logstash/pipeline/logstash.conf -e LS_JAVA_OPTS:-Xms6g -e LS_JAVA_OPTS:-Xmx6g docker.elastic.co/logstash/logstash:5.6.7
@@ -142,3 +136,111 @@ output {
 ```
 docker run -d --name kibana --restart=always -p 80:5601 --link es:elasticsearch kibana:5.6.7
 ```
+
+### 使用指令查看容器狀態
+
+```
+docker ps -a
+```
+
+### 恭喜 ELK 建立完成
+
+***
+
+### 三、進入 VM docker-compose 建立 ELK
+
+### 一開始指令是練習用的，等熟悉後用 docker-compose 可以快速搞定，不需要再一行行指令下
+
+### 安裝 docker-compose
+
+```
+apt-get -y install docker-compose
+```
+
+### 建立 docker-compose
+
+```
+vi docker-compose.yml
+```
+
+### docker-compose 內容
+
+```
+version: "2"
+
+services:
+
+  elasticsearch:
+    container_name: elasticsearch
+    image: elasticsearch:5.6.7
+    ports:
+      - "9200:9200"
+    restart: always
+    volumes:
+      - /data/elasticsearch:/usr/share/elasticsearch/data
+    environment:
+      - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+    networks:
+      - docker_elk
+
+  logstash:
+    container_name: logstash
+    image: docker.elastic.co/logstash/logstash:5.6.7
+    ports:
+      - "5044:5044"
+    restart: always
+    volumes:
+      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+    networks:
+      - docker_elk
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    container_name: kibana
+    image: kibana:5.6.7
+    ports:
+      - "80:5601"
+    restart: always
+    networks:
+      - docker_elk
+    depends_on:
+      - elasticsearch
+
+networks:
+  docker_elk:
+    driver: bridge
+```
+
+### 使用 docker-compose 把 elk 下載並 run 起來
+
+```
+docker-compose up -d
+```
+
+### 配置 logstash config 這次配置的 config 只要跟 docker-compose 放一起就可以了
+
+```
+vi logstash.conf
+```
+
+### conf 內容
+
+```
+input {
+  beats {
+    port => 5044
+  }
+}
+
+output {
+  elasticsearch {
+    hosts => [ "elasticsearch:9200" ]
+    manage_template => false
+    index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
+    document_type => "%{[@metadata][type]}"
+  }
+
+}
+```
+### 到這邊 ELK 就建立完成了！
