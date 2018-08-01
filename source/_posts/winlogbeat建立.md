@@ -259,7 +259,7 @@ net start winlogbeat
 
 ### 手動刪除指令
 
-### 要按照你 logstash.conf 設定格式才能刪除，* 是全部刪除如下例子 2018.* 就是 2018 的 log 全刪除
+### 要按照你 logstash.conf 設定格式才能刪除，\* 是全部刪除如下例子 2018.\* 就是 2018 的 log 全刪除
 
 ```
 curl -XDELETE 'http://127.0.0.1:9200/( log格式 )'
