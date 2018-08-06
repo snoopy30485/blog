@@ -12,7 +12,7 @@ tags:
 
 ### logstash：是一款輕量級的日誌搜集處理框架，可以方便的把分散的、多樣化的日誌搜集起來，並進行自定義的處理，然後傳輸到指定的位置，比如某個伺服器或者文件。
 
-### Kibana：Kibana是一款開源的數據分析和可視化平台，它是Elastic Stack成員之一，設計用於和Elasticsearch協作。您可以使用Kibana對Elasticsearch索引中的數據進行搜索，查看，交互操作。您可以很方便的利用圖表，表格及地圖對數據進行多元化的分析和呈現。Kibana可以使用大數據通俗易懂。它很簡單，基於瀏覽器的界面便於您快速創建和分享動態數據儀表板來追踪Elasticsearch的實時數據變化。搭建Kibana非常簡單。您可以分分鐘完成Kibana的安裝並開始探索Elasticsearch的索引數據 - 沒有代碼，不需要額外的基礎設施。
+### Kibana：Kibana 是一款開源的數據分析和可視化平台，它是 Elastic Stack 成員之一，設計用於和 Elasticsearch 協作。您可以使用 Kibana 對 Elasticsearch 索引中的數據進行搜索，查看，交互操作。您可以很方便的利用圖表，表格及地圖對數據進行多元化的分析和呈現。Kibana 可以使用大數據通俗易懂。它很簡單，基於瀏覽器的界面便於您快速創建和分享動態數據儀表板來追踪 Elasticsearch 的實時數據變化。搭建 Kibana 非常簡單。您可以分分鐘完成 Kibana 的安裝並開始探索 Elasticsearch 的索引數據，不需要額外的基礎設施。
 
 ### 架構圖
 
