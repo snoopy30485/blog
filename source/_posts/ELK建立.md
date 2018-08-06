@@ -145,6 +145,8 @@ docker run -d --name kibana --restart=always -p 80:5601 --link es:elasticsearch 
 docker ps -a
 ```
 
+![ ](images/4.png)
+
 ### 恭喜 ELK 建立完成
 
 ***
