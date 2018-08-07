@@ -19,3 +19,4 @@ ex：curl -XDELETE 'http://127.0.0.1:9200/winlogbeat-6.2.2-2018.*'
 ```
 
 ### 自動刪除
+
