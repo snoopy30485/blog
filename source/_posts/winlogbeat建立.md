@@ -243,7 +243,7 @@ powershell.exe -executionpolicy unrestricted -file.\install-service-winlogbeat.p
 
 ```
 r (run once)
-```+
+```
 
 ### 啟動服務
 
