@@ -18,6 +18,66 @@ ex：curl -XDELETE 'http://127.0.0.1:9200/winlogbeat-6.2.2-2018.01.15'
 ex：curl -XDELETE 'http://127.0.0.1:9200/winlogbeat-6.2.2-2018.*'
 ```
 
+***
+
 ### 自動刪除
 
+### 我們將使用 linux 的 shell script 製作腳本，並用排程來達到自動化刪除 log
 
+### 1. 建立腳本
+
+```
+vi (名字隨意).sh
+
+ex：vi test.sh
+```
+
+### 腳本內容
+
+```
+#!/bin/bash
+
+function delete_indices() {
+    comp_date=`date -d "30 day ago" +"%Y-%m-%d"`
+    date1="$1 00:00:00"
+    date2="$comp_date 00:00:00"
+
+    t1=`date -d "$date1" +%s`
+    t2=`date -d "$date2" +%s`
+
+    if [ $t1 -le $t2 ]; then
+        echo "$1時間早於$comp_date，進行索引刪除"
+        format_date=`echo $1| sed 's/-/\./g'`
+        curl -XDELETE http://localhost:9200/*$format_date
+    fi
+}
+
+curl -XGET http://localhost:9200/_cat/indices | awk -F" " '{print $3}' | awk -F"-" '{print $NF}' | egrep "[0-9]*\.[0-9]*\.[0-9]*" | sort | uniq  | sed 's/\./-/g' | while read LINE
+do
+    delete_indices $LINE
+done
+```
+
+### 2. 給腳本權限
+
+```
+chmod +x test.sh
+```
+
+### 3. 啟動測試
+
+```
+./test.sh
+```
+
+### 輸出畫面
+
+![ ](images/1.png)
+
+### 4. 設定排程
+
+```
+vi /etc/crontabe
+```
+
+![ ](images/2.png)
