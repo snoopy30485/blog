@@ -13,13 +13,15 @@ tags:
 ![ ](images/1.png)
 ![ ](images/2.png)
 
-### 選擇要圖表畫的 index
+### 2. 選擇要圖表畫的 index
 
 ![ ](images/3.png)
 
-### 設定參數
+### 3. 設定參數
 
 ![ ](images/4.png)
+
+### 4. 儲存圖表
 
 ### A. 點 ![ ](images/5.png) 圖表才會顯示你參數設定需要的 log
 
