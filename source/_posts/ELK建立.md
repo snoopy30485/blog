@@ -76,6 +76,32 @@ sysctl -w vm.max_map_count=262144 ( 在文件最下面加進去 )
 echo vm.max_map_count=262144 >> /etc/sysctl.conf
 ```
 
+### 配置 logstash config ( 如果先下 logstash 指令 -v 會找不到路徑下的檔案或執行失敗，所以要先配置檔案 )
+
+```
+vi logstash.conf
+```
+
+### config 內容
+
+```
+input {
+  beats {
+    port => 5044
+  }
+}
+
+output {
+  elasticsearch {
+    hosts => [ "elasticsearch:9200" ]
+    manage_template => false
+    index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
+    document_type => "%{[@metadata][type]}"
+  }
+
+}
+```
+
 ### 下載 elasticsearch 並 run 起來
 
 ### 參數介紹：
@@ -107,31 +133,7 @@ docker run -d --name es -p 9200:9200 --restart=always -v /data/elasticsearch:/us
 ```
 docker run -d --name logstash -p 5044:5044 --link es:elasticsearch --restart=always -v /logstash.conf:/usr/share/logstash/pipeline/logstash.conf -e LS_JAVA_OPTS:-Xms6g -e LS_JAVA_OPTS:-Xmx6g docker.elastic.co/logstash/logstash:5.6.7
 ```
-### 配置 logstash config
 
-```
-vi logstash.conf
-```
-
-### config 內容
-
-```
-input {
-  beats {
-    port => 5044
-  }
-}
-
-output {
-  elasticsearch {
-    hosts => [ "elasticsearch:9200" ]
-    manage_template => false
-    index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
-    document_type => "%{[@metadata][type]}"
-  }
-
-}
-```
 
 ### 下載 kibana 並 run 起來
 
