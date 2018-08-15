@@ -172,7 +172,7 @@ output.logstash:
 
 ### cd 進入路徑 D:\service\winlogbeat-6.2.2-windows-x86_64
 
-### 測試 wunlogbeat config 正確會顯示 OK
+### 測試 winlogbeat config 正確會顯示 OK
 
 ```
 winlogbeat test config
