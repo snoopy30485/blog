@@ -161,4 +161,4 @@ tags:
 
 ![ ](images/24.png)
 
-### Discover 基本操作結束下一篇 Visualize 操作！
+### Discover 基本操作結束下一篇 Visualize、Dashboard 操作！
