@@ -10,7 +10,7 @@ tags:
 
 ***
 
-### 一、下載 wunlogbeat 並設定 config
+### 一、下載 winlogbeat 並設定 config
 
 ### 將下載的檔案解壓縮並放到自己指定的路徑，本文章放在 D:\service\winlogbeat-6.2.2-windows-x86_64
 
