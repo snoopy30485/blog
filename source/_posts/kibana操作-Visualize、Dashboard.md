@@ -4,7 +4,7 @@ date: 2018-08-01 17:06:54
 tags:
 ---
 
-### kibana 操作-Visualize、版本：5.6.7
+### kibana 操作-Visualize、Dashboard、版本：5.6.7
 
 ### Visualize : 將搜尋出的數據以長條圖、圓餅圖、表格等方式呈現
 
@@ -30,3 +30,26 @@ tags:
 ### C. 點擊 Save 頂部菜單中的選項，命名然後單擊 Save 保存
 
 ![ ](images/6.png)
+
+***
+
+### Dashboard : 將 Visualize 繪製的許多圖表，整合這些資訊到同一個頁面裡
+
+### 1. 新增要整合的視覺化圖表
+
+![ ](images/7.png)
+![ ](images/8.png)
+
+### 2. 選擇要加入的圖表，Options 可以更換背景顏色 Add 增加新表單
+
+![ ](images/9.png)
+
+### 3. 儲存好要更改點選 Edit 可回復上一個圖在做設定
+
+![ ](images/10.png)
+
+### 4. 點擊 Save 頂部菜單中的選項，命名您的面板，然後單擊 Save 以保存為儀表板可視化，也可以在此下條件觀
+
+![ ](images/11.png)
+
+### Visualize、Dashboard 基本操作結束！
