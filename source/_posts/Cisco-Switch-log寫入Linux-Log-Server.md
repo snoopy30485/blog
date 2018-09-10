@@ -24,11 +24,11 @@ tags:
 
 ### 1. 配置 config：
 
-#### (1) vi /etc/syslog.conf 進入 config 拿掉 TCP 與 UDP reception 的註解
+### (1) vi /etc/syslog.conf 進入 config 拿掉 TCP 與 UDP reception 的註解
 
 ![ ](images/4.png)
 
-#### (2) Config 最後加上接收 Log 類型與寫入位置
+### (2) Config 最後加上接收 Log 類型與寫入位置
 
 ![ ](images/5.png)
 
