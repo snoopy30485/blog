@@ -188,13 +188,13 @@ RSYSLOGD_OPTIONS=""
 RSYSLOGD_OPTIONS="-r"
 ```
 
-### 重啟 Rsyslog Service
+### 4. 重啟 Rsyslog Service
 
 ```
 sudo service rsyslog restart
 ```
 
-### 到設定好放 log 的地方查看 log 有沒有進入
+### 3. 到設定好放 log 的地方查看 log 有沒有進入
 
 ```
 vi /var/log/cisco.log
