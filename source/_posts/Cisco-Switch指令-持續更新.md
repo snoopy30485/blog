@@ -20,6 +20,8 @@ tags:
 
 ### sh run (查看 running 組態檔內容)
 
+### conf t=configure terminal
+
 ### conf t (進入組態模式)
 
 ### logging host ip (指定 log 到指定ip 機器)

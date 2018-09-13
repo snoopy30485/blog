@@ -10,7 +10,7 @@ tags:
 
 ![ ](images/1.png)
 
-### 2. conf t 進入組態模式，
+### 2. conf t 進入組態模式，設定 log 到指定 ip → logging host ip
 
 ![ ](images/2.png)
 
@@ -164,4 +164,40 @@ local7.*        /var/log/cisco.log
 
 ```
 
-### 2. 
+### 2. 配置 config：
+
+### vi /etc/default/rsyslog 進入 config 找到 RSYSLOG_OPTIONS 加入參數 -r
+
+![ ](images/6.png)
+
+### 原版 config
+
+```
+# Options for rsyslogd
+# -x disables DNS lookups for remote messages
+# See rsyslogd(8) for more details
+RSYSLOGD_OPTIONS=""
+```
+
+### 更改過後 config
+
+```
+# Options for rsyslogd
+# -x disables DNS lookups for remote messages
+# See rsyslogd(8) for more details
+RSYSLOGD_OPTIONS="-r"
+```
+
+### 重啟 Rsyslog Service
+
+```
+sudo service rsyslog restart
+```
+
+### 到設定好放 log 的地方查看 log 有沒有進入
+
+```
+vi /var/log/cisco.log
+```
+
+![ ](images/7.png)
