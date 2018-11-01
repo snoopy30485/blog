@@ -24,7 +24,7 @@ tags:
 
 ![ ](images/1.png)
 
-#### 點擊2下開始安裝 ![ ](images/16.png)
+#### 開始安裝
 
 ![ ](images/2.png)
 
