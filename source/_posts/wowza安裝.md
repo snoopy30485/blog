@@ -40,9 +40,13 @@ tags:
 
 ![ ](images/5.png)
 
+#### 設定安裝位置
+
 ![ ](images/6.png)
 
-#### 到這邊就安裝完成了
+#### 打開網頁輸入 IP:8088( 預設port ) 登入測試 ( 如果是本機安裝 IP 為127.0.0.1 )，出現圖畫面就是安裝成功了
+
+![ ](images/16.png)
 
 ### 三、安裝 wowza for ubuntu
 
@@ -51,3 +55,47 @@ tags:
 #### 下載下方有安裝安裝指令
 
 ![ ](images/7.png)
+
+#### 輸入官方給的指令安裝，接下來會出現條款一直按 Enter 到下一步
+
+```
+sudo chmod +x WowzaStreamingEngine-4.7.6-linux-x64-installer.run
+```
+
+```
+sudo ./WowzaStreamingEngine-4.7.6-linux-x64-installer.run
+```
+
+![ ](images/8.png)
+
+#### 讀完條約會出現同意/不同意，輸入 y 同意
+
+![ ](images/9.png)
+
+#### 同意完會出現金鑰輸入，輸入金鑰
+
+![ ](images/10.png)
+
+#### 輸完金鑰，鑰需要輸入帳密登入 WEB 用，先輸入帳號
+
+![ ](images/11.png)
+
+#### 輸完帳號會問密碼，輸入2次後 OK
+
+![ ](images/12.png)
+
+#### 安裝完自動啟動 wowza
+
+![ ](images/13.png)
+
+#### 詢問是否安裝
+
+![ ](images/14.png)
+
+#### 跑完讀條，出現圖文字就是完成了
+
+![ ](images/15.png)
+
+#### 一樣打開網頁測試，只不過要使用 IP 沒辦法用本機需要使用 ubuntu ip:8088
+
+![ ](images/16.png)
