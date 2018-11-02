@@ -44,7 +44,7 @@ tags:
 
 ![ ](images/6.png)
 
-#### 打開網頁輸入 IP:8088( 預設port ) 登入測試 ( 如果是本機安裝 IP 為127.0.0.1 )，出現圖畫面就是安裝成功了
+#### 打開網頁輸入 IP:8088( 預設port ) 登入測試 ( 如果是本機安裝 IP 為127.0.0.1 )，出現下圖畫面就是安裝成功了
 
 ![ ](images/16.png)
 
@@ -76,7 +76,7 @@ sudo ./WowzaStreamingEngine-4.7.6-linux-x64-installer.run
 
 ![ ](images/10.png)
 
-#### 輸完金鑰，鑰需要輸入帳密登入 WEB 用，先輸入帳號
+#### 輸完金鑰，鑰需要輸入帳密 ( 登入 WEB 用 )，先輸入帳號
 
 ![ ](images/11.png)
 
@@ -84,7 +84,7 @@ sudo ./WowzaStreamingEngine-4.7.6-linux-x64-installer.run
 
 ![ ](images/12.png)
 
-#### 安裝完自動啟動 wowza
+#### 設定安裝完自動啟動 wowza
 
 ![ ](images/13.png)
 
