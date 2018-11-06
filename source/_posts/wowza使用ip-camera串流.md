@@ -36,8 +36,18 @@ tags:
 
 ![ ](images/7.png)
 
-#### 本文章使用 ip camera 牌子是 AXIS 
+#### 本文章使用 ip camera 牌子是 AXIS
 
 ![ ](images/8.png)
 
 #### 點擊後會需要輸入 stream name 和 camera ip address
+
+```
+camera ip address 輸入方式為：
+
+ip camera帳號：ip camera密碼@ip camera ip
+
+ex: test:test@1.1.1.1
+```
+
+![ ](images/9.png)
