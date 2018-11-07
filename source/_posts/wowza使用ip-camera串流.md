@@ -80,8 +80,20 @@ ex: rtsp://test:test@1.1.1.1//axis-media/media.amp
 
 ![ ](images/14.png)
 
-#### 加入好會進入下圖畫面 ( Stream Files ) 點擊 Return to Stream Files 回上一頁
+#### 加入好會進入下圖畫面 ( Stream Files )
 
 ![ ](images/15.png)
 
-#### 這種方式串流只有建立一個新的 Stream Files Incoming Stream 不會幫你串流起來
+#### 這種方式串流只有建立一個新的 Stream Files Incoming Stream 不會幫你串流起來，點擊 Return to Stream Files 回上一頁，點擊圖案紅框串流
+
+![ ](images/16.png)
+
+#### 點擊後在 MediaCaster Type 選擇你 ip camera 進來的格式，其他選項預設就好
+
+![ ](images/17.png)
+
+#### 出現如下圖紅框文字就是成功了
+
+![ ](images/18.png)
+
+#### 再到 Incoming Streams 確認
