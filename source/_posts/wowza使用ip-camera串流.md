@@ -30,7 +30,7 @@ tags:
 
 ![ ](images/6.png)
 
-#### 建立好後 live applications 有2個接 ip camera 的方法
+#### 建立好後 live applications 有2個串流 ip camera 的方法
 
 #### 一、 點選左邊 Sources ( Live )，裡面有預設選項讓你選
 
@@ -51,3 +51,37 @@ ex: test:test@1.1.1.1
 ```
 
 ![ ](images/9.png)
+
+#### 加入好會進入下圖畫面 ( Incoming Streams ) 右邊 Bytes In 顯示數字就是畫面有進wowza了
+
+![ ](images/10.png)
+
+#### 點擊 Return to Incoming Streams Page 返回上一頁，如圖 Active 代表正在正常運作
+
+![ ](images/11.png)
+
+#### 如果 ip 或是密碼打錯 port 沒開等等問題，就會出現 Waiting for Stream
+
+![ ](images/12.png)
+
+#### 第二種串流方法點選左邊的 Stream Files 進入後點選上方的 Add Stream Files 新增
+
+![ ](images/13.png)
+
+#### 輸入 Stream Files name 跟 Stream URI ( URI 要到 ip camera 的官網查 )
+
+```
+Stream URI 輸入方式為：
+
+rtsp://ip camera帳號：ip camera密碼@ip camera ip/產品型號的URI
+
+ex: rtsp://test:test@1.1.1.1//axis-media/media.amp
+```
+
+![ ](images/14.png)
+
+#### 加入好會進入下圖畫面 ( Stream Files ) 點擊 Return to Stream Files 回上一頁
+
+![ ](images/15.png)
+
+#### 這種方式串流只有建立一個新的 Stream Files Incoming Stream 不會幫你串流起來
