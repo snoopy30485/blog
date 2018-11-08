@@ -64,7 +64,7 @@ ex: test:test@1.1.1.1
 
 ![ ](images/12.png)
 
-#### 第二種串流方法點選左邊的 Stream Files 進入後點選上方的 Add Stream Files 新增
+#### 二、 第二種串流方法點選左邊的 Stream Files 進入後點選上方的 Add Stream Files 新增
 
 ![ ](images/13.png)
 
@@ -99,3 +99,19 @@ ex: rtsp://test:test@1.1.1.1//axis-media/media.amp
 #### 再到 Incoming Streams 確認是否成功
 
 ![ ](images/19.png)
+
+#### 三、 wowza 有測試功能可以看影片是否有串流成功
+
+#### 右上角會有一個 Test Players
+
+![ ](images/20.png)
+
+#### 點擊後會出現一個播放畫面 server ip：安裝 wowza 機器 ip，Application：當初立的 live applications 名稱，Stream：預設
+
+![ ](images/21.png)
+
+#### PS.進入 Incoming Streams 選擇要觀看的 stream 進去後再點 Test Players 數值就會都幫你設定好
+
+![ ](images/22.png)
+
+#### 到這邊 ip camera 到 wowza 這段就完成了
