@@ -22,33 +22,35 @@ cd AMS_5_0_6_r6102/
 
 #### Do you agree with the license agreement? (y/n):y ( 輸入 y )
 
-![ ](images/1.png)
+![ ](images/2.png)
 
 #### Please enter your Adobe Media Server 5 serial number ( 輸入序號 )
 
-![ ](images/1.png)
+![ ](images/3.png)
 
 #### The installer will install Adobe Media Server 5 in the following directory，Default [/opt/adobe/ams]: ( 安裝目錄直接按 Enter )
 
-![ ](images/1.png)
+![ ](images/4.png)
 
 #### Please enter the administrative username: administrator ( 輸入管理員名稱 )
 
-![ ](images/1.png)
+![ ](images/5.png)
 
 #### Please enter the administrative password: xxxxxxxx ( 輸入管理員密碼 )
 
-![ ](images/1.png)
+![ ](images/6.png)
 
 #### 二次輸入
 
-![ ](images/1.png)
+![ ](images/7.png)
 
 #### 接下來都用預設，Enter + y
 
-![ ](images/1.png)
+![ ](images/8.png)
 
 #### 完成後總結圖如下，再輸入 y 確認安裝
+
+![ ](images/9.png)
 
 #### 重啟 AMS 服務
 
@@ -62,7 +64,7 @@ service ams restart
 service ams status
 ```
 
-![ ](images/1.png)
+![ ](images/10.png)
 
 #### wowza 是使用 1935 port 記得打開 1935 port
 
@@ -71,3 +73,5 @@ sudo ufw allow 22 ( 記得要先開啟 22 再開其他 port )
 
 sudo ufw allow 1935
 ```
+
+![ ](images/11.png)
