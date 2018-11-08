@@ -30,7 +30,7 @@ tags:
 
 ![ ](images/6.png)
 
-#### 建立好後 live applications 有2個串流 ip camera 的方法
+#### 建立好後 live applications 有2個串流輸入 ip camera 的方法
 
 #### 一、 點選左邊 Sources ( Live )，裡面有預設選項讓你選
 
@@ -96,4 +96,6 @@ ex: rtsp://test:test@1.1.1.1//axis-media/media.amp
 
 ![ ](images/18.png)
 
-#### 再到 Incoming Streams 確認
+#### 再到 Incoming Streams 確認是否成功
+
+![ ](images/19.png)
