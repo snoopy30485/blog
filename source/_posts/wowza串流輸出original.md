@@ -3,3 +3,32 @@ title: wowza串流輸出original
 date: 2018-11-09 15:29:30
 tags:
 ---
+
+### 本章是如何將串流輸出到 original
+
+#### 進入 wowza Stream Targets
+
+![ ](images/1.png)
+
+#### 點擊 Enable Stream Targets 開啟
+
+![ ](images/1.png)
+
+#### 這時候 wowza 會要求你重新整理點擊右上 Restart Now 重新整理
+
+![ ](images/1.png)
+
+#### 重新種禮過後 Incoming Stream 串流會自己斷掉，要到 Stream Files 重新在串流一次
+
+![ ](images/1.png)
+![ ](images/1.png)
+
+#### 串流好了後回到 Stream Targets 點擊 Add Stream Targets
+
+![ ](images/1.png)
+
+#### 選擇一種方式輸出，本文章是使用 RTMP
+
+![ ](images/1.png)
+
+#### 輸入 Stream Targets Name ( 隨意命名 )、Source Stream Name ( Stream Files Name )、Destination Application Name ( Original 串流位置資料夾名稱 )、Destination Host ( Original IP )、

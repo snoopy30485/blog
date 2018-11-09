@@ -75,3 +75,15 @@ sudo ufw allow 1935
 ```
 
 ![ ](images/11.png)
+
+#### 進入 /opt/ams/applications 建立一個資料夾 ( 此資料夾是給 wowza 用的 )
+
+![ ](images/11.png)
+
+#### 建立一個資料夾
+
+![ ](images/11.png)
+
+#### 調到最高權限
+
+![ ](images/11.png)
