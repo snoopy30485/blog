@@ -55,7 +55,9 @@ cd AMS_5_0_6_r6102/
 #### 輸入AMS-original Lan IP
 
 ```
-sed -i '208c<RouteEntry>*:*;10.140.0.3:1935</RouteEntry>' /opt/adobe/ams/conf/_defaultRoot_/_defaultVHost_/Vhost.xml ( 10.140.0.3 為本章使用 original Lan IP )
+sed -i '208c<RouteEntry>*:*;10.140.0.3:1935</RouteEntry>' /opt/adobe/ams/conf/_defaultRoot_/_defaultVHost_/Vhost.xml 
+
+10.140.0.3 為本章使用 original Lan IP
 ```
 
 #### 重啟 AMS 服務
