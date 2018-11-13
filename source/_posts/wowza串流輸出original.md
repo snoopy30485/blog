@@ -18,7 +18,7 @@ tags:
 
 ![ ](images/3.png)
 
-#### 重新種禮過後 Incoming Stream 串流會自己斷掉，要到 Stream Files 重新在串流一次
+#### 重新整理過後 Incoming Stream 串流會自己斷掉，要到 Stream Files 重新在串流一次
 
 ![ ](images/4.png)
 ![ ](images/5.png)
