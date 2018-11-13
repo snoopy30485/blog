@@ -12,23 +12,25 @@ tags:
 
 #### 點擊 Enable Stream Targets 開啟
 
-![ ](images/1.png)
+![ ](images/2.png)
 
 #### 這時候 wowza 會要求你重新整理點擊右上 Restart Now 重新整理
 
-![ ](images/1.png)
+![ ](images/3.png)
 
 #### 重新種禮過後 Incoming Stream 串流會自己斷掉，要到 Stream Files 重新在串流一次
 
-![ ](images/1.png)
-![ ](images/1.png)
+![ ](images/4.png)
+![ ](images/5.png)
 
 #### 串流好了後回到 Stream Targets 點擊 Add Stream Targets
 
-![ ](images/1.png)
+![ ](images/6.png)
 
 #### 選擇一種方式輸出，本文章是使用 RTMP
 
-![ ](images/1.png)
+![ ](images/7.png)
 
-#### 輸入 Stream Targets Name ( 隨意命名 )、Source Stream Name ( Stream Files Name )、Destination Application Name ( Original 串流位置資料夾名稱 )、Destination Host ( Original IP )、
+#### 輸入 Stream Targets Name ( 隨意命名 )、Source Stream Name ( Stream Files Name )、Destination Application Name ( Original 串流位置資料夾名稱 )、Destination Host ( Original IP )、Destination Stream Name ( Original 串流輸出名稱 )
+
+![ ](images/8.png)
