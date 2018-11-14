@@ -39,7 +39,16 @@ tags:
 
 ![ ](images/9.png)
 
-#### 也可以到 Incoming Streams 看
+#### 如果設定錯誤會出現 Error
+
+![ ](images/10.png)
+
+#### 如果出現 Waiting 代表串流沒有輸入可以到 Incoming Streams 看
+
+![ ](images/11.png)
+![ ](images/12.png)
+
+#### 也可以到 Incoming Streams 右邊 Bytes Out 顯示數字就是成功輸出到 Original 了
 
 
 

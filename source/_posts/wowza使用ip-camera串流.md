@@ -22,7 +22,7 @@ tags:
 
 ![ ](images/4.png)
 
-#### 名稱輸完後會進入設定畫面，下圖紅框部分是允許進入格式，剩下的選項預設 ( 有機會會再做篇文章介紹 )，設定好後點擊 Save 儲存
+#### 進入設定畫面，下圖紅框部分是允許進入格式，剩下的選項預設 ( 有機會會再做篇文章介紹 )，設定好後點擊 Save 儲存
 
 ![ ](images/5.png)
 
@@ -30,9 +30,9 @@ tags:
 
 ![ ](images/6.png)
 
-#### 建立好後 live applications 有2個串流輸入 ip camera 的方法
+#### 建立好後 live applications ip camera  有2個串流輸入的方法
 
-#### 一、 點選左邊 Sources ( Live )，裡面有預設選項讓你選
+#### 一、 點選左邊 Sources ( Live )，裡面有預設選項讓你選，是依照 ip camera 廠牌做分類，但不是全部廠牌都有沒有要用另一種方法加入
 
 ![ ](images/7.png)
 
