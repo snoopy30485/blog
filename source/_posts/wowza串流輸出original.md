@@ -34,3 +34,13 @@ tags:
 #### 輸入 Stream Targets Name ( 隨意命名 )、Source Stream Name ( Stream Files Name )、Destination Application Name ( Original 串流位置資料夾名稱 )、Destination Host ( Original IP )、Destination Stream Name ( Original 串流輸出名稱 )
 
 ![ ](images/8.png)
+
+#### 設定好後如下圖，出現 Active 就是成功輸出了
+
+![ ](images/9.png)
+
+#### 也可以到 Incoming Streams 看
+
+
+
+#### 接下來測試出輸出是否成功
