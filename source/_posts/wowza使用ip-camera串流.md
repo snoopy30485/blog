@@ -106,12 +106,33 @@ ex: rtsp://test:test@1.1.1.1//axis-media/media.amp
 
 ![ ](images/20.png)
 
-#### 點擊後會出現一個播放畫面 server ip：安裝 wowza 機器 ip，Application：當初立的 live applications 名稱，Stream：預設
+#### 點擊後會出現一個播放畫面 server ip：安裝 wowza 機器 ip，Application：當初立的 live applications 名稱，Stream：Stream Name.stream
 
 ![ ](images/21.png)
 
 #### PS.進入 Incoming Streams 選擇要觀看的 stream 進去後再點 Test Players 數值就會都幫你設定好
 
 ![ ](images/22.png)
+
+#### 也可以使用有串流的播放器做測試 ( 本文章使用的是 VLC )
+
+![ ](images/23.png)
+
+#### 點擊媒體 → 開啟網路串流
+
+![ ](images/24.png)
+
+#### 輸入串流網址
+
+```
+rtmp://wowza ip:1935/live applications 名稱/Stream Name.stream
+
+```
+
+![ ](images/25.png)
+
+#### 如下圖出現畫面就成功了
+
+![ ](images/26.png)
 
 #### 到這邊 ip camera 到 wowza 這段就完成了
