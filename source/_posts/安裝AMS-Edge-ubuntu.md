@@ -9,7 +9,7 @@ tags:
 #### 將安裝包放入後按照下方指令開始安裝
 
 ```
-tar -xvf ams-original.tar.gz
+tar -xvf ams-edge.tar.gz
 
 cd AMS_5_0_6_r6102/
 
