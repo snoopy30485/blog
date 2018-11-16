@@ -1,10 +1,10 @@
 ---
-title: wowza串流輸出original
+title: wowza串流輸出original-eage抓取original串流
 date: 2018-11-09 15:29:30
 tags:
 ---
 
-### 本章是如何將串流輸出到 original
+### 如下圖本章是如何將串流輸出到 original 
 
 #### 進入 wowza Stream Targets
 
@@ -48,5 +48,20 @@ tags:
 ![ ](images/11.png)
 ![ ](images/12.png)
 
-#### 接下來測試出輸出是否成功，打開撥放器 VLC
+#### 接下來測試出輸出 original 是否成功，打開撥放器 VLC，輸入串流網址
 
+```
+original 串流網址輸入方式為：
+
+格式://original ip:1935/original 輸入串流所創的資料夾/wowza Stream Targets 建立要輸入 original 的名稱 ( Destination Stream Name )
+
+ex：rtmp://35.201.252.199:1935/live-demo/test
+```
+
+![ ](images/13.png)
+
+#### #### 如下圖出現畫面就成功了
+
+![ ](images/14.png)
+
+#### 再來是測試 eage 能否抓取 original 的串流

@@ -127,7 +127,7 @@ ex: rtsp://test:test@1.1.1.1//axis-media/media.amp
 ```
 rtmp://wowza ip:1935/live applications 名稱/Stream Name.stream
 
-ex:rtmp://35.201.252.199:1935/test/test.stream
+ex：rtmp://35.201.252.199:1935/test/test.stream
 ```
 
 ![ ](images/25.png)
