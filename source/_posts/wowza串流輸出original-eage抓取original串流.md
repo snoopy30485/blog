@@ -1,10 +1,12 @@
 ---
-title: wowza串流輸出original-eage抓取original串流
+title: wowza串流輸出original-edge抓取original串流
 date: 2018-11-09 15:29:30
 tags:
 ---
 
-### 如下圖本章是如何將串流輸出到 original 
+### 如下圖 wowza 串流輸出 original、edge 抓取 original 串流
+
+![ ](images/15.png)
 
 #### 進入 wowza Stream Targets
 
@@ -64,4 +66,20 @@ ex：rtmp://35.201.252.199:1935/live-demo/test
 
 ![ ](images/14.png)
 
-#### 再來是測試 eage 能否抓取 original 的串流
+#### 再來是測試 edge 能否抓取 original 的串流，打開撥放器 VLC，輸入串流網址
+
+#### PS.在安裝 edge 文章有介紹指令 sed -i '208c<RouteEntry>*:*;10.140.0.3:1935</RouteEntry>' /opt/adobe/ams/conf/_defaultRoot_/_defaultVHost_/Vhost.xml，此只主要為抓取 original 的串流
+
+```
+original 串流網址輸入方式為：
+
+格式://edge ip:1935/original 輸入串流所創的資料夾/wowza Stream Targets 建立要輸入 original 的名稱 ( Destination Stream Name )
+
+ex：rtmp://35.229.145.147:1935/live-demo/test
+```
+
+![ ](images/16.png)
+
+#### #### 如下圖出現畫面就成功了
+
+![ ](images/14.png)

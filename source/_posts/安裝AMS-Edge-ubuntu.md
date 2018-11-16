@@ -52,7 +52,7 @@ cd AMS_5_0_6_r6102/
 
 ![ ](images/9.png)
 
-#### 輸入AMS-original Lan IP
+#### 輸入 AMS-original Lan IP，指令主要為抓取 original 串流
 
 ```
 sed -i '208c<RouteEntry>*:*;10.140.0.3:1935</RouteEntry>' /opt/adobe/ams/conf/_defaultRoot_/_defaultVHost_/Vhost.xml 
