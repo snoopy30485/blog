@@ -6,7 +6,7 @@ tags:
 
 ### 如下圖 wowza 串流輸出 original、edge 抓取 original 串流
 
-![ ](images/10.png)
+![ ](images/15.png)
 
 #### 首先進入 wowza Stream Targets
 
