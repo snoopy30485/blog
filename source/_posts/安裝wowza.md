@@ -1,5 +1,5 @@
 ---
-title: wowza安裝
+title: 安裝wowza
 date: 2018-10-29 13:36:29
 tags:
 ---
@@ -44,7 +44,7 @@ tags:
 
 ![ ](images/6.png)
 
-#### 打開網頁輸入 IP:8088 ( 預設port ) 登入測試 ( 如果是本機安裝 IP 可以輸入 127.0.0.1 )，出現下圖畫面就是安裝成功了
+#### 打開網頁輸入 IP:8088 ( 預設port ) 登入測試 ( 如果是本機安裝 IP 可以輸入 127.0.0.1 )，出現下圖畫面就是安裝成功了，如果是別台電腦要開防火牆 8088 port 記得開
 
 ![ ](images/16.png)
 
@@ -95,6 +95,18 @@ sudo ./WowzaStreamingEngine-4.7.6-linux-x64-installer.run
 #### 跑完讀條，出現圖文字就是完成了
 
 ![ ](images/15.png)
+
+#### 開啟 port 
+
+```
+sudo ufw allow 22 ( 記得要先開啟 22 再開其他 port )
+
+sudo ufw allow 1935 ( wowza 串流預設 port )
+
+sudo ufw allow 8088 ( wowza 網頁預設 port )
+```
+
+![ ](images/17.png)
 
 #### 一樣打開網頁測試，只不過要使用 IP 沒辦法用本機需要使用 ubuntu ip:8088
 

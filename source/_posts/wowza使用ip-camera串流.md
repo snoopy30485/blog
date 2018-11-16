@@ -106,7 +106,7 @@ ex: rtsp://test:test@1.1.1.1//axis-media/media.amp
 
 ![ ](images/20.png)
 
-#### 點擊後會出現一個播放畫面 server ip：安裝 wowza 機器 ip，Application：當初立的 live applications 名稱，Stream：Stream Name.stream
+#### 點擊後會出現一個播放畫面 server ip：安裝 wowza 機器 ip ( 如果是本機開啟可以用 127.0.0.1 )，Application：當初立的 live applications 名稱，Stream：Stream Name.stream
 
 ![ ](images/21.png)
 
@@ -135,5 +135,9 @@ ex:rtmp://35.201.252.199:1935/test/test.stream
 #### 如下圖出現畫面就成功了
 
 ![ ](images/26.png)
+
+#### PS.到 Incoming Streams stream 點進去可以看到 Bytes Out 輸出 ( 只有直接從 wowza 輸出這邊才會顯示 )
+
+![ ](images/27.png)
 
 #### 到這邊 ip camera 到 wowza 這段就完成了

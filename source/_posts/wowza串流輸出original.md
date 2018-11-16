@@ -48,8 +48,5 @@ tags:
 ![ ](images/11.png)
 ![ ](images/12.png)
 
-#### 也可以到 Incoming Streams 右邊 Bytes Out 顯示數字就是成功輸出到 Original 了
+#### 接下來測試出輸出是否成功，打開撥放器 VLC
 
-
-
-#### 接下來測試出輸出是否成功
