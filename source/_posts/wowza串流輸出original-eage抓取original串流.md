@@ -8,7 +8,7 @@ tags:
 
 ![ ](images/15.png)
 
-#### 進入 wowza Stream Targets
+#### 首先進入 wowza Stream Targets
 
 ![ ](images/1.png)
 
