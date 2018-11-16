@@ -68,7 +68,7 @@ ex：rtmp://35.201.252.199:1935/live-demo/test
 
 #### 再來是測試 edge 能否抓取 original 的串流，打開撥放器 VLC，輸入串流網址
 
-#### PS.在安裝 edge 文章有介紹指令 sed -i '208c<RouteEntry>*:*;10.140.0.3:1935</RouteEntry>' /opt/adobe/ams/conf/_defaultRoot_/_defaultVHost_/Vhost.xml，此只主要為抓取 original 的串流
+#### PS.在安裝 edge 文章有介紹指令 sed -i '208c<RouteEntry>*:*;10.140.0.3:1935</RouteEntry>' /opt/adobe/ams/conf/_defaultRoot_/_defaultVHost_/Vhost.xml，此指令主要為抓取 original 的串流
 
 ```
 original 串流網址輸入方式為：
