@@ -6,7 +6,7 @@ tags:
 
 ### 本文章將介紹用手機 GoCoder 串流 wowza
 
-#### 首先進入手機下載 GoCoder
+#### 首先手機先下載 GoCoder
 
 ![ ](images/1.jpg)
 
