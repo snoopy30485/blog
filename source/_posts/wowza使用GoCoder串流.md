@@ -8,11 +8,11 @@ tags:
 
 #### 首先進入手機下載 GoCoder
 
-![ ](images/1.jpg)
+![ ](images/1.png)
 
 #### 下圖為開啟畫面
 
-![ ](images/2.jpg)
+![ ](images/2.png)
 
 #### 點擊右上做設定 ( 串流 wowza engine 只需要設定 Wowza Stream Engine )
 
