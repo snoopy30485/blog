@@ -8,15 +8,15 @@ tags:
 
 #### 首先進入手機下載 GoCoder
 
-![ ](images/1.jng)
+![ ](images/1.jpg)
 
 #### 下圖為開啟畫面
 
-![ ](images/2.jng)
+![ ](images/2.jpg)
 
 #### 點擊右上做設定 ( 串流 wowza engine 只需要設定 Wowza Stream Engine )
 
-![ ](images/3.jng)
+![ ](images/3.jpg)
 
 #### 進入 wowza webwowza → Source ( Live )，點擊 wowza GoCoder 裡面有一些參數，除了 IP 輸入外網 IP 其他可以對照輸入
 
@@ -25,15 +25,15 @@ tags:
 
 #### 點擊 Wowza Stream Engine 會出現3個需要設定選項
 
-![ ](images/6.jng)
+![ ](images/6.jpg)
 
 #### 設定 Host：因為是用手機連記得設定外網 IP，Port：1935 wowza 預設串流 port
 
-![ ](images/7.jng)
+![ ](images/7.jpg)
 
 #### 設定 Application：wowza live application name，Stream Name：GoCoder 預設都是 myStream
 
-![ ](images/8.jng)
+![ ](images/8.jpg)
 
 #### 手機 GoCoder Source Authentication 要到 wowza Server → Source Authentication → Add Source 新增 Source
 
@@ -42,15 +42,15 @@ tags:
 
 #### 設定 Source Authentication：wowza 所設定的 Source Authentication
 
-![ ](images/9.jng)
+![ ](images/9.jpg)
 
 #### 點擊右下紅點開始串流
 
-![ ](images/12.jng)
+![ ](images/12.jpg)
 
 #### 串流後畫面如下圖 ( 一些 GoCoder 其他設定有空會再做文章介紹 )
 
-![ ](images/13.jng)
+![ ](images/13.jpg)
 
 #### 可以到 Inconing Streams 會發現串流正在在執行 ( 使用 GoCoder 的方式是不會有 Stream Files )
 
