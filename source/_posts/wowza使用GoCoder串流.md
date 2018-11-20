@@ -18,7 +18,7 @@ tags:
 
 ![ ](images/3.jpg)
 
-#### 進入 wowza webwowza → Source ( Live )，點擊 wowza GoCoder 裡面有一些參數，除了 IP 輸入外網 IP 其他可以對照輸入
+#### 進入 wowza webwowza → Source ( Live )，點擊 wowza GoCoder 裡面有一些參數，除了 IP ( 需要輸入外網 IP ) 其他可以對照輸入
 
 ![ ](images/4.png)
 ![ ](images/5.png)
@@ -27,7 +27,7 @@ tags:
 
 ![ ](images/6.jpg)
 
-#### 設定 Host：因為是用手機連記得設定外網 IP，Port：1935 wowza 預設串流 port
+#### 設定 Host：輸入外網 IP，Port：1935 ( wowza 預設串流 port )
 
 ![ ](images/7.jpg)
 
