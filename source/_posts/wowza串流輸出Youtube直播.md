@@ -15,9 +15,9 @@ tags:
 ![ ](images/2.png)
 ![ ](images/3.png)
 
-#### 接下來到 wowza → Stream Targets → Add Stream Targts 設定輸出
-
 #### GoCoder 輸入到 wowza 文章傳送門：https://snoopy30485.github.io/2018/11/15/wowza%E4%BD%BF%E7%94%A8GoCoder%E4%B8%B2%E6%B5%81
+
+#### 接下來到 wowza → Stream Targets → Add Stream Targts 設定輸出
 
 ![ ](images/4.png)
 
