@@ -26,7 +26,7 @@ tags:
 
 ![ ](images/5.png)
 
-#### 儲存好後會進入下圖畫面，設定隨時都可以更改，左上是建立另一個新 live applications 也可以從這邊點選
+#### 儲存好後會進入下圖畫面，設定隨時都可以更改 ( 左上是建立另一個新 live applications 如果已經建立好後想要再建立第2個 live application 從這邊點選 )
 
 ![ ](images/6.png)
 

@@ -6,6 +6,8 @@ tags:
 
 ### 本文章將介紹使用 GoCoder 串流到 wowza 在串流輸出到 youtube 直播
 
+#### ps.youtube 輸出方法其他串流方式也是相同，本文章使用比較方便的手機 GoCoder 介紹
+
 #### 首先開啟 youtube 點擊右上角進行直播
 
 ![ ](images/1.png)
