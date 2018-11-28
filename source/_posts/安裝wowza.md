@@ -32,11 +32,11 @@ tags:
 
 ![ ](images/3.png)
 
-#### 設定 wowza WEB 登入帳密
+#### 設定 wowza web 登入帳密
 
 ![ ](images/4.png)
 
-#### 設定安裝好開啟 WEB wowza
+#### 設定安裝好開啟 web wowza
 
 ![ ](images/5.png)
 
@@ -44,15 +44,15 @@ tags:
 
 ![ ](images/6.png)
 
-#### 打開網頁輸入 IP:8088 ( 預設port ) 登入測試 ( 如果是本機安裝 IP 可以輸入 127.0.0.1 )，出現下圖畫面就是安裝成功了，如果是別台電腦打開 wowza web 防火牆 8088 port 記得開
+#### 打開網頁輸入 外網 IP:8088 登入測試 ( 如果是本機 IP 可以輸入 127.0.0.1 或是內網 IP )，出現下圖畫面就是安裝成功了，如果是別台電腦打開 wowza web 防火牆 8088 port 記得開
 
 ![ ](images/16.png)
 
-### 三、安裝 wowza for ubuntu
+### 三、安裝 wowza for ubuntu 16.04
 
 #### 官方下載網址：https://www.wowza.com/pricing/installer ( 一樣的地方 )
 
-#### 下載下方有安裝安裝指令
+#### 下載下方有安裝指令
 
 ![ ](images/7.png)
 
@@ -76,7 +76,7 @@ sudo ./WowzaStreamingEngine-4.7.6-linux-x64-installer.run
 
 ![ ](images/10.png)
 
-#### 輸完金鑰，鑰需要輸入帳密 ( 登入 WEB 用 )，先輸入帳號
+#### 輸完金鑰，鑰需要輸入帳密 ( 登入 wowza web 用 )，先輸入帳號
 
 ![ ](images/11.png)
 
@@ -96,18 +96,18 @@ sudo ./WowzaStreamingEngine-4.7.6-linux-x64-installer.run
 
 ![ ](images/15.png)
 
-#### 開啟 port 
+#### 開啟 port
 
 ```
 sudo ufw allow 22 ( 記得要先開啟 22 再開其他 port )
 
-sudo ufw allow 1935 ( wowza 串流預設 port )
+sudo ufw allow 1935 ( wowza 串流 port )
 
-sudo ufw allow 8088 ( wowza 網頁預設 port )
+sudo ufw allow 8088 ( wowza 網頁 port )
 ```
 
 ![ ](images/17.png)
 
-#### 一樣打開網頁測試，只不過要使用 IP 沒辦法用本機需要使用 ubuntu ip:8088
+#### 一樣打開網頁測試 ( 在別台電腦開啟網頁輸入 機器外網 IP：8088 )
 
 ![ ](images/16.png)
