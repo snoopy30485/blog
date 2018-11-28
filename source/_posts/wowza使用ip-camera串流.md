@@ -10,27 +10,27 @@ tags:
 
 ![ ](images/1.png)
 
-#### 下圖為登入後畫面，點選上方的 Applications 建立一個新的 live applications
+#### 下圖為登入後畫面，點選上方的 Application 建立一個新的 live Application
 
 ![ ](images/2.png)
+
+#### 進入 Application 後，點選 Live
+
+![ ](images/4.png)
 
 #### 輸入名稱
 
 ![ ](images/3.png)
 
-#### 進入 Applications 後，點選 Live
-
-![ ](images/4.png)
-
 #### 進入設定畫面，下圖紅框部分是允許進入格式，剩下的選項預設 ( 有機會會再做篇文章介紹 )，設定好後點擊 Save 儲存
 
 ![ ](images/5.png)
 
-#### 儲存好後會進入下圖畫面，設定隨時都可以更改 ( 左上是建立另一個新 live applications 如果已經建立好後想要再建立第2個 live application 從這邊點選 )
+#### 儲存好後會進入下圖畫面，設定隨時都可以更改 ( 左上 live Application 點選後會進入到一開始進去畫面 )
 
 ![ ](images/6.png)
 
-#### 建立好後 live applications ip camera  有2個串流輸入的方法
+#### 建立好 live Application 後 ip camera 本文章介紹二個串流輸入的方法
 
 #### 一、 點選左邊 Sources ( Live )，裡面有預設選項讓你選，是依照 ip camera 廠牌做分類，但不是全部廠牌都有沒有要用另一種方法加入
 
@@ -45,18 +45,18 @@ tags:
 ```
 camera ip address 輸入方式為：
 
-ip camera帳號：ip camera密碼@ip camera ip
+ip camera 帳號：ip camera 密碼@ip camera ip
 
 ex: test:test@1.1.1.1
 ```
 
 ![ ](images/9.png)
 
-#### 加入好會進入下圖畫面 ( Incoming Streams ) 右邊 Bytes In 顯示數字就是畫面有進wowza了
+#### 加入好會進入下圖畫面 ( Incoming Streams ) 右邊 Bytes In 顯示數字就是畫面有進 wowza 了 ( 沒有可以點擊 Refresh 刷新一下 ) 點擊 Return to Incoming Streams Page 返回上一頁
 
 ![ ](images/10.png)
 
-#### 點擊 Return to Incoming Streams Page 返回上一頁，如圖 Active 代表正在正常運作
+#### 下圖 Active 代表正在正常運作
 
 ![ ](images/11.png)
 
@@ -64,27 +64,29 @@ ex: test:test@1.1.1.1
 
 ![ ](images/12.png)
 
+#### 到這邊設定就完成了
+
 #### 二、 第二種串流方法點選左邊的 Stream Files 進入後點選上方的 Add Stream Files 新增
 
 ![ ](images/13.png)
 
-#### 輸入 Stream Files name 跟 Stream URI ( URI 要到 ip camera 的官網查 )
+#### 輸入 Stream Files name 跟 Stream URI ( URI 如果不知道可以到 ip camera 的官網查 )
 
 ```
 Stream URI 輸入方式為：
 
-rtsp://ip camera帳號：ip camera密碼@ip camera ip/產品型號的URI
+rtsp://ip camera 帳號：ip camera 密碼@ip camera ip/產品型號的 URI
 
 ex: rtsp://test:test@1.1.1.1//axis-media/media.amp
 ```
 
 ![ ](images/14.png)
 
-#### 加入好會進入下圖畫面 ( Stream Files )
+#### 加入好會進入下圖畫面 ( Stream Files ) 點擊 Return to Stream Files 回上一頁
 
 ![ ](images/15.png)
 
-#### 這種方式串流只有建立一個新的 Stream Files Incoming Stream 不會幫你串流起來，點擊 Return to Stream Files 回上一頁，點擊圖案紅框串流
+#### 這種方式串流只有建立一個新的 Stream Files，Incoming Stream 不會幫你串流起來，點擊下圖紅框圖案串流
 
 ![ ](images/16.png)
 
@@ -96,7 +98,7 @@ ex: rtsp://test:test@1.1.1.1//axis-media/media.amp
 
 ![ ](images/18.png)
 
-#### 再到 Incoming Streams 確認是否成功
+#### 再到 Incoming Streams 確認是否輸入
 
 ![ ](images/19.png)
 
@@ -106,7 +108,7 @@ ex: rtsp://test:test@1.1.1.1//axis-media/media.amp
 
 ![ ](images/20.png)
 
-#### 點擊後會出現一個播放畫面 server ip：安裝 wowza 機器 ip ( 如果是本機開啟可以用 127.0.0.1 )，Application：當初立的 live applications 名稱，Stream：Stream Name.stream
+#### 點擊後會出現一個播放畫面 server：安裝 wowza 機器 ip ( 如果是本機開啟可以用 127.0.0.1 或內網 IP )、Application：當初立的 live Application Name、Stream：Stream Name.stream
 
 ![ ](images/21.png)
 
@@ -125,7 +127,7 @@ ex: rtsp://test:test@1.1.1.1//axis-media/media.amp
 #### 輸入串流網址
 
 ```
-rtmp://wowza ip:1935/live applications 名稱/Stream Name.stream
+rtmp://wowza ip:1935/live Application 名稱/Stream Name.stream
 
 ex：rtmp://35.201.252.199:1935/test/test.stream
 ```
