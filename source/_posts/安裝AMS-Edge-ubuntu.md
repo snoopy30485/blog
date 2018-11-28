@@ -20,31 +20,31 @@ cd AMS_5_0_6_r6102/
 
 ![ ](images/1.png)
 
-#### Do you agree with the license agreement? (y/n):y ( 輸入 y )
+#### 是否同意，輸入 y
 
 ![ ](images/2.png)
 
-#### Please enter your Adobe Media Server 5 serial number ( 輸入序號 )
+#### 輸入序號
 
 ![ ](images/3.png)
 
-#### The installer will install Adobe Media Server 5 in the following directory，Default [/opt/adobe/ams]: ( 安裝目錄直接按 Enter )
+#### 安裝目錄 ( /opt/adobe/ams )，直接按 Enter
 
 ![ ](images/4.png)
 
-#### Please enter the administrative username: administrator ( 輸入管理員名稱 )
+#### 輸入管理員名稱：administrator
 
 ![ ](images/5.png)
 
-#### Please enter the administrative password: xxxxxxxx ( 輸入管理員密碼 )
+#### 輸入管理員密碼：xxxxxxxx
 
 ![ ](images/6.png)
 
-#### 二次輸入
+#### 密碼二次輸入
 
 ![ ](images/7.png)
 
-#### 接下來都用預設，Enter + y
+#### 接下來都用預設，Enter
 
 ![ ](images/8.png)
 
@@ -52,7 +52,7 @@ cd AMS_5_0_6_r6102/
 
 ![ ](images/9.png)
 
-#### 輸入 AMS-original Lan IP，指令主要為抓取 original 串流
+#### 輸入 AMS-original Lan IP
 
 ```
 sed -i '208c<RouteEntry>*:*;10.140.0.3:1935</RouteEntry>' /opt/adobe/ams/conf/_defaultRoot_/_defaultVHost_/Vhost.xml 
@@ -83,3 +83,5 @@ sudo ufw allow 1935
 ```
 
 ![ ](images/11.png)
+
+#### 到這邊 edge 安裝跟設定就完成了
