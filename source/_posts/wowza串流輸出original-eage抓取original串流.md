@@ -6,6 +6,8 @@ tags:
 
 ### 如下圖 wowza 串流輸出 original、edge 抓取 original 串流
 
+#### 其實可以直接從 wowza 抓取串流網址，多一台 original 是因為安全，然後再由多台 edge 抓取客端再來抓取，多台 edge 可以分散風險
+
 ![ ](images/15.png)
 
 #### 首先進入 wowza Stream Targets
@@ -67,8 +69,6 @@ ex：rtmp://35.201.252.199:1935/live-demo/test
 ![ ](images/14.png)
 
 #### 再來是測試 edge 能否抓取 original 的串流，打開撥放器 VLC，輸入串流網址
-
-#### PS.在安裝 edge 文章有介紹指令 sed -i '208c<RouteEntry>*:*;10.140.0.3:1935</RouteEntry>' /opt/adobe/ams/conf/_defaultRoot_/_defaultVHost_/Vhost.xml，此指令主要為抓取 original 的串流
 
 ```
 original 串流網址輸入方式為：
