@@ -17,8 +17,6 @@ tags:
 ![ ](images/2.png)
 ![ ](images/3.png)
 
-#### GoCoder 輸入到 wowza 文章傳送門：https://snoopy30485.github.io/2018/11/15/wowza%E4%BD%BF%E7%94%A8GoCoder%E4%B8%B2%E6%B5%81
-
 #### 接下來到 wowza → Stream Targets → Add Stream Targts 設定輸出
 
 ![ ](images/4.png)
@@ -27,7 +25,7 @@ tags:
 
 ![ ](images/5.png)
 
-#### 設定參數 Stream Targets Name：隨意命名、Source Stream Name：Stream File Name ( GoCoder 預設是 myStream )
+#### 設定參數 Stream Targets Name：隨意命名、Source Stream Name：Stream File Name
 
 ![ ](images/6.png)
 
@@ -49,4 +47,4 @@ tags:
 ![ ](images/11.png)
 ![ ](images/12.png)
 
-#### 畫面有出了就是成功了！
+#### 畫面有出現就是成功了！
