@@ -18,7 +18,7 @@ tags:
 
 ![ ](images/3.jpg)
 
-#### 進入 wowza webwowza → Source ( Live )，點擊 wowza GoCoder 裡面有一些參數，除了 IP ( 需要輸入外網 IP ) 其他可以對照輸入
+#### 進入 wowza web → Source ( Live )，點擊 wowza GoCoder 裡面有一些參數，除了 IP ( 需要輸入外網 IP ) 其他可以對照輸入
 
 ![ ](images/4.png)
 ![ ](images/5.png)
@@ -31,7 +31,7 @@ tags:
 
 ![ ](images/7.jpg)
 
-#### 設定 Application：wowza live application name，Stream Name：GoCoder 預設都是 myStream
+#### 設定 Application：wowza live application name，Stream Name：GoCoder 預設都是 myStream ( 更改後 Incoming Streams 會顯示更改後名稱，PS.同樣名稱二支手機會互搶 )
 
 ![ ](images/8.jpg)
 
@@ -63,5 +63,3 @@ tags:
 #### 下圖有畫面就是成功了
 
 ![ ](images/16.png)
-
-#### PS.手機使用 GoCoder 串流到 wowza 一次只能一台手機使用，下一台手機使用會把上一台畫面蓋掉
