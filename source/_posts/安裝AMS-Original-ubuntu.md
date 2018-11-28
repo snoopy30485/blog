@@ -76,7 +76,7 @@ sudo ufw allow 1935
 
 ![ ](images/11.png)
 
-#### 進入 /opt/ams/applications 建立一個資料夾 ( 此資料夾是給 wowza 用的 )
+#### 進入 /opt/adobe/ams/applications 建立一個資料夾 ( 此資料夾是給 wowza 用的 )
 
 ![ ](images/12.png)
 
