@@ -108,7 +108,7 @@ ex: rtsp://test:test@1.1.1.1//axis-media/media.amp
 
 ![ ](images/20.png)
 
-#### 點擊後會出現一個播放畫面 server：安裝 wowza 機器 ip ( 如果是本機開啟可以用 127.0.0.1 或內網 IP )、Application：當初立的 live Application Name、Stream：Stream Name.stream
+#### 點擊後會出現一個播放畫面 server：安裝 wowza 機器 ip ( 如果是本機開啟可以用 127.0.0.1 或內網 IP )、Application：live Application Name、Stream：Stream Name.stream
 
 ![ ](images/21.png)
 
