@@ -51,7 +51,7 @@ tags:
 
 ![ ](images/12.png)
 
-#### 點擊完 Check Code 會出現 Source Stream Name 輸入你 Incoming Stream 要串流的名稱
+#### 點擊完 Check Code 會出現 Source Stream Name 輸入你 Incoming Stream 串流的名稱
 
 ![ ](images/13.png)
 
@@ -81,7 +81,7 @@ tags:
 ![ ](images/20.png)
 ![ ](images/21.png)
 
-#### 如果有停止或是重啟動作，會需要再重新輸入一次代碼
+#### PS.如果有停止或是重啟動作，會需要再重新輸入一次代碼
 
 ![ ](images/22.png)
 
