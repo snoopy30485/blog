@@ -120,7 +120,7 @@ ex：salt-key -a test
 salt-key -L
 ```
 
-![ ](images/17.png)
+![ ](images/27.png)
 
 #### 3.刪除金鑰
 
