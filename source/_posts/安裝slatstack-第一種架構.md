@@ -50,11 +50,11 @@ vim minion ( 編輯 config )
 
 ![ ](images/5.png)
 
-#### 設定 IP 讓 master 找的到 minion
+#### 設定：輸入 master IP 讓 master 找的到 minion
 
 ![ ](images/6.png)
 
-#### 設定 minion ID
+#### 設定：minion ID
 
 ![ ](images/7.png)
 
@@ -120,7 +120,7 @@ ex：salt-key -a test
 salt-key -L
 ```
 
-![ ](images/12.png)
+![ ](images/17.png)
 
 #### 3.刪除金鑰
 
