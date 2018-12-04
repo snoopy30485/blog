@@ -1,5 +1,5 @@
 ---
-title: 安裝slatstack
+title: 安裝slatstack-第一種架構
 date: 2018-11-30 13:43:24
 tags:
 ---
@@ -13,6 +13,13 @@ tags:
 ![ ](images/1.png)
 
 #### 安裝 saltstack master 本文章使用 ubuntu 16.04 來安裝
+
+#### 更新指令
+
+```
+apt-get update
+```
+
 
 #### 安裝指令
 
