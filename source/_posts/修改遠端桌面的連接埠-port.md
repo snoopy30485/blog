@@ -62,4 +62,4 @@ HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TerminalServer\WinStations\R
 
 ![ ](images/13.png)
 
-#### 這樣就完成囉
+#### 這樣就完成囉！
