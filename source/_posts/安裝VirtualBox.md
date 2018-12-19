@@ -46,13 +46,15 @@ tags:
 
 ![ ](images/11.png)
 
-### 三、執行擴充包安裝檔
-
-![ ](images/12.png)
+### 三、安裝 USB 2.0 與 USB 3.0 的擴充包
 
 #### 點選 All supported platforms，下載支援 USB 2.0 與 USB 3.0 的擴充包
 
 ![ ](images/2.png)
+
+#### 執行安裝包
+
+![ ](images/12.png)
 
 #### 點選安裝
 
