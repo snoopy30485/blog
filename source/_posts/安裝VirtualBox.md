@@ -21,7 +21,7 @@ tags:
 ![ ](images/3.png)
 ![ ](images/4.png)
 
-#### 點選下一步
+#### 設定安裝路徑
 
 ![ ](images/5.png)
 
