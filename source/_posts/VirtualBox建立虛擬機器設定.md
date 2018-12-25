@@ -6,7 +6,7 @@ tags:
 
 ### 本文章將介紹如何在 VirtualBox 新增一台虛擬機器，使用版本為 VirtualBox 6.0.0，使用範本為 ubuntu 16.04
 
-#### IOS 檔案下載網址：http://releases.ubuntu.com/16.04/
+#### ubuntu 16.04 IOS 檔案下載網址：http://releases.ubuntu.com/16.04/
 
 #### 1. 點選新增來增加虛擬機器
 
