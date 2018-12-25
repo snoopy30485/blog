@@ -1,6 +1,6 @@
 ---
 title: VirtualBox安裝Ubuntu-Server設定
-date: 2018-06-29 18:21:57
+date: 2018-06-29 11:50:57
 tags:
 ---
 
