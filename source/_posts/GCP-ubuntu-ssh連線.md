@@ -1,6 +1,6 @@
 ---
-title: ubuntu-ssh連線
-date: 2018-06-30 11:35:55
+title: GCP-ubuntu-ssh連線
+date: 2018-06-24 11:35:55
 tags:
 ---
 
