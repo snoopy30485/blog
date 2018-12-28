@@ -47,11 +47,11 @@ output {
 
 ### Redis 參數介紹：
 
-#### redis-server：建立redis的server（另有redis-cli的客端版本）
+#### redis-server：建立 redis 的 server（ 另有 redis-client 的客端版本 ）
 
 #### --appendonly yes：是否做資料持久化
 
-#### --maxmemory 4gb：設定Redis Container 占用記憶體的最大容量
+#### --maxmemory 4gb：設定 Redis Container 占用記憶體的最大容量
 
 #### --requirepass：客端 VM 將 Log 資料傳送到 Redis 時驗證用的 key ( 跟 logstash 配置的要一樣 )
 
