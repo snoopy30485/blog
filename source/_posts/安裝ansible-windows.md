@@ -49,6 +49,9 @@ sudo vi /etc/ansible/hosts
 隨意名稱 ansible_ssh_host=要連線機器 ip
 ```
 
+![ ](images/5.png)
+![ ](images/6.png)
+
 #### 新增群組資料夾
 
 ```
@@ -63,8 +66,6 @@ ansible_connection: winrm
 ansible_winrm_server_cert_validation: ignore
 ```
 
-![ ](images/5.png)
-![ ](images/6.png)
 ![ ](images/7.png)
 
 #### 4. windows 開啟 powershell 設定，本文章是使用 windows server 2016 R2 不用下列步驟可以跳第 5 步驟
