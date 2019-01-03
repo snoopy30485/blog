@@ -47,7 +47,7 @@ sudo vi /etc/ansible/hosts
 ```
 ansible -m ping all
 
-ansible -m ping test
+ansible -m ping test ( 指定單個主機 )
 ```
 
 ![ ](images/.png)
