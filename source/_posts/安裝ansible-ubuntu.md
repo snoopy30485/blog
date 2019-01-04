@@ -57,3 +57,15 @@ ansible -m ping ubuntu ( 指定群組 )
 ```
 
 ![ ](images/5.png)
+
+#### 4. 下指令方式操作機器
+
+```
+ansible name -m command -a "command"
+
+ex：ansible test -m command -a "sudo reboot"
+```
+
+#### 如下圖下完重啟指令後會發現連不到，因為重新啟動會暫時連不到表示指令操作成功
+
+![ ](images/6.png)
