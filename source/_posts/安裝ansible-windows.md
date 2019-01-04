@@ -99,8 +99,9 @@ winrm set winrm/config/service ‘@{AllowUnencrypted="true"}‘
 
 在cmd 執行 powershell.exe -File ConfigureRemotingForAnsible.ps1
 配置winrm 與https證書訊息
-檔案內容：https://snoopy30485.github.io/2019/01/03/%E9%85%8D%E7%BD%AEwinrm%E8%88%87https%E8%AD%89%E6%9B%B8%E8%A8%8A%E6%81%AF/
 ```
+
+#### 檔案內容：https://snoopy30485.github.io/2019/01/03/%E9%85%8D%E7%BD%AEwinrm%E8%88%87https%E8%AD%89%E6%9B%B8%E8%A8%8A%E6%81%AF/
 
 ![ ](images/14.png)
 ![ ](images/8.png)

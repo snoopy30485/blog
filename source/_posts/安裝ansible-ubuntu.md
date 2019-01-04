@@ -38,6 +38,10 @@ sudo vi /etc/ansible/hosts
 更改內容
 [隨意群組名稱]
 隨意名稱 ansible_ssh_host=要連線機器 ip
+
+ex：
+[unubtu]
+test ansible_ssh_host=127.0.0.1
 ```
 
 ![ ](images/4.png)
@@ -48,6 +52,8 @@ sudo vi /etc/ansible/hosts
 ansible -m ping all
 
 ansible -m ping test ( 指定單個主機 )
+
+ansible -m ping ubuntu ( 指定群組 )
 ```
 
 ![ ](images/5.png)
