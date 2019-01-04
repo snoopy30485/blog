@@ -10,6 +10,7 @@ tags:
 
 ```
 將 PPA 添加到系統中，中間需要案 Enter 接受 PPA 增加
+
 sudo apt-add-repository ppa:ansible/ansible
 ```
 
@@ -18,7 +19,9 @@ sudo apt-add-repository ppa:ansible/ansible
 
 ```
 更新並安裝
+
 sudo apt-get update
+
 sudo apt-get install -y ansible
 ```
 
