@@ -4,12 +4,13 @@ date: 2019-01-03 14:29:23
 tags:
 ---
 
-### 本章將介紹使用 ubuntu-ansible 連線控制 windows，但是 windows 是沒有 ssh 連線的所以會需要用到 pywinrm
+### 本章將介紹使用 ubuntu-ansible 連線控制 windows，但是 windows 是沒有 ssh 連線的，所以會需要用到 pywinrm
 
 #### 1. 安裝 ansible
 
 ```
 將 PPA 添加到系統中，中間需要案 Enter 接受 PPA 增加
+
 sudo apt-add-repository ppa:ansible/ansible
 ```
 
@@ -18,7 +19,9 @@ sudo apt-add-repository ppa:ansible/ansible
 
 ```
 更新並安裝
+
 sudo apt-get update
+
 sudo apt-get install -y ansible
 ```
 
@@ -28,6 +31,9 @@ sudo apt-get install -y ansible
 
 ```
 安裝 pywinrm 模組
+
+sudo apt-get install -y python-pip
+
 pip install pywinrm
 ```
 
@@ -52,7 +58,7 @@ sudo vi /etc/ansible/hosts
 ![ ](images/5.png)
 ![ ](images/6.png)
 
-#### 新增群組資料夾
+#### 4. 新增群組資料夾，windows 連線會需要輸入遠短帳密，因此我們在 ansible 下建立 group_vars 輸入遠端需要設定
 
 ```
 mkdir /etc/ansible/group_vars
@@ -68,47 +74,90 @@ ansible_winrm_server_cert_validation: ignore
 
 ![ ](images/7.png)
 
-#### 4. windows 開啟 powershell 設定，本文章是使用 windows server 2016 R2 不用下列步驟可以跳第 5 步驟
+#### 5. windows 開啟 powershell 設定，本文章是使用 windows server 2016 Datacenter 不用下列步驟可以跳第 5 步驟
 
 ```
 安裝 .NET Framework 4.5
+```
 
-更改powershell 策略為 remotesigned
+```
+更改 powershell 策略為 remotesigned 輸入 y 確認
 
+Set-ExecutionPolicy remotesigned
+
+檢查策略
+
+Get-ExecutionPolicy
+
+```
+
+![ ](images/15.png)
+
+```
 查看版本（ 須為3.0以上 ）
-$PSVersionTable.PSVersion
 
+$PSVersionTable.PSVersion
+```
+
+![ ](images/16.png)
+
+```
 開啟 Winrm service
+
 winrm enumerate winrm/config/listener
+
 如果沒有回應，表示該服務沒有啟動，預設是不啟動的
 ```
 
-#### 5. 對 winrm service 進行基礎配置
+![ ](images/17.png)
+
+#### 6. 製作 powershell 腳本
+
+#### ConfigureRemotingForAnsible.ps1 檔案內容：https://goo.gl/t5BWTN
+
+#### 7. 對 winrm service 進行基礎配置
 
 ```
 winrm quickconfig
 
-查看 winrm service listener
-winrm e winrm/config/listener
-
-將winrm service 配置auth
-winrm set winrm/config/service/auth ‘@{Basic="true"}‘
-
-將winrm service配置加密方式為允許非加密
-winrm set winrm/config/service ‘@{AllowUnencrypted="true"}‘
-
-在cmd 執行 powershell.exe -File ConfigureRemotingForAnsible.ps1
-配置winrm 與https證書訊息
+如果已經啟動設定會需要用指令修改
 ```
 
-#### 檔案內容：https://snoopy30485.github.io/2019/01/03/%E9%85%8D%E7%BD%AEwinrm%E8%88%87https%E8%AD%89%E6%9B%B8%E8%A8%8A%E6%81%AF/
+![ ](images/18.png)
 
-![ ](images/14.png)
+```
+將winrm service 配置auth
+
+winrm set winrm/config/service/auth ‘@{Basic="true"}‘
+```
+
 ![ ](images/8.png)
+
+```
+將winrm service配置加密方式為允許非加密
+
+winrm set winrm/config/service ‘@{AllowUnencrypted="true"}‘
+```
+
 ![ ](images/9.png)
+
+```
+在放置 ConfigureRemotingForAnsible.ps1 路徑下執行配置 winrm 與 https 證書訊息
+
+powershell.exe -File ConfigureRemotingForAnsible.ps1
+```
+
 ![ ](images/10.png)
 
-#### 10. 測試，如下圖就成功了接下來可以下其他指令對機器做控制
+```
+檢查 config 內容
+
+winrm get winrm/config
+```
+
+![ ](images/14.png)
+
+#### 8. 測試，如下圖就成功了接下來可以下其他指令對機器做控制
 
 ```
 ansible -m ping all
