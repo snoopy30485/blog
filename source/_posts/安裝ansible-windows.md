@@ -63,7 +63,6 @@ test ansible_ssh_host=127.0.0.1
 127.0.0.1
 ```
 
-![ ](images/5.png)
 ![ ](images/6.png)
 ![ ](images/12.png)
 
@@ -83,6 +82,7 @@ ansible_connection: winrm
 ansible_winrm_server_cert_validation: ignore
 ```
 
+![ ](images/5.png)
 ![ ](images/7.png)
 
 #### 5. 製作 powershell 腳本，本文章是使用 windows server 2016 Datacenter
