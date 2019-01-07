@@ -199,6 +199,7 @@ ansible windows -m win_ping ( 指定群組 )
 ```
 
 ![ ](images/11.png)
+![ ](images/13.png)
 
 #### 9. 下指令方式操作機器
 

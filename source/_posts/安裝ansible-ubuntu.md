@@ -45,9 +45,14 @@ sudo vi /etc/ansible/hosts
 ex：
 [unubtu]
 test ansible_ssh_host=127.0.0.1
+
+或是 ( 這樣要單獨操控指令就要使用 IP )
+[windows]
+127.0.0.1
 ```
 
 ![ ](images/4.png)
+![ ](images/8.png)
 
 #### 3. 測試，如下圖就成功了接下來可以下其他指令對機器做控制
 
