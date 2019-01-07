@@ -56,10 +56,13 @@ ansible -m ping all
 
 ansible -m ping test ( 指定單個主機 )
 
+ansible -m ping 127.0.0.1 ( 指定單個主機 )
+
 ansible -m ping ubuntu ( 指定群組 )
 ```
 
 ![ ](images/5.png)
+![ ](images/7.png)
 
 #### 4. 下指令方式操作機器
 

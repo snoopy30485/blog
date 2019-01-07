@@ -55,19 +55,26 @@ sudo vi /etc/ansible/hosts
 隨意名稱 ansible_ssh_host=要連線機器 ip
 
 ex：
-[windows]]
+[windows]
 test ansible_ssh_host=127.0.0.1
+
+或是 ( 這樣要單獨操控指令就要使用 IP )
+[windows]
+127.0.0.1
 ```
 
 ![ ](images/5.png)
 ![ ](images/6.png)
+![ ](images/12.png)
 
 #### 4. 新增群組資料夾，windows 連線會需要輸入遠短帳密，因此我們在 ansible 下建立 group_vars 輸入遠端需要設定
 
-```
-mkdir /etc/ansible/group_vars
+#### PS.檔案名稱要跟群組一樣，才會讀取到 YMAL 檔的內容
 
-vi /etc/ansible/group_vars/windows.yml
+```
+sudo mkdir /etc/ansible/group_vars
+
+sudo vi /etc/ansible/group_vars/windows.yml
 
 ansible_user: 遠端帳號
 ansible_password: 遠端密碼
@@ -97,6 +104,10 @@ ansible_winrm_server_cert_validation: ignore
 ![ ](images/23.png)
 
 #### 6. windows 開啟 powershell 設定，本文章是使用 windows server 2016 Datacenter 不用下列步驟可以跳第 7 步驟
+
+#### 開啟 powershell，左下搜尋 → 輸入 powershell → 右鍵以系統管理員身分執行
+
+![ ](images/24.png)
 
 ```
 安裝 .NET Framework 4.5
@@ -178,18 +189,21 @@ winrm get winrm/config
 #### 8. 測試，如下圖就成功了接下來可以下其他指令對機器做控制
 
 ```
-ansible -m ping all
+ansible all -m win_ping
 
-ansible -m ping test ( 指定單個主機 )
-```
+ansible test -m win_ping ( 指定單個主機 )
 
-```
-執行命令
-ansible name -m command -a "command"
+ansible 127.0.0.1 -m win_ping ( 指定單個主機 )
 
-ex：ansible windows -m win_command -a "shutdown -s -t 10" ( 遠端操作關機指令 )
+ansible windows -m win_ping ( 指定群組 )
 ```
 
 ![ ](images/11.png)
-![ ](images/12.png)
-![ ](images/13.png)
+
+#### 9. 下指令方式操作機器
+
+```
+ansible name -m win_command -a "command"
+
+ex：ansible windows -m win_command -a "shutdown -r -t 10" ( 遠端操作重啟指令 )
+```
