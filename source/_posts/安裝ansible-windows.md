@@ -53,6 +53,10 @@ sudo vi /etc/ansible/hosts
 更改內容
 [隨意群組名稱]
 隨意名稱 ansible_ssh_host=要連線機器 ip
+
+ex：
+[windows]]
+test ansible_ssh_host=127.0.0.1
 ```
 
 ![ ](images/5.png)
@@ -74,7 +78,25 @@ ansible_winrm_server_cert_validation: ignore
 
 ![ ](images/7.png)
 
-#### 5. windows 開啟 powershell 設定，本文章是使用 windows server 2016 Datacenter 不用下列步驟可以跳第 5 步驟
+#### 5. 製作 powershell 腳本，本文章是使用 windows server 2016 Datacenter
+
+#### 桌面右鍵 → 新增 → 文件資料夾
+
+![ ](images/19.png)
+
+#### 隨意資料夾右上箭頭 → 點選分頁檢視 → 副檔名打勾，這樣就看的到檔案副檔名
+
+![ ](images/20.png)
+![ ](images/21.png)
+![ ](images/22.png)
+
+#### 命名 ConfigureRemotingForAnsible.ps1 貼上網址內容，檔案內容：https://goo.gl/t5BWTN
+
+#### 貼上內容後更改檔名 .ps1
+
+![ ](images/23.png)
+
+#### 6. windows 開啟 powershell 設定，本文章是使用 windows server 2016 Datacenter 不用下列步驟可以跳第 7 步驟
 
 ```
 安裝 .NET Framework 4.5
@@ -111,10 +133,6 @@ winrm enumerate winrm/config/listener
 
 ![ ](images/17.png)
 
-#### 6. 製作 powershell 腳本
-
-#### ConfigureRemotingForAnsible.ps1 檔案內容：https://goo.gl/t5BWTN
-
 #### 7. 對 winrm service 進行基礎配置
 
 ```
@@ -126,7 +144,7 @@ winrm quickconfig
 ![ ](images/18.png)
 
 ```
-將winrm service 配置auth
+winrm service 配置 auth
 
 winrm set winrm/config/service/auth ‘@{Basic="true"}‘
 ```
@@ -134,7 +152,7 @@ winrm set winrm/config/service/auth ‘@{Basic="true"}‘
 ![ ](images/8.png)
 
 ```
-將winrm service配置加密方式為允許非加密
+winrm service 配置加密方式為允許非加密
 
 winrm set winrm/config/service ‘@{AllowUnencrypted="true"}‘
 ```
