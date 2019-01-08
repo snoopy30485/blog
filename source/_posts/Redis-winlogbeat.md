@@ -6,6 +6,8 @@ tags:
 
 ### 有接 Redis 的 winlogbeat
 
+### 需要更改的地方只有第 52 行的 ip、62 行的 key、66 行的密碼
+
 ```
 ###################### Winlogbeat Configuration Example ##########################
 
@@ -71,6 +73,6 @@ output.redis:
   key: winlogbeat 
 
   # The password to authenticate with. The default is no authentication.
-  # 自己設定的密碼
+  # redis 設定的密碼
   password: 123456
 ```

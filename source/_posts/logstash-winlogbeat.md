@@ -6,6 +6,8 @@ tags:
 
 ### 有接 logstash 的 winlogbeat
 
+### 需要更改的地方只有第 104 行的 ip
+
 ```
 ###################### Winlogbeat Configuration Example ##########################
 

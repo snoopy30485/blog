@@ -6,6 +6,8 @@ tags:
 
 ### 只有 elasticsearch 的 winlogbeat
 
+### 需要更改的地方只有第 94 行的 ip
+
 ```
 ###################### Winlogbeat Configuration Example ##########################
 
