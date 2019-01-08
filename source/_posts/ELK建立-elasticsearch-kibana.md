@@ -44,7 +44,9 @@ sysctl -w vm.max_map_count=262144 ( 在文件最下面加進去 )
 #### 也可以直接下這行指令幫你增加到文件裡
 
 ```
-sudo echo vm.max_map_count=262144 >> /etc/sysctl.conf
+sudo su
+
+echo vm.max_map_count=262144 >> /etc/sysctl.conf
 ```
 
 #### 下載 elasticsearch 並 run 起來
@@ -66,19 +68,19 @@ sudo echo vm.max_map_count=262144 >> /etc/sysctl.conf
 #### ES_JAVA_OPTS="-Xms2g -Xmx2g"：設定記憶體可使用上限
 
 ```
-docker run -d --name es -p 9200:9200 --restart=always -v /data/elasticsearch:/usr/share/elasticsearch/data -e ES_JAVA_OPTS:-Xmx2g -e ES_JAVA_OPTS:-Xms2g elasticsearch:5.6.7
+sudo docker run -d --name es -p 9200:9200 --restart=always -v /data/elasticsearch:/usr/share/elasticsearch/data -e ES_JAVA_OPTS:-Xmx2g -e ES_JAVA_OPTS:-Xms2g elasticsearch:5.6.7
 ```
 
 #### 下載 kibana 並 run 起來
 
 ```
-docker run -d --name kibana --restart=always -p 80:5601 --link es:elasticsearch kibana:5.6.7
+sudo docker run -d --name kibana --restart=always -p 80:5601 --link es:elasticsearch kibana:5.6.7
 ```
 
 #### 使用指令查看容器狀態
 
 ```
-docker ps -a
+sudo docker ps -a
 ```
 
 ![ ](images/4.png)
