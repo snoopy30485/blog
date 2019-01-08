@@ -4,15 +4,9 @@ date: 2018-07-26 19:58:11
 tags:
 ---
 
-### 一、 Redis 介紹
+#### 一、 ELK + Redis ( 在 gcp 防火牆要開啟 port 6379 ) 指令 ( 前面文章有 ELK 建立，所以只上建立容器指令 )
 
-### Redis 是 REmote DIctionary Server（ 遠程字典服務器 ）的縮寫，它以字典結構（ key-value 鍵值對結構 ）存儲數據，並允許其他應用通過 TCP 協議讀寫字典中的內容。所以，redis 是一個key-value 存儲系統，或者說是一個 key-value 數據庫，因此常常被用在需要快取一些資料的場合，可以減輕許多後端資料庫的壓力
-
-***
-
-### 二、 ELK + Redis ( 在 gcp 防火牆要開啟 port 6379 ) 指令 ( 前面文章有 ELK 建立，所以只上建立容器指令 )
-
-### 一樣要先配置 logstash 文件
+#### 一樣要先配置 logstash 文件
 
 ```
 input {
@@ -43,9 +37,9 @@ output {
 }
 ```
 
-### 容器 run 起來
+#### 容器 run 起來
 
-### Redis 參數介紹：
+#### Redis 參數介紹：
 
 #### redis-server：建立 redis 的 server（ 另有 redis-client 的客端版本 ）
 
@@ -73,7 +67,7 @@ docker run -d --name kibana --restart=always -p 80:5601 --link es:elasticsearch 
 
 ***
 
-### 三、 docker-compose 建立 ( logstash 配置跟 docker-compose 同一層 )
+#### 二、 docker-compose 建立 ( logstash 配置跟 docker-compose 同一層 )
 
 ```
 version: "2"
