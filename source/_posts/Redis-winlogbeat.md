@@ -4,7 +4,7 @@ date: 2018-07-31 20:02:47
 tags:
 ---
 
-### Redis 的 winlogbeat
+### 有接 Redis 的 winlogbeat
 
 ```
 ###################### Winlogbeat Configuration Example ##########################
@@ -57,7 +57,8 @@ output.redis:
   # The list of Redis servers to connect to. If load balancing is enabled, the
   # events are distributed to the servers in the list. If one server becomes
   # unreachable, the events are distributed to the reachable servers only.
-  hosts: ["35.221.167.254"]
+  # 機器 IP
+  hosts: ["127.0.0.1"]
 
   # The Redis port to use if hosts does not contain a port number. The default
   # is 6379.
@@ -65,8 +66,11 @@ output.redis:
 
   # The name of the Redis list or channel the events are published to. The
   # default is winlogbeat.
-  key: vplaylog
+
+  # 驗證 redis key
+  key: winlogbeat 
 
   # The password to authenticate with. The default is no authentication.
-  password: QFkXXBZkLD6MgcEL1y8l
+  # 自己設定的密碼
+  password: 123456
 ```
