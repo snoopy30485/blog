@@ -4,6 +4,8 @@ date: 2018-07-31 14:50:55
 tags:
 ---
 
+### 只有 elasticsearch 的 winlogbeat
+
 ```
 ###################### Winlogbeat Configuration Example ##########################
 
