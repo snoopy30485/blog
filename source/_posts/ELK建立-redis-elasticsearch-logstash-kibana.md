@@ -1,5 +1,5 @@
 ---
-title: ELK+Redis
+title: ELK建立-redis-elasticsearch-logstash-kibana
 date: 2018-07-26 19:58:11
 tags:
 ---
