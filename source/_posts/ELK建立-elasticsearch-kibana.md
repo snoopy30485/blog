@@ -1,5 +1,5 @@
 ---
-title: ELK建立
+title: ELK建立-elasticsearch-kibana
 date: 2018-07-26 16:13:20
 tags:
 ---
@@ -74,32 +74,6 @@ sysctl -w vm.max_map_count=262144 ( 在文件最下面加進去 )
 
 ```
 echo vm.max_map_count=262144 >> /etc/sysctl.conf
-```
-
-### 配置 logstash config ( 如果先下 logstash 指令 -v 會找不到路徑下的檔案或執行失敗，所以要先配置檔案 )
-
-```
-vi logstash.conf
-```
-
-### config 內容
-
-```
-input {
-  beats {
-    port => 5044
-  }
-}
-
-output {
-  elasticsearch {
-    hosts => [ "elasticsearch:9200" ]
-    manage_template => false
-    index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
-    document_type => "%{[@metadata][type]}"
-  }
-
-}
 ```
 
 ### 下載 elasticsearch 並 run 起來
@@ -189,19 +163,6 @@ services:
     networks:
       - docker_elk
 
-  logstash:
-    container_name: logstash
-    image: docker.elastic.co/logstash/logstash:5.6.7
-    ports:
-      - "5044:5044"
-    restart: always
-    volumes:
-      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
-    networks:
-      - docker_elk
-    depends_on:
-      - elasticsearch
-
   kibana:
     container_name: kibana
     image: kibana:5.6.7
@@ -224,29 +185,4 @@ networks:
 docker-compose up -d
 ```
 
-### 配置 logstash config 這次配置的 config 只要跟 docker-compose 放一起就可以了
-
-```
-vi logstash.conf
-```
-
-### conf 內容
-
-```
-input {
-  beats {
-    port => 5044
-  }
-}
-
-output {
-  elasticsearch {
-    hosts => [ "elasticsearch:9200" ]
-    manage_template => false
-    index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
-    document_type => "%{[@metadata][type]}"
-  }
-
-}
-```
-### 到這邊 ELK 就建立完成了！
+### 到這邊就建立完成了！
