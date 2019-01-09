@@ -86,7 +86,7 @@ sudo docker ps -a
 ![ ](images/4.png)
 
 
-#### 三、使用 docker-compose 建立 ELK
+#### 二、使用 docker-compose 建立 ELK
 
 #### 一開始指令是練習用的，等熟悉後用 docker-compose 可以快速搞定，不需要再一行行指令下
 
