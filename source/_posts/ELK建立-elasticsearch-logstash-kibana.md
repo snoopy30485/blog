@@ -89,27 +89,25 @@ output {
 
 ##### --link：Container 互聯
 
-##### ES_JAVA_OPTS="-Xms6g -Xmx6g"：設定記憶體可使用上限
+##### ES_JAVA_OPTS="-Xms2g -Xmx2g"：設定記憶體可使用上限
 
 ```
-docker run -d --name es -p 9200:9200 --restart=always -v /data/elasticsearch:/usr/share/elasticsearch/data -e ES_JAVA_OPTS:-Xmx6g -e ES_JAVA_OPTS:-Xms6g elasticsearch:5.6.7
+sudo docker run -d --name es -p 9200:9200 --restart=always -v /data/elasticsearch:/usr/share/elasticsearch/data -e ES_JAVA_OPTS:-Xmx2g -e ES_JAVA_OPTS:-Xms2g elasticsearch:5.6.7
 ```
 
 #### 下載 logstash 並 run 起來
 
-#### 參數介紹：
-
-#### -v：把我們設置的 config 同步到容器裡面 ( 配置 logstash.conf 放的路徑要跟 -v 的一樣 )
+#### 注意：-v 把我們設置的 config 同步到容器裡面 ( 配置 logstash.conf 放的路徑要跟 -v 的一樣本文章 config 放置路徑是在 /home/h102539/ )
 
 ```
-docker run -d --name logstash -p 5044:5044 --link es:elasticsearch --restart=always -v /logstash.conf:/usr/share/logstash/pipeline/logstash.conf -e LS_JAVA_OPTS:-Xms6g -e LS_JAVA_OPTS:-Xmx6g docker.elastic.co/logstash/logstash:5.6.7
+sudo docker run -d --name logstash -p 5044:5044 --link es:elasticsearch --restart=always -v /home/h102539/logstash.conf:/usr/share/logstash/pipeline/logstash.conf -e LS_JAVA_OPTS:-Xms2g -e LS_JAVA_OPTS:-Xmx2g docker.elastic.co/logstash/logstash:5.6.7
 ```
 
 
 #### 下載 kibana 並 run 起來
 
 ```
-docker run -d --name kibana --restart=always -p 80:5601 --link es:elasticsearch kibana:5.6.7
+sudo docker run -d --name kibana --restart=always -p 80:5601 --link es:elasticsearch kibana:5.6.7
 ```
 
 #### 使用指令查看容器狀態
@@ -120,11 +118,7 @@ docker ps -a
 
 ![ ](images/4.png)
 
-#### 恭喜 ELK 建立完成
-
-***
-
-#### 三、進入 VM docker-compose 建立 ELK
+#### 三、docker-compose 建立 ELK
 
 #### 一開始指令是練習用的，等熟悉後用 docker-compose 可以快速搞定，不需要再一行行指令下
 
@@ -132,6 +126,32 @@ docker ps -a
 
 ```
 apt-get -y install docker-compose
+```
+
+#### 配置 logstash config 這次配置的 config 只要跟 docker-compose 放一起就可以了
+
+```
+vi logstash.conf
+```
+
+#### conf 內容
+
+```
+input {
+  beats {
+    port => 5044
+  }
+}
+
+output {
+  elasticsearch {
+    hosts => [ "elasticsearch:9200" ]
+    manage_template => false
+    index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
+    document_type => "%{[@metadata][type]}"
+  }
+
+}
 ```
 
 #### 建立 docker-compose
@@ -167,7 +187,7 @@ services:
       - "5044:5044"
     restart: always
     volumes:
-      - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf
+      - ./home/h1025139/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
     networks:
       - docker_elk
     depends_on:
@@ -195,29 +215,4 @@ networks:
 docker-compose up -d
 ```
 
-#### 配置 logstash config 這次配置的 config 只要跟 docker-compose 放一起就可以了
-
-```
-vi logstash.conf
-```
-
-#### conf 內容
-
-```
-input {
-  beats {
-    port => 5044
-  }
-}
-
-output {
-  elasticsearch {
-    hosts => [ "elasticsearch:9200" ]
-    manage_template => false
-    index => "%{[@metadata][beat]}-%{[@metadata][version]}-%{+YYYY.MM.dd}"
-    document_type => "%{[@metadata][type]}"
-  }
-
-}
-```
 #### 到這邊就建立完成了！
