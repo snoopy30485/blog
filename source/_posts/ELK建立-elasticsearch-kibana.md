@@ -65,7 +65,7 @@ echo vm.max_map_count=262144 >> /etc/sysctl.conf
 
 #### --link：Container 互聯
 
-#### ES_JAVA_OPTS="-Xms2g -Xmx2g"：設定記憶體可使用上限
+#### -e ES_JAVA_OPTS="-Xms2g -Xmx2g"：設定記憶體可使用上限
 
 ```
 sudo docker run -d --name es -p 9200:9200 --restart=always -v /data/elasticsearch:/usr/share/elasticsearch/data -e ES_JAVA_OPTS:-Xmx2g -e ES_JAVA_OPTS:-Xms2g elasticsearch:5.6.7
