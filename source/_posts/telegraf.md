@@ -6,7 +6,7 @@ tags:
 
 #### telegraf config
 
-#### 
+#### 第 52 行輸入檔案路徑、第 69 行輸入機器 IP、第 72 行輸入 datebase 名稱
 
 ```
 # Telegraf configuration

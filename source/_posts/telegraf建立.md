@@ -14,7 +14,7 @@ tags:
 
 #### 3. 打開 telegraf.conf 做設定
 
-#### telegraf 內容：
+#### telegraf 內容：https://snoopy30485.github.io/2018/08/03/telegraf/
 
 #### 4. 以系統管理員身份開啟 Command Prompt ( cmd )，輸入指令到 telegraf 的路徑下，進行 telegraf 服務安裝並啟動
 
