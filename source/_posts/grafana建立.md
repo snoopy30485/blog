@@ -83,3 +83,43 @@ sudo vi docker-compose.yml
 ```
 
 #### docker-compose 內容
+
+```
+version: "2"
+
+services:
+
+  influxdb:
+    container_name: influxdb
+    image: influxdb:1.7.2
+    ports:
+      - "8086:8086"
+      - "8083:8083"
+    restart: always
+    volumes:
+      - /data/influxdb:/var/lib/influxdb
+    environment:
+      - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
+    networks:
+      - grafana
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:5.2.4
+    user: root
+    ports:
+      - "80:3000"
+    volumes:
+      - /data/grafana:/var/lib/grafana
+    restart: always
+    networks:
+      - grafana
+    depends_on:
+      - influxdb
+
+networks:
+  grafana:
+    driver: bridge
+```
+
+#### 到這邊就建立完成了！
