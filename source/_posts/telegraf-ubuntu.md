@@ -1,5 +1,8 @@
 ---
 title: telegraf-ubuntu
-date: 2019-01-10 15:37:18
+date: 2018-08-03 14:12:08
 tags:
 ---
+
+#### ubuntu-telegraf config
+

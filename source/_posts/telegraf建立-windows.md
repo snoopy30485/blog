@@ -1,5 +1,5 @@
 ---
-title: telegraf建立
+title: telegraf建立-windows
 date: 2018-08-03 14:08:00
 tags:
 ---
