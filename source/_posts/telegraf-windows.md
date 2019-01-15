@@ -80,7 +80,7 @@ tags:
   urls = ["http://10.148.0.30:8086"] # required
   # The target database for metrics (telegraf will create it if not exists)
   # 輸入 datebase 名稱
-  database = "test" # required
+  database = "telegraf" # required
   # Precision of writes, valid values are "ns", "us" (or "µs"), "ms", "s", "m", "h".
   # note: using second precision greatly helps InfluxDB compression
   precision = "s"
