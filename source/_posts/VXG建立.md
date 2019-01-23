@@ -15,7 +15,7 @@ tags:
 ![ ](images/21.png)
 ![ ](images/22.png)
 
-#### 進入信箱點擊 Confirm Email Address 會開啟分頁輸入自己的密碼
+#### 輸入完 email 後進入 email 點擊 Confirm Email Address 會開啟分頁輸入自己的密碼
 
 ![ ](images/23.png)
 ![ ](images/24.png)
