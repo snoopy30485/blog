@@ -4,9 +4,32 @@ date: 2018-11-24 15:59:00
 tags:
 ---
 
-#### VXG 是跟 wowza 一樣的流媒體服務器，本文章將介紹如何建立起來
+### VXG 是跟 wowza 一樣的流媒體服務器，本文章將介紹如何建立起來
 
-#### 下載網址：https://dashboard.videoexpertsgroup.com/?downloads=
+#### VXG streaming server 下載方式
+
+#### 進入官網：https://www.videoexpertsgroup.com/
+
+#### 點擊右上角 FREE TRIAL 輸入 email 申請免費30天帳號 ( 此帳號是官網雲端帳號 )
+
+![ ](images/21.png)
+![ ](images/22.png)
+
+#### 進入信箱點擊 Confirm Email Address 會開啟分頁輸入自己的密碼
+
+![ ](images/23.png)
+![ ](images/24.png)
+
+#### 輸入完密碼會回到登入頁面，輸入信箱跟剛剛設定的密碼登入
+
+![ ](images/25.png)
+
+#### 到了登入頁面點擊左邊列表 Downloads，選擇 VXG Streaming Server 下載
+
+![ ](images/26.png)
+![ ](images/27.png)
+
+#### 接下來把檔案放到欲安裝機器安裝，本文章使用的是 ubuntu 16.04
 
 #### 更新
 
@@ -74,7 +97,7 @@ sudo ./start.sh -r -h SERVER_HOST -c CERTIFICATE_PATH
 
 ![ ](images/6.png)
 
-#### 首次啟動需要許可證密要，會需要到官網申請一組 VXG cloud (雲端) 的帳號
+#### 首次啟動需要許可證密要，會需要再度登入官網雲端
 
 #### 打開瀏覽器輸入安裝 VXG 機器 IP 進入 VXG 管理畫面
 
