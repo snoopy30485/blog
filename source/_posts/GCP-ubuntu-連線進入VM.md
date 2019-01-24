@@ -1,5 +1,5 @@
 ---
-title: 連線進入VM
+title: GCP-ubuntu-連線進入VM
 date: 2018-06-21 14:47:21
 tags:
 ---
