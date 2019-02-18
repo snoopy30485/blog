@@ -3,7 +3,7 @@ title: ELK建立-elasticsearch-logstash-kibana
 date: 2018-07-26 18:01:43
 tags:
 ---
-
+# ( 文章有問題，會再做修改 )
 ### 本章將使用 ubuntu 16.04、elasticsearch:5.6.7、logstash:5.6.7、kibana：5.6.7 並在
 
 ### elasticsearch 版本發行說明：
