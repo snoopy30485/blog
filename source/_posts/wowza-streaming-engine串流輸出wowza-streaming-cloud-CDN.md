@@ -25,7 +25,26 @@ tags:
 
 ![ ](images/5.png)
 
-#### 6. 再來到 wowza streaming engine → Stream Targets → Add Stream Targers 新增輸出
+#### 6. 接下來到 wowza streaming engine → Transcoder → 點擊 Enable Transcoder 開啟轉碼
+
+![ ](images/6.png)
+
+#### 7. 開啟後點選 Restart Now 重新整理
+
+![ ](images/7.png)
+
+#### 8. 重新整理完後，記得要回到
+
+![ ](images/8.png)
+
+#### [傳送們](https://snoopy30485.github.io/2018/11/02/wowza%E4%BD%BF%E7%94%A8ip-camera%E4%B8%B2%E6%B5%81/)
+
+
+
+
+
+
+#### . 再來到 wowza streaming engine → Stream Targets → Add Stream Targers 新增輸出
 
 ![ ](images/6.png)
 
@@ -39,4 +58,3 @@ tags:
 
 #### . 點擊 Check Code 輸入 
 
-https://snoopy30485.github.io/2018/11/02/wowza%E4%BD%BF%E7%94%A8ip-camera%E4%B8%B2%E6%B5%81/
