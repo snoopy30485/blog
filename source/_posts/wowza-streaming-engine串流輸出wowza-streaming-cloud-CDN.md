@@ -33,28 +33,34 @@ tags:
 
 ![ ](images/7.png)
 
-#### 8. 重新整理完後，記得要回到
+#### 8. 重新整理完後，記得要回到 Stream Files 重新串流
+
+#### wowza 串流文章[傳送們](https://snoopy30485.github.io/2018/11/02/wowza%E4%BD%BF%E7%94%A8ip-camera%E4%B8%B2%E6%B5%81/)
 
 ![ ](images/8.png)
 
-#### [傳送們](https://snoopy30485.github.io/2018/11/02/wowza%E4%BD%BF%E7%94%A8ip-camera%E4%B8%B2%E6%B5%81/)
+#### 9. 看到下圖畫面就是設定成功了 ( 目前是使用預設值，轉碼設定會再做一篇文章 )
 
+![ ](images/9.png)
 
+#### 10. 再來到 wowza streaming engine → Stream Targets → Add Stream Targers 新增輸出
 
+![ ](images/10.png)
 
+#### 11. 選擇 wowza streaming cloud 把串流輸出到剛剛 wowza 雲端建好的 cdn
 
+![ ](images/11.png)
 
-#### . 再來到 wowza streaming engine → Stream Targets → Add Stream Targers 新增輸出
+#### 12. 輸入名稱 Stream Target Name，輸入連線代碼 Connection Code ( 連線代碼為在 wowza cloud 建立好 cdn 給的代碼 )
 
-![ ](images/6.png)
+![ ](images/12.png)
 
-#### . 選擇 wowza streaming cloud 把串流輸出到剛剛 wowza 雲端建好的 cdn
+#### 12. 輸入好代碼後點擊 Check Code 輸入建好的串流名稱，點選 Add this target
 
-![ ](images/7.png)
+![ ](images/13.png)
 
-#### . 輸入名稱 Stream Target Name，輸入連線代碼 Connection Code ( 連線代碼為在 wowza cloud 建立好 cdn 給的代碼 )
+#### 13. 看到下圖畫面就是成功轉碼並輸出到 wowza cloud cdn 了
 
-![ ](images/8.png)
+![ ](images/14.png)
 
-#### . 點擊 Check Code 輸入 
-
+#### 14. 接下來回到 wowza cloud 
