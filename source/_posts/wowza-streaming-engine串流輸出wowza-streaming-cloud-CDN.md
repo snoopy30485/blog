@@ -63,4 +63,14 @@ tags:
 
 ![ ](images/14.png)
 
-#### 14. 接下來回到 wowza cloud 
+#### 14. 接下來回到 wowza cloud 複製 Apple HLS Playback URL
+
+![ ](images/15.png)
+
+#### 15. 開啟撥放器網路串流，把剛剛複製的 Apple HLS Playback URL 貼上，然後撥放
+
+![ ](images/16.png)
+
+#### 16. 如下圖出現畫面就是成功了
+
+![ ](images/17.png)
