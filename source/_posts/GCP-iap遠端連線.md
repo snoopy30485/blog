@@ -8,11 +8,11 @@ tags:
 
 #### 1. 首先打開本機 google SDK 輸入下面指令
 
+#### 沒有安裝 google SDK 可到[本篇文章](https://snoopy30485.github.io/2018/06/27/google-command-SDK%E5%AE%89%E8%A3%9D/)查看如何安裝
+
 ```
 gcloud auth login
 ```
-
-#### 沒有安裝 google SDK 可到[本篇文章](https://snoopy30485.github.io/2018/06/27/google-command-SDK%E5%AE%89%E8%A3%9D/)查看如何安裝
 
 ![ ](images/1.png)
 
