@@ -58,7 +58,7 @@ cd AMS_5_0_6_r6102/
 service ams restart
 ```
 
-#### 確認 AMS 啟動狀態 ( 有時候會不成功服務需多重起幾次 )
+#### 確認 AMS 啟動狀態 ( 有時候會不成功服務需多重起幾次 )，狀態檢查完按 Q 離開
 
 ```
 service ams status
