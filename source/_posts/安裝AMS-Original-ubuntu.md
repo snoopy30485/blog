@@ -78,13 +78,29 @@ sudo ufw allow 1935
 
 #### 進入 /opt/adobe/ams/applications 建立一個資料夾 ( 此資料夾是給 wowza 用的 )
 
+```
+cd /opt/adobe/ams/applications
+```
+
 ![ ](images/12.png)
 
 #### 建立一個資料夾
 
+```
+mkdir 隨意資料夾名稱
+
+ex： mkdir test
+```
+
 ![ ](images/13.png)
 
 #### 調到最高權限
+
+```
+chmod 777 資料夾名稱
+
+ex： chmod 777 test 
+```
 
 ![ ](images/14.png)
 
