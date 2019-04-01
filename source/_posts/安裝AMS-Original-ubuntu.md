@@ -4,7 +4,7 @@ date: 2018-11-08 15:26:58
 tags:
 ---
 
-### AMS_Original 安裝包下載：https://drive.google.com/open?id=1ZoMojUk21mlRwmCl90mylBCVHpClugQ-
+### AMS_Original 安裝包下載：[點我下載](https://drive.google.com/open?id=1ZoMojUk21mlRwmCl90mylBCVHpClugQ-)
 
 #### 將安裝包放入後按照下方指令開始安裝
 
