@@ -4,8 +4,6 @@ date: 2018-07-01 08:43:53
 tags:
 ---
 
-#### Ubuntu的各種解壓縮指令，作者自己做筆記用
-
 ### .tar
 
 #### 打包：tar cvf FileName.tar DirName
