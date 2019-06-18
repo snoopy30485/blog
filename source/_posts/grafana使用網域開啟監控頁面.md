@@ -6,9 +6,11 @@ tags:
 
 ## 本文章將介紹使用 GCP 加入 DNS 網域開啟 grafana 監控頁面
 
-### 在 GCP 加入 DNS 網域請看本文章 [傳送們](https://snoopy30485.github.io/2018/06/20/GCP-%E8%A8%AD%E5%AE%9ADNS%E7%B6%B2%E5%9F%9F/)
+### 在 GCP 加入 DNS 網域文章 [傳送們](https://snoopy30485.github.io/2018/06/20/GCP-%E8%A8%AD%E5%AE%9ADNS%E7%B6%B2%E5%9F%9F/)
 
 ### GCP 網域加好後，只需要在指令多加 -e GF_AUTH_GOOGLE_ALLOWED_DOMAINS="你的網域" 這樣就可以使用網域開啟監控頁面
+
+### grafana 建立文章 [傳送們](https://snoopy30485.github.io/2018/08/02/grafana%E5%BB%BA%E7%AB%8B/)
 
 ### grafana 指令 ( 本章使用的網域為 grafana.costworlds.com )
 
