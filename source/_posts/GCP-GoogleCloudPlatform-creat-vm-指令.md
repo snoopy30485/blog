@@ -175,4 +175,4 @@ ex：gcloud compute instances create --create-disk name=test,type=pd-ssd,size=10
 
 ![ ](images/6.png)
 
-### ### 恭喜 GCP VM 建立完成！
+### GCP VM 建立完成

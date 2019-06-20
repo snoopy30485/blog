@@ -134,4 +134,4 @@ ex：gcloud config set project proven-cosine-207802
 
 ![ ](images/6.png)
 
-### 恭喜專案建立完成！
+### 專案建立完成
