@@ -48,7 +48,7 @@ gcloud compute instances create (VM名稱) --zone (區域) --image-project (proj
 ex：gcloud compute instances create test --zone asia-east1-c --image-project ubuntu-os-cloud --image ubuntu-1604-xenial-v20180522 --tags test --custom-cpu 4 --custom-memory 8 --boot-disk-size 30 --create-disk size=10GB,type=pd-ssd,name=test-disk
 ```
 
-### 建立成功後詳細訊息還是要到 Compute Engine → VM 執行個體裡面看
+### 建立成功後訊息
 
 ![ ](images/16.png)
 
