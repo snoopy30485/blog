@@ -76,13 +76,13 @@ tags:
 
 ### 設定磁碟
 
-### 硬碟部分有做一篇基礎文章，可以到這邊看 [文章傳送門](https://snoopy30485.github.io/2018/06/26/disk-%E4%BB%8B%E7%B4%B9/)
+### 硬碟部分有做一篇 GCP 硬碟設定介紹，可以到這邊看 [文章傳送門](https://snoopy30485.github.io/2018/06/26/disk-%E4%BB%8B%E7%B4%B9/)
 
 ![ ](images/15.png)
 
 ### 設定網路
 
-### 網路部分有做一篇基礎文章，可以到這邊看 [文章傳送門](https://snoopy30485.github.io/2018/06/20/%E7%B6%B2%E8%B7%AF/)
+### 網路部分有做一篇 GCP 網路設定介紹，可以到這邊看 [文章傳送門](https://snoopy30485.github.io/2018/06/20/%E7%B6%B2%E8%B7%AF/)
 
 ![ ](images/16.png)
 
