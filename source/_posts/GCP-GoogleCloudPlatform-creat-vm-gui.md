@@ -114,4 +114,4 @@ tags:
 
 ![ ](images/25.png)
 
-### 恭喜 GCP 雲端 VM 建立完成！
+### 恭喜 GCP VM 建立完成！
