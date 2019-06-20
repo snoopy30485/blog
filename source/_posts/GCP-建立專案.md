@@ -4,7 +4,9 @@ date: 2018-06-18 10:00:00
 tags:
 ---
 
-## 建立專案 ( GUI )
+## 本文章將介紹如何建立 GCP 專案
+
+### 建立專案 ( GUI )
 
 ### 1. 進入 GCP，網址：https://cloud.google.com/
 
@@ -120,6 +122,10 @@ gcloud config list project
 
 ```
 gcloud config set project (專案ID)
+```
+
+```
+ex：gcloud config set project proven-cosine-207802 
 ```
 
 ![ ](images/9.png)
