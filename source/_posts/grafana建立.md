@@ -52,9 +52,10 @@ docker run -d --name influxdb --restart=always -p 8083:8083 -p 8086:8086 -v /dat
 
 #### ES_JAVA_OPTS=”-Xms2g -Xmx2g”：設定記憶體可使用上限
 
+#### --user root：因為 grafana 在 5.1.0 之前是使用 root 權限 run 起來的，但是在這之後版本沒有這樣做所以要多下一個 --user root 指令
+
 #### 下載 grafana 並 run 起來
 
-#### 因為 grafana 在 5.1.0 之前是使用 root 權限 run 起來的，但是在這之後版本沒有這樣做所以要多下一個 --user root 指令
 
 ```
 docker run -d --name grafana --restart=always -p 80:3000 -v /data/grafana:/var/lib/grafana --user root --link influxdb:influxdb grafana/grafana:5.2.4
@@ -129,7 +130,7 @@ docker-compose up -d
 
 #### 三、測試開啟 grafana 監控頁面
 
-#### 打開網頁輸入機器外網 IP，因為有下 -p 80:3000 指令是以 80 port 開啟監控頁面所以直接打 IP 就可以了，如果沒有要加上 3000
+#### 打開網頁輸入機器外網 IP，因為有下 -p 80:3000 指令所以是以 80 port 開啟監控頁面直接打 IP 就可以了，如果沒有要加上 3000
 
 #### 以本篇文章為例 IP 為 35.229.184.95，如果沒用 80 port 開啟 grafana 監控頁面請輸入 35.229.184.95:3000
 
