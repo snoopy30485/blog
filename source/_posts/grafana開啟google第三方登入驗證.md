@@ -46,6 +46,24 @@ tags:
 docker run -d --name grafana --user root -p 80:3000 -v /data/grafana:/var/lib/grafana --link influxdb:influxdb --restart=always -e GF_SERVER_ROOT_URL=http://grafana.costworlds.com -e GF_AUTH_DISABLE_LOGIN_FORM=false -e GF_AUTH_GOOGLE_ENABLED=true -e GF_AUTH_GOOGLE_CLIENT_ID=33574658051-0f9glecg4ujag71t3r2r6i96lc1bdgqe.apps.googleusercontent.com -e GF_AUTH_GOOGLE_CLIENT_SECRET=NNDaKWcBni51U7Ya4uYL6-Ay -e GF_AUTH_GOOGLE_ALLOWED_DOMAINS=gmail.com -e GF_AUTH_GOOGLE_ALLOW_SIGN_UP=true grafana/grafana:5.2.4
 ```
 
+### 多出指令 environment 細部講解：
+
+### GF_SERVER_ROOT_URL：指定 grafana 網站的使用網域，有租網域給該 grafana 服務使用的話可以利用此設定
+
+### GF_AUTH_DISABLE_LOGIN_FORM：輸入帳號密碼功能的顯示，如果需要輸入帳號密碼與 google 第三方驗證登入同時存在的話這邊設定 false
+
+### GF_AUTH_GOOGLE_ENABLED：開啟google第三方登入驗證功能
+
+### GF_AUTH_GOOGLE_CLIENT_ID：google 驗證客端的 ID，可以至 GCP 上的 API 和憑證中的憑證後點選建立憑證 → OAuth 用戶端ID建立後或給予一組用戶端 ID 可以填寫在此。注意這邊需要先到 OAuth 同意畫面新增已授權網域並選擇公開
+
+### GF_AUTH_GOOGLE_CLIENT_SECRET：google 驗證客端的密碼，同上在建立 OAuth2.0 用戶端 ID 的時候會同時給予密碼
+
+### GF_AUTH_GOOGLE_ALLOWED_DOMAINS：允許認證的登入的網域，也就是說你需要設定什麼帳號的網域登入 google 成功後才可以轉導登入進 grafana
+
+### GF_AUTH_GOOGLE_ALLOW_SIGN_UP：允許 google 驗證登入
+
+### 八、測試，開啟網頁使用 google 帳號可以登入就是成功了
+
 ### docker-compose
 
 ```
@@ -92,24 +110,6 @@ networks:
   grafana:
     driver: bridge
 ```
-
-### 多出指令 environment 細部講解：
-
-### GF_SERVER_ROOT_URL：指定 grafana 網站的使用網域，有租網域給該 grafana 服務使用的話可以利用此設定
-
-### GF_AUTH_DISABLE_LOGIN_FORM：輸入帳號密碼功能的顯示，如果需要輸入帳號密碼與 google 第三方驗證登入同時存在的話這邊設定 false
-
-### GF_AUTH_GOOGLE_ENABLED：開啟google第三方登入驗證功能
-
-### GF_AUTH_GOOGLE_CLIENT_ID：google 驗證客端的 ID，可以至 GCP 上的 API 和憑證中的憑證後點選建立憑證 → OAuth 用戶端ID建立後或給予一組用戶端 ID 可以填寫在此。注意這邊需要先到 OAuth 同意畫面新增已授權網域並選擇公開
-
-### GF_AUTH_GOOGLE_CLIENT_SECRET：google 驗證客端的密碼，同上在建立 OAuth2.0 用戶端 ID 的時候會同時給予密碼
-
-### GF_AUTH_GOOGLE_ALLOWED_DOMAINS：允許認證的登入的網域，也就是說你需要設定什麼帳號的網域登入 google 成功後才可以轉導登入進 grafana
-
-### GF_AUTH_GOOGLE_ALLOW_SIGN_UP：允許 google 驗證登入
-
-### 八、測試，開啟網頁使用 google 帳號可以登入就是成功了
 
 ![ ](images/10.png)
 ![ ](images/11.png)
