@@ -6,7 +6,9 @@ tags:
 
 ## 本篇文章降介紹如何在 GCP 設定 DNS 網域
 
-### 租好網域後，接下來到 GCP 設定 DNS 網域
+### 租好網域後，接下來到 GCP 設定 DNS 網域 ( 本文章是租用 GoDaddy 網域 )
+
+![ ](images/10.png)
 
 ### 一、開啟 GCP 導覽選單選擇網路 → Cloud DNS
 
