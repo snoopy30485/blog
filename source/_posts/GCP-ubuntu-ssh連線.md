@@ -23,7 +23,7 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/home/test/.ssh/id_rsa):
 ```
 
-#### 指定金鑰保護密碼，如果有設定密碼的話，以後每次使用都要輸入密碼，除你需要非常高的安全性，否則就不用設定了直接按下 Enter 鍵即可
+#### 指定金鑰保護密碼，如果有設定密碼的話，以後每次使用都要輸入密碼，不設定就直接按下 Enter 鍵即可
 
 ```
 Enter passphrase (empty for no passphrase):
@@ -35,7 +35,7 @@ Enter passphrase (empty for no passphrase):
 Enter same passphrase again:
 ```
 
-#### 產生的金鑰會有兩個檔案，位置在 /home/test/.ssh ( 這是本文章自己的路經 )
+#### 產生的金鑰會有兩個檔案，位置在 /home/使用者名稱/.ssh
 
 #### id_rsa.pub：公開金鑰（public key），這是可以對外公開的金鑰，之後要將它放在 GCP 上作認證使用
 
