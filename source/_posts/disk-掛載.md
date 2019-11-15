@@ -61,7 +61,7 @@ gcloud compute instances attach-disk ( VM 名稱 ) --disk (創建磁碟的名稱
 
 ![ ](images/5.png)
 
-#### PS：可以到 Compute Engine → 磁碟，查看新增好會出現 VM 名稱
+#### PS：可以到 Compute Engine → 磁碟，查看新增好的硬碟使用者會出現 VM 名稱
 
 ![ ](images/18.png)
 
