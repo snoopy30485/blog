@@ -91,7 +91,7 @@ sudo ./start.sh -r -h SERVER_HOST -c CERTIFICATE_PATH
 
 ![ ](images/5.png)
 
-### 停止 VXG 服務器指令
+### PS：停止 VXG 服務器指令
 
 ```
 ./stop.sh
