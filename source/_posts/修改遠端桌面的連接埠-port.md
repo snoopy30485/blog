@@ -18,7 +18,7 @@ HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TerminalServer\WinStations\R
 
 ![ ](images/2.png)
 
-#### 三、開啟修改視窗後，請先點選 Decimal ( 十進位 )，然後在 Value data ( 數值資料 ) 處輸入新的連接埠編號，如 5566，最後再按下確定修改完後，請關閉登錄檔編輯器再讓電腦重開機即可生效
+#### 三、開啟修改視窗後，請先點選 Decimal ( 十進位 )，然後在 Value data ( 數值資料 ) 處輸入新的連接埠編號，如 5566，最後再按下確定修改
 
 ![ ](images/3.png)
 
@@ -57,6 +57,8 @@ HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\TerminalServer\WinStations\R
 #### 最後就會看到你加入的 port 名稱了
 
 ![ ](images/12.png)
+
+#### 最後讓電腦重開機即可生效
 
 #### 接下來測試輸入 IP：新埠號
 
