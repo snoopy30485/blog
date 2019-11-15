@@ -66,7 +66,7 @@ test ansible_ssh_host=127.0.0.1
 ![ ](images/6.png)
 ![ ](images/12.png)
 
-#### 4. 新增群組資料夾，windows 連線會需要輸入遠短帳密，因此我們在 ansible 下建立 group_vars 輸入遠端需要設定
+#### 4. 新增群組資料夾，windows 連線會需要輸入遠端帳密，因此我們在 ansible 下建立 group_vars 輸入遠端需要設定
 
 #### PS.檔案名稱要跟群組一樣，才會讀取到 YMAL 檔的內容
 
