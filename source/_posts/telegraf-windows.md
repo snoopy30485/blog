@@ -6,7 +6,7 @@ tags:
 
 ### windows-telegraf config
 
-### 第 52 行輸入檔案路徑、第 69 行輸入機器 IP、第 72 行輸入 datebase 名稱
+### 第 52 行加入Log檔案放置的路徑與檔案名稱、第 69 行輸入機器 IP、第 72 行輸入 datebase 名稱
 
 ```
 # Telegraf configuration
@@ -59,7 +59,7 @@ tags:
   ## Run telegraf in quiet mode
   quiet = false
   ## Specify the log file name. The empty string means to log to stdout.
-  # 輸入檔案路徑
+  # 加入Log檔案放置的路徑與檔案名稱
   logfile = "D:\\Service\\telegraf\\telegraf.log"
 
   ## Override default hostname, if empty use os.Hostname()
