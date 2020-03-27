@@ -38,7 +38,7 @@ tags:
 
 ### 七、在來回到 VM 開始建立 grafana
 
-### grafana 建立文章 [傳送們](https://snoopy30485.github.io/2018/08/02/grafana%E5%BB%BA%E7%AB%8B/)
+### grafana 建立文章 [傳送門](https://snoopy30485.github.io/2018/08/02/grafana%E5%BB%BA%E7%AB%8B/)
 
 ### 因為是開啟第三方登入驗證，所已建 grafana 會再多幾行指令
 
