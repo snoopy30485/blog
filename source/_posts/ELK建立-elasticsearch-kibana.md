@@ -9,9 +9,6 @@ tags:
 ### elasticsearch 版本發行說明：
 ### https://www.elastic.co/guide/en/elasticsearch/reference/5.6/es-release-notes.html
 
-### logstash  版本發行說明：
-### https://www.elastic.co/guide/en/logstash/current/releasenotes.html
-
 ### kibana 版本發行說明：
 ### https://www.elastic.co/guide/en/kibana/5.6/release-notes.html
 
