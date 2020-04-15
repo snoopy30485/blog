@@ -54,7 +54,7 @@ Class E : 240.xx.xx.xx ~ 255.xx.xx.xx
 
 #### Public IP : 公共 IP ( 外網 )，經由 INTERNIC 所統一規劃的 IP，有這種 IP 才可以連上 Internet
 #### 組建一個企業級網路，需要去向電信運營商 ISP 申請一個接入 Internet 的寬頻，同時 ISP 還會給我們分配一個或多個 IP 地址，這些 IP 地址可以供我們企業內部上網，這些 ISP 分配給我們的 IP，就是公共 IP
-#### 要將網路連上 Intetnet 的時候，必須先註冊好網路編號 ( Net ID )，如果該 ID 已經被使用了，就必須選用另外的 ID 了，負責 Internet IP 註冊的機構叫做 InterNIC ( Network Information Center )，他們的網路位址是 http://www.internic.net，他們將 IP 地址分配給註冊並向Internet NIC 提出申請的組織機構，通過它直接訪問網際網路，不過實際上的運作，一般機構或個人是不太可能直接從 InterNIC 上註冊 IP 的，而是經 ISP 分配下來，這些經過合法授權使用的 IP，稱之為公共 IP ( Public IP )
+#### 要將網路連上 Intetnet 的時候，必須先註冊好網路編號 ( Net ID )，如果該 ID 已經被使用了，就必須選用另外的 ID 了，負責 Internet IP 註冊的機構叫做 InterNIC ( Network Information Center )，他們的網路位址是 http://www.internic.net ，他們將 IP 地址分配給註冊並向Internet NIC 提出申請的組織機構，通過它直接訪問網際網路，不過實際上的運作，一般機構或個人是不太可能直接從 InterNIC 上註冊 IP 的，而是經 ISP 分配下來，這些經過合法授權使用的 IP，稱之為公共 IP ( Public IP )
 
 #### Private IP : 私有 IP 或保留 IP ( 內網 )，不能直接連上 Internet 的 IP，主要用於區域網路內的主機連線規劃
 #### 早在 IPv4 規劃的時候就擔心 IP 會有不足的情況，而且為了應付某些企業內部的網路設定，於是就有了私有 IP (Private IP) 的產生了。私有 IP 也分別在 A, B, C 三個 Class 當中各保留一段作為私有 IP 網段，那就是：
