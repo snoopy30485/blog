@@ -18,14 +18,14 @@ sudo apt-get update
 sudo apt-get install -y docker.io
 ```
 
-#### 下載 redis images 並且 docker run 起來 
+#### 下載 redis image 並且 docker run 起來 
 
 ```
 docker run -d --name redis -p 6379:6379 -v /data/redis:/data --restart=always redis:3.2.4 redis-server --appendonly yes --maxmemory 4gb --requirepass QFkXXBZkLD6MgcEL1y8l
 ```
 
 指令                 | 意義
-:------------------- | :----
+:------------------- | :----:
 -d	                 | 在背景執行
 --name	             | Container的名稱
 -p	                 | 本機與Container對應的port
