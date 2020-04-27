@@ -25,7 +25,7 @@ docker run -d --name redis -p 6379:6379 -v /data/redis:/data --restart=always re
 ```
 
 指令                 | 意義
-:------------------- | :----:
+:------------------- | ----:
 -d	                 | 在背景執行
 --name	             | Container的名稱
 -p	                 | 本機與Container對應的port
