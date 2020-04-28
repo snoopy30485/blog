@@ -64,3 +64,5 @@ curl -XGET http://127.0.0.1:9200/_cat/indices?v
 ![ ](images/10.png)
 
 #### 點擊左邊 discover 就可以看到匯入的 log 了
+
+![ ](images/11.png)
