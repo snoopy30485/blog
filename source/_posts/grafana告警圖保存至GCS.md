@@ -102,56 +102,6 @@ tags:
 docker run -d --name grafana --user root -p 80:3000 -v /data/grafana:/var/lib/grafana --link influxdb:influxdb --restart=always -e GF_SERVER_ROOT_URL=http://grafana.costworlds.com -e GF_AUTH_DISABLE_LOGIN_FORM=false -e GF_AUTH_GOOGLE_ENABLED=true -e GF_AUTH_GOOGLE_CLIENT_ID=33574658051-0f9glecg4ujag71t3r2r6i96lc1bdgqe.apps.googleusercontent.com -e GF_AUTH_GOOGLE_CLIENT_SECRET=NNDaKWcBni51U7Ya4uYL6-Ay -e GF_AUTH_GOOGLE_ALLOWED_DOMAINS=gmail.com -e GF_AUTH_GOOGLE_ALLOW_SIGN_UP=true -e GF_EXTERNAL_IMAGE_STORAGE_PROVIDER=gcs -e GF_EXTERNAL_IMAGE_STORAGE_GCS_KEY_FILE=/var/lib/grafana/proven-cosine-207802-ec7a854d7ba9.json -e GF_EXTERNAL_IMAGE_STORAGE_GCS_BUCKET=test-grafana  grafana/grafana:5.2.4
 ```
 
-### docker-compose
-
-```
-version: "2"
-
-services:
-
-  influxdb:
-    container_name: influxdb
-    image: influxdb:1.7.2
-    ports:
-      - "8086:8086"
-      - "8083:8083"
-    restart: always
-    volumes:
-      - /data/influxdb:/var/lib/influxdb
-    environment:
-      - "ES_JAVA_OPTS=-Xms2g -Xmx2g"
-    networks:
-      - grafana
-
-  grafana:
-    container_name: grafana
-    image: grafana/grafana:5.2.4
-    user: root
-    ports:
-      - "80:3000"
-    volumes:
-      - /data/grafana:/var/lib/grafana
-    restart: always
-    environment:
-      - GF_AUTH_GOOGLE_ALLOWED_DOMAINS=grafana.costworlds.com
-      -e GF_AUTH_DISABLE_LOGIN_FORM=false -e GF_AUTH_GOOGLE_ENABLED=true 
-      -e GF_AUTH_GOOGLE_CLIENT_ID=33574658051-0f9glecg4ujag71t3r2r6i96lc1bdgqe.apps.googleusercontent.com 
-      -e GF_AUTH_GOOGLE_CLIENT_SECRET=NNDaKWcBni51U7Ya4uYL6-Ay 
-      -e GF_AUTH_GOOGLE_ALLOWED_DOMAINS=gmail.com 
-      -e GF_AUTH_GOOGLE_ALLOW_SIGN_UP=true
-      -e GF_EXTERNAL_IMAGE_STORAGE_PROVIDER=gcs
-      -e GF_EXTERNAL_IMAGE_STORAGE_GCS_KEY_FILE=/var/lib/grafana/proven-cosine-207802-ec7a854d7ba9.json
-      -e GF_EXTERNAL_IMAGE_STORAGE_GCS_BUCKET=test-grafana
-    networks:
-      - grafana
-    depends_on:
-      - influxdb
-
-networks:
-  grafana:
-    driver: bridge
-```
-
 ### 十七、查看
 
 ### container log 指令

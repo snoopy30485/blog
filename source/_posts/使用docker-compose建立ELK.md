@@ -12,18 +12,6 @@ tags:
 apt-get install -y docker-compose
 ```
 
-#### 建立 docker-compose.yml
-
-```
-mkdir docker-compose.yml
-```
-
-#### 寫入 docker-compose 內容
-
-```
-vi docker-compose.yml
-```
-
 #### 建立 logstash 資料夾並進入
 
 ```
@@ -109,6 +97,18 @@ FROM  logstash:5.6.7
 COPY conf.d /home/ben.yu/logstash/conf.d
 CMD ["-f", "/home/ben.yu/logstash/conf.d"]
 
+```
+
+#### 建立 docker-compose.yml
+
+```
+mkdir docker-compose.yml
+```
+
+#### 寫入 docker-compose 內容
+
+```
+vi docker-compose.yml
 ```
 
 #### 寫入內容
