@@ -134,8 +134,8 @@ vi Dockerfile
 
 ```
 FROM  logstash:5.6.7
-COPY conf.d /home/ben.yu/logstash/conf.d
-CMD ["-f", "/home/ben.yu/logstash/conf.d"]
+COPY conf.d /etc/logstash/conf.d
+CMD ["-f", "/etc/logstash/conf.d"]
 
 ```
 
