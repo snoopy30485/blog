@@ -15,7 +15,7 @@ apt-get install -y docker-compose
 #### 建立 docker-compose.yml
 
 ```
-mkdir docker-compose.yml
+touch docker-compose.yml
 ```
 
 #### 寫入 docker-compose 內容
