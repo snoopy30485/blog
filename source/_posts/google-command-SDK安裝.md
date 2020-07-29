@@ -46,7 +46,7 @@ tags:
 
 #### 10. 接下來會有 google 帳號選擇
 
-![ ](images/12.png)
+![ ](images/12-1.png)
 
 #### 11. GCP 專案ID選擇，不知道請到 GCP 查看
 
