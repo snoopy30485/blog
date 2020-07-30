@@ -1,10 +1,13 @@
 ---
 title: wowza使用ip-camera串流
 date: 2018-11-02 13:41:35
-tags:
+tags: 流媒體服務器
+categories: 流媒體服務器
 ---
 
 ### 本章將講解如何使用 ip camera 串流 wowza
+
+<!-- more -->
 
 #### 先登入 wowza
 

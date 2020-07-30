@@ -1,10 +1,13 @@
 ---
 title: wowza使用GoCoder串流
 date: 2018-11-15 13:43:22
-tags:
+tags: 流媒體服務器
+categories: 流媒體服務器
 ---
 
 ### 本文章將介紹用手機 GoCoder 串流 wowza
+
+<!-- more -->
 
 #### 首先手機先下載 GoCoder
 

@@ -1,9 +1,12 @@
 ---
 title: wowza-streaming-engine串流輸出wowza-streaming-cloud-CDN
 date: 2018-11-23 11:36:20
-tags:
+tags: 流媒體服務器
+categories: 流媒體服務器
 ---
 ### 本文章將介紹如何使用 wowza engine 串流輸出到 wowza cloud CDN
+
+<!-- more -->
 
 #### 1. 首先登入 wowza cloud 來到 Advanced 頁面
 

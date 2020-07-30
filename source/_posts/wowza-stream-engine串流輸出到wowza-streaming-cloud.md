@@ -1,10 +1,13 @@
 ---
 title: wowza-stream-engine串流輸出到wowza-streaming-cloud
 date: 2018-11-23 11:36:19
-tags:
+tags: 流媒體服務器
+categories: 流媒體服務器
 ---
 
 ### 本文章將介紹 wowza-engine 串流輸出到 wowza-cloud 的基本操作
+
+<!-- more -->
 
 #### 首先登入 wowza streaming cloud
 

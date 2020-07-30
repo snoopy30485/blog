@@ -1,10 +1,13 @@
 ---
 title: windows常用指令
 date: 2018-06-23 12:52:37
-tags:
+tags: windows
+categories: windows
 ---
 
 #### 本文章是作者自己筆記用，會不定時更新指令
+
+<!-- more -->
 
 #### 開啟指令方式 鍵盤開始鍵 + R
 

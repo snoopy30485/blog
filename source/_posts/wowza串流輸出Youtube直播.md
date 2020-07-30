@@ -1,10 +1,13 @@
 ---
 title: wowza串流輸出Youtube直播
 date: 2018-11-15 13:44:29
-tags:
+tags: 流媒體服務器
+categories: 流媒體服務器
 ---
 
 ### 本文章將介紹使用 GoCoder 串流到 wowza 在串流輸出到 youtube 直播
+
+<!-- more -->
 
 #### ps.youtube 輸出方法其他串流方式也是相同，本文章使用比較方便的手機 GoCoder 介紹
 

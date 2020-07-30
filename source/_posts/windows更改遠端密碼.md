@@ -1,10 +1,13 @@
 ---
 title: windows更改遠端密碼
 date: 2018-06-22 15:31:26
-tags:
+tags: winodws
+categories: winodws
 ---
 
 ### 更改遠端登入密碼
+
+<!-- more -->
 
 ### 進入 VM 後，左下角開始點擊右鍵點選 Computer Management ( 中文名稱是電腦管理 )
 

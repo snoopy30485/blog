@@ -5,7 +5,10 @@ tags: ansible
 categories: ansible
 ---
 
+### 配置winrm與https證書訊息
+
 <!-- more -->
+
 ```
 #Requires -Version 3.0
 

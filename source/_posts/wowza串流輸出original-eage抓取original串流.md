@@ -1,10 +1,13 @@
 ---
 title: wowza串流輸出original-edge抓取original串流
 date: 2018-11-09 15:29:30
-tags:
+tags: 流媒體服務器
+categories: 流媒體服務器
 ---
 
 ### 如下圖 wowza 串流輸出 original、edge 抓取 original 串流
+
+<!-- more -->
 
 #### 其實可以直接從 wowza 抓取串流網址，多一台 original 是因為安全，然後再由多台 edge 抓取客端再來抓取，多台 edge 可以分散風險
 

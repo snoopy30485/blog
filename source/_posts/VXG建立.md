@@ -1,10 +1,13 @@
 ---
 title: VXG建立
 date: 2018-11-24 15:59:00
-tags:
+tags: 流媒體服務器
+categories: 流媒體服務器
 ---
 
 ## VXG 是跟 wowza 一樣的流媒體服務器，本文章將介紹如何建立起來
+
+<!-- more -->
 
 ### VXG streaming server 下載方式
 
