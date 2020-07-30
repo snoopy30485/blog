@@ -1,7 +1,8 @@
 ---
 title: git指令
 date: 2019-02-26 15:22:06
-tags:
+tags: git
+categories: git
 ---
 
 #### 本文章作筆記用，會持續更新 git 指令
