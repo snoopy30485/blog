@@ -1,10 +1,13 @@
 ---
 title: google-command-SDK安裝
 date: 2018-06-27 16:41:22
-tags:
+tags: GCP
+categories: GCP
 ---
 
 ### 本文章將介紹安裝 google command SDK
+
+<!-- more -->
 
 #### 1. 首先到官網在互動是安裝程式下，點擊 Cloud SDK 安裝程式下載 GoogleCloudSDKinstaller.exe [官方下載連結](https://cloud.google.com/sdk/downloads?hl=zh-tw)
 

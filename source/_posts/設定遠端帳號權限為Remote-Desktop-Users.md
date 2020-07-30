@@ -1,10 +1,13 @@
 ---
 title: 設定遠端帳號權限為Remote-Desktop-Users
 date: 2018-06-23 12:52:37
-tags:
+tags: windows
+categories: windows
 ---
 
 ### 本文章將介紹把帳號設定為 Remote Desktop Users 權限
+
+<!-- more -->
 
 #### 1. 在開始的地方點擊滑鼠右鍵選擇 Computer Management ( 電腦管理 )
 
