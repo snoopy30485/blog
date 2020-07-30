@@ -1,10 +1,13 @@
 ---
 title: GCP-防火牆
 date: 2018-06-20 08:51:15
-tags:
+tags: GCP
+categories: GCP
 ---
 
 ## 本文章將介紹 GCP 防火牆設定
+
+<!-- more -->
 
 ### 防火牆入門介紹
 

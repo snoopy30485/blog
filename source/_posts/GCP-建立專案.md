@@ -1,10 +1,13 @@
 ---
 title: GCP-建立專案
 date: 2018-06-18 10:00:00
-tags:
+tags: GCP
+categories: GCP
 ---
 
 ## 本文章將介紹如何建立 GCP 專案
+
+<!-- more -->
 
 ### 建立專案 ( GUI )
 

@@ -1,10 +1,13 @@
 ---
 title: GCP-VM建立其它功能介紹
 date: 2018-06-19 16:42:47
-tags:
+tags: GCP
+categories: GCP
 ---
 
 ## 本文章將介紹一些 GCP 建立 VM 的一些細碎項目
+
+<!-- more -->
 
 ### 創建 VM 的管理介紹
 

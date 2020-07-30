@@ -1,10 +1,13 @@
 ---
 title: GCP-網路
 date: 2018-06-20 09:51:15
-tags:
+tags: GCP
+categories: GCP
 ---
 
 ## 本文章將介紹 GCP 網路設定
+
+<!-- more -->
 
 ### 本章所使用網路是使用 GCP 已經預設好的規劃 ( 各區域都已經分配完成 )
 

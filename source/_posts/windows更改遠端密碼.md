@@ -1,8 +1,8 @@
 ---
 title: windows更改遠端密碼
 date: 2018-06-22 15:31:26
-tags: winodws
-categories: winodws
+tags: windows
+categories: windows
 ---
 
 ### 更改遠端登入密碼

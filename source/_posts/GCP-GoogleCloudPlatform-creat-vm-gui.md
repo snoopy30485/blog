@@ -1,10 +1,13 @@
 ---
 title: GCP-GoogleCloudPlatform-creat-vm-gui
 date: 2018-06-19 10:54:37
-tags:
+tags: GCP
+categories: GCP
 ---
 
 ## 本文章將介紹如何使用 GUI 建立 GCP VM
+
+<!-- more -->
 
 ### 1. 進入 GCP，網址：https://cloud.google.com/
 

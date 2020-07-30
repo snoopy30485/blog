@@ -1,12 +1,15 @@
 ---
 title: GCP-windows-連線進入VM
 date: 2018-06-22 15:31:25
-tags:
+tags: GCP
+categories: GCP
 ---
 
 ### 連線進入 VM ( windows )
 
 ### 總共有3種方法可以進入 VM 本篇文章將依序作介紹
+
+<!-- more -->
 
 ### RDP 連線會需要用到 tcp:3389，一般專案開好會有預設防火牆 tcp:3389 但是 VM 跟 IP 全開 ( 建好 VM 可以直接連就是因為這樣 )，需要再做設定防火牆文章可以到這裡看 [文章傳送門](https://snoopy30485.github.io/2018/06/20/GCP-%E9%98%B2%E7%81%AB%E7%89%86/)
 

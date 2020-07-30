@@ -1,10 +1,13 @@
 ---
 title: GCP-設定DNS網域
 date: 2018-06-20 09:51:16
-tags:
+tags: GCP
+categories: GCP
 ---
 
 ## 本篇文章降介紹如何在 GCP 設定 DNS 網域
+
+<!-- more -->
 
 ### 租好網域後，接下來到 GCP 設定 DNS 網域 ( 本文章是租用 GoDaddy 網域 )
 

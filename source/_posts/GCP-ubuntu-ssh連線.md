@@ -1,10 +1,13 @@
 ---
 title: GCP-ubuntu-ssh連線
 date: 2018-06-24 11:35:55
-tags:
+tags: GCP
+categories: GCP
 ---
 
 ### 本文章將介紹 SSH 公開金鑰認證（Public Key Authentication）的使用方式，讓你不用打密碼就可以直接登入
+
+<!-- more -->
 
 ### 使用版本 ubuntu 16.04
 

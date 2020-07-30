@@ -1,12 +1,15 @@
 ---
 title: 安裝VirtualBox
 date: 2018-06-28 11:32:09
-tags:
+tags: VirtualBox
+categories: VirtualBox
 ---
 
 ### 一、什麼是 VirtualBox？
 
 #### VirtualBox 是一套由 Oracle 公司所開發的免費且中文化的虛擬機器 ( Virtual Machine ) 軟體，目前已經發表 6.0.0 版，安裝 VirtualBox 之後，可以在你的電腦新增多部的虛擬機器，在虛擬機器中可以安裝不同的作業系統，例如：Windows、Linux、Solaris、BSD、IBM OS/2 等，當然也可以安裝任何的軟體，就好像在使用實體電腦一樣，VirtualBox 很適合用來練習硬碟的分割與調整、作業系統和軟體的安裝與測試，不管你在虛擬電腦做任何的測試，完全不會影響電腦的正常運作。
+
+<!-- more -->
 
 ### 二、安裝 VirtualBox
 

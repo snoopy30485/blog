@@ -1,10 +1,13 @@
 ---
 title: GCP-Cloud-Launcher
 date: 2018-06-27 16:41:21
-tags:
+tags: GCP
+categories: GCP
 ---
 
 ### Cloud Launcher入門
+
+<!-- more -->
 
 ### 只需點擊幾下鼠標，Cloud Launcher 就可以在 Google Compute Engine 上啟動常用軟件包。支持許多常見的 Web 框架，數據庫，CMS 和 CRM。這是在 Google 雲端平台上啟動和運行的最快方式之一。
 

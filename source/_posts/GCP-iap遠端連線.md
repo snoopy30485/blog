@@ -1,10 +1,13 @@
 ---
 title: GCP-iap遠端連線
 date: 2018-06-27 16:41:23
-tags:
+tags: GCP
+categories: GCP
 ---
 
 ### 本文章將介紹如何用 iap 遠端
+
+<!-- more -->
 
 #### 1. 首先打開本機 google SDK 輸入下面指令
 

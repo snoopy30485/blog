@@ -1,12 +1,15 @@
 ---
 title: GCP-GoogleCloudPlatform-creat-vm-指令
 date: 2018-06-19 15:42:47
-tags:
+tags: GCP
+categories: GCP
 ---
 
 ## 本文章將介紹如何使用指令建立 GCP VM
 
 ### GCP 更多指令用法可以到連結查看，指令網站連結：https://cloud.google.com/sdk/docs/
+
+<!-- more -->
 
 ### 本篇開始：
 
