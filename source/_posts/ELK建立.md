@@ -1,10 +1,13 @@
 ---
 title: ELK建立
 date: 2018-07-26 16:13:06
-tags:
+tags: ELK
+categories: ELK
 ---
 
 ### 本文章將介紹如何用 docker 建立 ELK
+
+<!-- more -->
 
 #### 新環境更新
 

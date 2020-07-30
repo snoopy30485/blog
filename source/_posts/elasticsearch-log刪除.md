@@ -1,10 +1,13 @@
 ---
 title: elasticsearch-log刪除
 date: 2018-08-01 14:22:59
-tags:
+tags: ELK
+categories: ELK
 ---
 
 ### elasticsearch log 刪除
+
+<!-- more -->
 
 ### 手動刪除指令
 

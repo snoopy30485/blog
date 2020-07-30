@@ -1,10 +1,13 @@
 ---
 title: ELK抓取syslog
 date: 2018-09-13 10:36:58
-tags:
+tags: ELK
+categories: ELK
 ---
 
 ### 1. 安裝 Filebeat 資料蒐集服務
+
+<!-- more -->
 
 ```
 curl -L -O https://artifacts.elastic.co/downloads/beats/filebeat/filebeat-6.4.0-amd64.deb (下載)
