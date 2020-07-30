@@ -1,10 +1,13 @@
 ---
 title: docker基礎指令
 date: 2018-07-02 16:13:05
-tags:
+tags: docker
+categories: docker
 ---
 
 #### 這邊列出 docker有關 Container 指令的分類，供作者自己查詢
+
+<!-- more -->
 
 #### create：建立 Container 並執行指令
 #### run：同 create

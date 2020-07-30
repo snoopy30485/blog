@@ -1,10 +1,13 @@
 ---
 title: VirtualBox建立虛擬機器設定
 date: 2018-06-29 11:49:47
-tags:
+tags: VirtualBox
+categories: VirtualBox
 ---
 
 ### 本文章將介紹如何在 VirtualBox 新增一台虛擬機器，使用版本為 VirtualBox 6.0.0，使用範本為 ubuntu 16.04
+
+<!-- more -->
 
 #### ubuntu 16.04 IOS 檔案下載網址：http://releases.ubuntu.com/16.04/
 

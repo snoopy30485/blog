@@ -1,10 +1,13 @@
 ---
 title: linux更改時區
 date: 2018-06-23 13:53:34
-tags:
+tags: linux
+categories: linux
 ---
 
 ### linux更改時區
+
+<!-- more -->
 
 ### 輸入指令、選擇時區
 

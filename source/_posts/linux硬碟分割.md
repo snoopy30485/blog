@@ -1,10 +1,13 @@
 ---
 title: linux硬碟分割
 date: 2018-06-29 11:50:58
-tags:
+tags: linux
+categories: linux
 ---
 
 ### 本文章將介紹 linux 硬碟分割
+
+<!-- more -->
 
 #### 上一章 VirtualBox 安裝系統練習，使用系統給的自動分割，本章將使用手動分割硬碟
 

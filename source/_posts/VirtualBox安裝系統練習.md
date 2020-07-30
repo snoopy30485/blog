@@ -1,10 +1,13 @@
 ---
 title: VirtualBox安裝系統練習
 date: 2018-06-29 11:50:57
-tags:
+tags: VirtualBox
+categories: VirtualBox
 ---
 
 ### 本文章將介紹使用 VirtualBox 軟體來安裝 Ubuntu Server ( 因為只是練習所以系統使用預設帶過，詳細的 ubuntu 安裝介紹會再寫篇文章 )
+
+<!-- more -->
 
 #### 安裝 Ubuntu Server 是無法使用滑鼠的，僅能使用鍵盤來進行操作，請善用鍵盤的 Tab 鍵來跳到下一個項目，方向鍵來上下左右進行操作，如果要確定項目請使用 Enter 鍵，還有假如要選擇選項，那就使用空白鍵來進行選擇
 

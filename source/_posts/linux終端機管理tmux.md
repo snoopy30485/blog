@@ -1,10 +1,13 @@
 ---
 title: linux終端機管理tmux
 date: 2018-06-30 06:41:17
-tags:
+tags: linux
+categories: linux
 ---
 
 ### 本文章將介紹使用指令 tmux 終端機管理工具，分割視窗、同時開啟多個終端機
+
+<!-- more -->
 
 #### 安裝 tmux 
 

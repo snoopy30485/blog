@@ -1,8 +1,13 @@
 ---
 title: Ubuntu的各種解壓縮指令
 date: 2018-07-01 08:43:53
-tags:
+tags: linux
+categories: linux
 ---
+
+### Ubuntu的各種解壓縮指令
+
+<!-- more -->
 
 ### .tar
 

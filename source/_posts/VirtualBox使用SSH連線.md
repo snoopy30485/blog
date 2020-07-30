@@ -1,10 +1,13 @@
 ---
 title: VirtualBox使用SSH連線
 date: 2018-06-30 06:41:15
-tags:
+tags: VirtualBox
+categories: VirtualBox
 ---
 
 ### 本篇文章將介紹如何使用 SSH 連線工具連到virtualbox linux
+
+<!-- more -->
 
 #### 1. 點選左上方檔案，選擇主機網路管理員
 
