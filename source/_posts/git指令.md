@@ -6,6 +6,8 @@ tags:
 
 #### 本文章作筆記用，會持續更新 git 指令
 
+<!-- more -->
+
 #### git 指令查看+變更帳號信箱
 
 #### git config user.name
