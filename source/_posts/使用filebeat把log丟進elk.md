@@ -1,10 +1,13 @@
 ---
 title: 使用filebeat把log丟進elk
 date: 2018-07-26 16:13:07
-tags:
+tags: ELK
+categories: ELK
 ---
 
 ### 本章將介紹使用 filebeat 將 log 丟進 elk
+
+<!-- more -->
 
 #### filebeat 下載：https://www.elastic.co/downloads/beats/filebeat
 

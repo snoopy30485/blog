@@ -1,10 +1,13 @@
 ---
 title: Cisco-Switch-log寫入Linux-Log-Server
 date: 2018-09-10 16:03:44
-tags:
+tags: cisco
+categories: cisco
 ---
 
 ### 一、 進入 Switch 設定輸入 log 到指定 ip 機器
+
+<!-- more -->
 
 ### 1. en 輸入密碼，進入管理者模式
 

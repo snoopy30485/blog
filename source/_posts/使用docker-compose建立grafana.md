@@ -1,10 +1,13 @@
 ---
 title: 使用docker-compose建立grafana
 date: 2018-08-03 14:12:13
-tags:
+tags: grafana
+categories: grafana
 ---
 
 ### 本文章將介紹使用 docker-compose 建立 grafana
+
+<!-- more -->
 
 #### 指令安裝 docker-compose
 

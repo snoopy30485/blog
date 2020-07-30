@@ -1,10 +1,13 @@
 ---
 title: telegraf-windows
 date: 2018-08-03 14:12:07
-tags:
+tags: grafana
+categories: grafana
 ---
 
 ### windows-telegraf config
+
+<!-- more -->
 
 ### 第 52 行加入Log檔案放置的路徑與檔案名稱、第 69 行輸入機器 IP、第 72 行輸入 datebase 名稱
 

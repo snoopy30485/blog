@@ -1,10 +1,13 @@
 ---
 title: kibana操作-Visualize、Dashboard
 date: 2018-08-01 17:06:54
-tags:
+tags: ELK
+categories: ELK
 ---
 
 ### kibana 操作-Visualize、Dashboard、版本：5.6.7
+
+<!-- more -->
 
 ### Visualize : 將搜尋出的數據以長條圖、圓餅圖、表格等方式呈現
 

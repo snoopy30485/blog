@@ -1,10 +1,13 @@
 ---
 title: kibana操作-Discover
 date: 2018-08-01 17:06:52
-tags:
+tags: ELK
+categories: ELK
 ---
 
 ### kibana 操作-Discover、版本：5.6.7
+
+<!-- more -->
 
 ### 第一次進入畫面
 

@@ -1,10 +1,13 @@
 ---
 title: grafana告警圖保存至GCS
 date: 2018-08-03 14:12:12
-tags:
+tags: grafana
+categories: grafana
 ---
 
 ## 本文章將介紹將 grafana 告警圖片上傳到 gcs
+
+<!-- more -->
 
 ### 一、進入 gcp 然後到導覽選單 storage → 瀏覽器
 

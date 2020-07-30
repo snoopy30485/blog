@@ -1,10 +1,13 @@
 ---
 title: telegraf建立-windows
 date: 2018-08-03 14:08:00
-tags:
+tags: grafana
+categories: grafana
 ---
 
 ## 本文章將介紹 telegraf 建立 ( windows )
+
+<!-- more -->
 
 ### 1. 下載 telegraf 壓縮檔
 

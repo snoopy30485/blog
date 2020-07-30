@@ -1,10 +1,13 @@
 ---
 title: telegraf-ubuntu
 date: 2018-08-03 14:12:09
-tags:
+tags: grafana
+categories: grafana
 ---
 
 #### ubuntu-telegraf config
+
+<!-- more -->
 
 #### 第 73 行輸入檔案路徑、第 93 行輸入機器 IP、第 96 行輸入 datebase 名稱
 

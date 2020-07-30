@@ -1,12 +1,15 @@
 ---
 title: grafana建立
 date: 2018-08-02 17:59:37
-tags:
+tags: grafana
+categories: grafana
 ---
 
 ### 什麼是 Grafana ？
 
 #### Grafana 是一套開源的監控及分析平台軟體，可支援許多不同的資料來源為其一大特點，從常用的 CloudWatch、Elasticsearch、Graphite、influxDB 到 OpenStack 的 Gnocchi 或 Google Calendar 等，範圍十分的廣泛，管理者不會因為受限於不同的資料來源而必需使用不同的監控軟體。Grafana 具備豐富的面板選擇，除了基本文字、圖表、表格等，管理者亦可使用如甘特圖、流程圖等面板來顯示所監控的資料及訊息，並可由管理者自行調整顯示資料的色彩
+
+<!-- more -->
 
 ### 什麼是 InfluxDB ？
 

@@ -1,10 +1,13 @@
 ---
 title: grafana搭配slack告警
 date: 2018-08-03 14:12:11
-tags:
+tags: grafana
+categories: grafana
 ---
 
 ## 本篇文章將介紹把告警傳送到 slack
+
+<!-- more -->
 
 ### 一、首先先註冊一個 slack 的帳號與下載 slack 的應用程序或 app
 

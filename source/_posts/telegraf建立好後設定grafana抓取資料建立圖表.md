@@ -1,10 +1,13 @@
 ---
 title: telegraf建立好後設定grafana抓取資料建立圖表
 date: 2018-08-03 14:12:10
-tags:
+tags: grafana
+categories: grafana
 ---
 
 ## 本文章將介紹 telegraf 收集完資料傳到 influxdb 後 grafana 抓取資料建立圖表
+
+<!-- more -->
 
 ### 一、第一次建好登入可以看到首頁 install grafana 顯示打勾圖案，代表那個步驟完成了，所以接下來我們要做下個步驟點擊 add data source，這個步驟是在配置我的數據來源 ex：influxdb、elasticsearch...
 

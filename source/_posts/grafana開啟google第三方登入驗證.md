@@ -1,10 +1,13 @@
 ---
 title: grafana開啟google第三方登入驗證
 date: 2018-08-02 17:59:39
-tags:
+tags: grafana
+categories: grafana
 ---
 
 ## 本文章將介紹使用 GCP 開啟第三方登入驗證
+
+<!-- more -->
 
 ### 一、建立 google 憑證，到導覽選單 API 和服務 → 憑證
 

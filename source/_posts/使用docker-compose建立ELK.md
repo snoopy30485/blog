@@ -1,10 +1,13 @@
 ---
 title: 使用docker-compose建立ELK
 date: 2018-07-26 16:13:08
-tags:
+tags: ELK
+categories: ELK
 ---
 
 ### 本文章將介紹使用 docker-compose 建立 ELK
+
+<!-- more -->
 
 #### 指令安裝 docker-compose
 

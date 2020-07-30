@@ -1,10 +1,13 @@
 ---
 title: telegraf建立-ubuntu
 date: 2018-08-03 14:12:08
-tags:
+tags: grafana
+categories: grafana
 ---
 
 #### 1. 取得 telegraf 安裝包
+
+<!-- more -->
 
 ```
 wget https://dl.influxdata.com/telegraf/releases/telegraf_1.5.3-1_amd64.deb

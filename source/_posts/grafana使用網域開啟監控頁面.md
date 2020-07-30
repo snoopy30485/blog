@@ -1,10 +1,13 @@
 ---
 title: grafana使用網域開啟監控頁面
 date: 2018-08-02 17:59:38
-tags:
+tags: grafana
+categories: grafana
 ---
 
 ## 本文章將介紹使用 GCP 加入 DNS 網域開啟 grafana 監控頁面
+
+<!-- more -->
 
 ### 在 GCP 加入 DNS 網域文章 [傳送門](https://snoopy30485.github.io/2018/06/20/GCP-%E8%A8%AD%E5%AE%9ADNS%E7%B6%B2%E5%9F%9F/)
 
