@@ -1,10 +1,13 @@
 ---
 title: 安裝ansible-windows
 date: 2019-01-03 14:29:23
-tags:
+tags: ansible
+categories: ansible
 ---
 
 ### 本章將介紹使用 ubuntu-ansible 連線控制 windows，但是 windows 是沒有 ssh 連線的，所以會需要用到 pywinrm
+
+<!-- more -->
 
 #### 1. 安裝 ansible
 

@@ -1,9 +1,11 @@
 ---
 title: 配置winrm與https證書訊息
 date: 2019-01-03 16:00:24
-tags:
+tags: ansible
+categories: ansible
 ---
 
+<!-- more -->
 ```
 #Requires -Version 3.0
 

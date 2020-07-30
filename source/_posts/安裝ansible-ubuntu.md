@@ -1,10 +1,13 @@
 ---
 title: 安裝ansible-ubuntu
 date: 2019-01-03 14:29:15
-tags:
+tags: ansible
+categories: ansible
 ---
 
 ### 想要用 ansible 控制另外一台 ubuntu 機器很簡單，只要安裝好 ansible 設定好 host，並且 SSH 可以連線要被控制的 ubuntu 機器就可以了
+
+<!-- more -->
 
 #### 1. 安裝 ansible
 
