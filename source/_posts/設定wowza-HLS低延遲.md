@@ -1,10 +1,13 @@
 ---
 title: 設定wowza-HLS低延遲
 date: 2018-11-23 11:36:21
-tags:
+tags: 流媒體服務器
+categories: 流媒體服務器
 ---
 
 ### 本文章將介紹如何調整 HLS 低延遲
+
+<!-- more -->
 
 #### 1. 首先在 Applications 選擇想設定低延遲的 Live Applications 點擊 Edit 
 

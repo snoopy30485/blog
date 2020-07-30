@@ -1,10 +1,13 @@
 ---
 title: 安裝AMS_Original_ubuntu
 date: 2018-11-08 15:26:58
-tags:
+tags: 流媒體服務器
+categories: 流媒體服務器
 ---
 
 ### AMS_Original 安裝包下載：[點我下載](https://drive.google.com/open?id=1ZoMojUk21mlRwmCl90mylBCVHpClugQ-)
+
+<!-- more -->
 
 #### 將安裝包放入後按照下方指令開始安裝
 
