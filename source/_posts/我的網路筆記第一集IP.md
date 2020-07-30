@@ -1,7 +1,8 @@
 ---
 title: 我的網路筆記第一集IP
 date: 2020-04-10 13:48:54
-tags:
+tags: 網路
+categories: 網路
 ---
 
 ### 一、IP 位址的組成與分級
