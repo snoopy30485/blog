@@ -9,9 +9,9 @@ categories: GCP
 
 <!-- more -->
 
-#### 1. 首先到官網在互動是安裝程式下，點擊 Cloud SDK 安裝程式下載 GoogleCloudSDKinstaller.exe [官方下載連結](https://cloud.google.com/sdk/downloads?hl=zh-tw)
+#### 1. 首先到官網，點擊 Google Cloud SDK installer 下載安裝檔 [官方下載連結](https://cloud.google.com/sdk/docs/quickstart-windows)
 
-![ ](images/1.png)
+![ ](images/1-1.png)
 
 #### 2. 點擊 GoogleCloudSDKinstaller.exe 開始安裝
 
@@ -43,22 +43,58 @@ categories: GCP
 
 ![ ](images/10.png)
 
-#### 9. 安裝好後開啟 google SDK 會出現2個選項，選擇 1 使用新設置重新初始化此配置
+#### 9. 登入帳戶
 
-![ ](images/11.png)
+#### 下指令登入帳戶，會取得一串 URL
 
-#### 10. 接下來會有 google 帳號選擇
+```
+gcloud auth login
+```
 
-![ ](images/12-1.png)
+![ ](images/16.png)
 
-#### 11. GCP 專案ID選擇，不知道請到 GCP 查看
+#### 10. 開啟網頁複製貼上 URL，選擇帳戶然後點選允許
 
-![ ](images/13.png)
+![ ](images/17.png)
+![ ](images/18.png)
 
-#### 12. 選擇區域
+#### 11. 允許後會給一串授權碼，複製貼回 SDK
 
-![ ](images/14.png)
+![ ](images/19.png)
+![ ](images/20.png)
 
-#### 13. 出現下圖畫面就是設定結束，整個 google SDK 安裝就完成了
+#### 12. 貼回 SDK 後會顯示這個帳號有哪些專案，選擇自己想要的專案後會需要再選擇地區和區域，選完設定就結束了
 
-![ ](images/15.png)
+![ ](images/21.png)
+![ ](images/22.png)
+
+#### 13. 選擇完後會把設定檔存起來，下指令可以看你有那些設定檔，適合多帳號使用
+
+```
+gcloud config configurations list
+```
+
+![ ](images/23.png)
+
+
+#### 14. 針對不同的工作可以切換不同的設定檔，正在使用中的設定檔 IS_ACTIVE 會顯示 True
+
+```
+gcloud config configurations activate [config name]
+```
+
+![ ](images/24.png)
+
+#### 刪除設定檔
+
+```
+glcoud config configurations delete [config name]
+```
+
+#### 15. 重開設定檔，可重開新的或選擇舊的重新設定
+
+```
+gcloud init
+```
+
+![ ](images/25.png)
