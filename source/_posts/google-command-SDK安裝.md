@@ -68,7 +68,7 @@ gcloud auth login
 ![ ](images/21.png)
 ![ ](images/22.png)
 
-#### 13. 選擇完後會把設定檔存起來，下指令可以看你有那些設定檔，適合多帳號使用
+#### 13. 選擇完後會把設定檔存起來，下指令可以看你有那些設定檔，適合多帳號專案使用
 
 ```
 gcloud config configurations list
