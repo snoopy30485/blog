@@ -1,8 +1,8 @@
 ---
 title: Cisco-Switch指令-持續更新
 date: 2018-09-10 16:01:13
-tags: cisoco
-categories: cisoco
+tags: cisco
+categories: cisco
 ---
 
 ### 本篇文章是做筆記用，將會寫入目前有用到的指令做紀錄
