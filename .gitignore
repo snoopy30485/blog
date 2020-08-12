@@ -5,3 +5,6 @@ db.json
 node_modules/
 public/
 .deploy*/
+
+Cisco-Switch-log寫入Linux-Log-Server.md
+Cisco-Switch指令-持續更新.md
