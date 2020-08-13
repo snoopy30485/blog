@@ -23,4 +23,4 @@ categories: git
 
 #### .gitignore 範例
 
-![ ](images/3.png)
+![ ](images/4.png)
