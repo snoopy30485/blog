@@ -27,7 +27,7 @@ kubectx
 #### 切换到指定 context
 
 ```
-
+kubectx [name]
 ```
 
 #### 在最近使用過的 2 个 context 快速切換
@@ -45,7 +45,7 @@ kubens
 #### 切换到指定 namespace
 
 ```
-kubens  [name]
+kubens [name]
 ```
 
 #### 在最近使用過的 2 个 namespace 快速切换
