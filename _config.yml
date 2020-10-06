@@ -85,5 +85,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:snoopy30485/snoopy30485.github.io.git
+  repo: git@github.com:snoopy123456/snoopy123456.github.io.git
   branch: master
