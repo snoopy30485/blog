@@ -19,7 +19,7 @@ search:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://snoopy3345678.github.io/
+url: https://snoopy30485.github.io/
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -85,5 +85,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:snoopy30485/snoopy3345678.github.io.git
+  repo: git@github.com:snoopy30485/snoopy30485.github.io.git
   branch: master
